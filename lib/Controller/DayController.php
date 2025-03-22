@@ -84,27 +84,11 @@ class DayController extends Controller {
      $wtdayfile = __DIR__ . '/../../data/days.xml';
     if (!file_exists($wtdayfile)) {
       return $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
-      //return "keine days.xml gefunden. Anleitung in README: days_example.xml kopieren und in days.xml  umbenennen, days.xml bearbeiten und speichern!!!";
  		}
      else { return; }
-     //return;// "blabla";
-     //return $day + ' <b>test</b><br><img src="https://s2.dmcdn.net/v/UzrL81aZ6ekdlpZue/x720">';
-    //return $this->config->getAppValue('logcleaner', $who);
  	}
 
   public function getday(string $day) {
-    /*
-    $pizza  = "2025-12-01";
-    $pieces = explode("-", $pizza);
-
-    $day = intval($pieces[2]);
-    $today = intval(date("j"));
-    $month = intval($pieces[1]);
-    $thismonth = intval(date("n"));
-
-    echo "<br> vom xml 2025-12-01 ist das datum: $day.$month. und heute ist $today.$thismonth.";
-    */
-    //return "hallo";
     $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');
     $wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last');
     $day = intval($day);
@@ -154,20 +138,9 @@ else {
   $out .= '<br>' . $xml->days->day[$day-1]->description;
   return $out;
 }
-
-//if (($day > intval(date("j"))) and ($wtpara_test === 1)) { return '<br><b>' . $this->l->t('Unfortunately, you are too early, because you are only allowed to open this door on the right day.') . '</b>'; }
-/*
-else {
-  //$out .= '$day = ' . $day. ' und intval(date("j")) = ' . intval(date("j")) . ' <br><h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
-  //$out .= '<br>' . $xml->days->day[$day-1]->description;
-  return $out;
-}
-*/
    }
 }
-    //$day = 10;
-      //return $day + ' <b>test</b><br><img src="https://s2.dmcdn.net/v/UzrL81aZ6ekdlpZue/x720">';
-   //return $this->config->getAppValue('logcleaner', $who);
+    
  }
 
 
