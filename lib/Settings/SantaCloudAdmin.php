@@ -1,4 +1,30 @@
 <?php
+/**
+ *
+ * SantaCloud APP (Nextcloud)
+ *
+ * @author Wolfgang Tödt <wtoedt@gmail.com>
+ *
+ * @copyright Copyright (c) 2025 Wolfgang Tödt
+ *
+ * @license GNU AGPL version 3 or any later version
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+declare(strict_types=1);
+
 namespace OCA\SantaCloud\Settings;
 
 use OCP\AppFramework\Http\TemplateResponse;
@@ -19,12 +45,6 @@ class SantaCloudAdmin implements ISettings {
      * @return TemplateResponse
      */
     public function getForm() {
-      /*
-        $parameters = [
-            'mySetting' => $this->config->getSystemValue('santacloud', true),
-        ];
-        */
-        //$sample_wt_zeilen = $this->config->getAppValue('sample', 'sample_wt_zeilen', '');
         $wtpara_test = $this->config->getAppValue('santacloud', 'wtpara_test', '');
         $wtpara_last = $this->config->getAppValue('santacloud', 'wtpara_last', '');
     		$parameters = [
@@ -32,33 +52,21 @@ class SantaCloudAdmin implements ISettings {
           'wtpara_test' => $wtpara_test,
           'wtpara_last' => $wtpara_last
     		];
-
         return new TemplateResponse('santacloud', 'settings/admin', $parameters, '');
-        /*
-        TemplateResponse {
-      		return new TemplateResponse(
-      			Application::APP_ID,
-      			'index',
-      		);
-      	}
-        */
     }
 
     public function kgetForm() {
-
-
   		$sample_wt_zeilen = $this->config->getAppValue('sample', 'sample_wt_zeilen', '');
   		$sample_wt_art = $this->config->getAppValue('sample', 'sample_wt_art', '');
   		$parameters = [
   			'sample_wt_zeilen' => $sample_wt_zeilen,
   			'sample_wt_art' => $sample_wt_art
   		];
-
   		return new TemplateResponse('sample', 'admin_settings', $parameters, '');
   	}
 
     public function getSection() {
-        return 'santacloud'; // Name of the previously created section.
+        return 'santacloud';
     }
 
     /**
