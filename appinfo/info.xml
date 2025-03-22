@@ -11,6 +11,7 @@
 	<namespace>SantaCloud</namespace>
 	<category>games</category>
 	<bugs>https://muster.com/issuetracking</bugs>
+	<screenshot>https://github.com/zomtec2311/santacloud/blob/main/SantaCloud.png</screenshot>
 	<dependencies>
 		<nextcloud min-version="29" max-version="29"/>
 	</dependencies>
