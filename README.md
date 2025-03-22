@@ -1,6 +1,8 @@
 # Santa Cloud
 
-A template to get started with Nextcloud app development.
+A template to get started with Nextcloud app development
+
+![https://github.com/zomtex2311/santacloud/blob/main/SantaCloud.png](https://github.com/zomtec2311/santacloud/blob/main/SantaCloud.png)​
 
 ## Usage
 
