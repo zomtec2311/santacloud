@@ -59,89 +59,75 @@ class DayController extends Controller {
    }
 
    public function setSettingTest($wtpara_test) {
-    $this->config->setAppValue('santacloud', 'wtpara_test', $wtpara_test);
- 			return;
- 	}
+     $this->config->setAppValue('santacloud', 'wtpara_test', $wtpara_test);
+ 		 return;
+ 	 }
 
-  public function setSettingLast($wtpara_last) {
-   $this->config->setAppValue('santacloud', 'wtpara_last', $wtpara_last);
+   public function setSettingLast($wtpara_last) {
+     $this->config->setAppValue('santacloud', 'wtpara_last', $wtpara_last);
      return;
- }
+   }
 
    public function getxml() {
-      //$this->config = $config;
-      $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');
- 		   if (!isset($wtpara_test)) {
- 			     $wtpara_test = 1;
-             $this->config->setAppValue('santacloud', 'wtpara_test', 1);
- 		   }
-       $wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last');
-  		   if (!isset($wtpara_last)) {
-             $wtpara_last = 2;
-              $this->config->setAppValue('santacloud', 'wtpara_last', 2);
-  		 }
-     //$wtdayfile = 'apps/santacloud/data/days_example.xml';
+     $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');
+ 		 if (!isset($wtpara_test)) {
+ 		    $wtpara_test = 1;
+        $this->config->setAppValue('santacloud', 'wtpara_test', 1);
+ 		 }
+     $wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last');
+  	 if (!isset($wtpara_last)) {
+       $wtpara_last = 2;
+       $this->config->setAppValue('santacloud', 'wtpara_last', 2);
+  	 }
      $wtdayfile = __DIR__ . '/../../data/days.xml';
-    if (!file_exists($wtdayfile)) {
-      return $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
- 		}
+     if (!file_exists($wtdayfile)) {
+       return $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
+     }
      else { return; }
- 	}
+ 	 }
 
-  public function getday(string $day) {
-    $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');
-    $wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last');
-    $day = intval($day);
-    $today = intval(date("j"));
-    $thismonth = intval(date("n"));
-    $out = "";
-    // __DIR__ ist /var/www/html/apps/santacloud/lib/Controller
-    $wtdayfile = __DIR__ . '/../../data/days.xml';
-    if( $wtpara_test === 1) {
-      if (!file_exists($wtdayfile)) {
-        return;
-      }
-      else {
-        $xmlStr = file_get_contents($wtdayfile);
-        $xml = simplexml_load_string($xmlStr);
-        $out .= '<br><h1 style="font-size: 2em;color:red;">' . $this->l->t('Attention - test mode is ON') . '</h1><br><h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
-        $out .= '<br>' . $xml->days->day[$day-1]->description;
-        return $out;
-      }
-    }
-else {
-  if ($day > $today) { return '<br><b>' . $this->l->t('Unfortunately, you are too early, because you are only allowed to open this door on the right day.') . '</b>'; }
-
-   if (!file_exists($wtdayfile)) {
-     return;
+   public function getday(string $day) {
+     $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');
+     $wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last');
+     $day = intval($day);
+     $today = intval(date("j"));
+     $thismonth = intval(date("n"));
+     $out = "";
+     $wtdayfile = __DIR__ . '/../../data/days.xml';
+     if( $wtpara_test === 1) {
+       if (!file_exists($wtdayfile)) { return; }
+       else {
+         $xmlStr = file_get_contents($wtdayfile);
+         $xml = simplexml_load_string($xmlStr);
+         $out .= '<br><h1 style="font-size: 2em;color:red;">' . $this->l->t('Attention - test mode is ON') . '</h1><br><h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
+         $out .= '<br>' . $xml->days->day[$day-1]->description;
+         return $out;
+       }
+     }
+     else {
+       if ($day > $today) { return '<br><b>' . $this->l->t('Unfortunately, you are too early, because you are only allowed to open this door on the right day.') . '</b>'; }
+       if (!file_exists($wtdayfile)) {
+         return;
+       }
+       else {
+         $xmlStr = file_get_contents($wtdayfile);
+         $xml = simplexml_load_string($xmlStr);
+         $datexml  = $xml->days->day[$day-1]->date;
+         $pieces = explode("-", $datexml);
+         $xmlmonth = intval($pieces[1]);
+         if ($xmlmonth !== $thismonth) { return; }
+         if ( $day === $today ) {
+           $out .= '<br><h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
+           $out .= '<br>' . $xml->days->day[$day-1]->description;
+           return $out;
+         }
+         if ( ($day < $today) and ($wtpara_last === 2)) { return '<br><b>' . $this->l->t('Unfortunately, you are too late, because this door is no longer available.') . '</b>'; }
+         else {
+           $out .= '<br><h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
+           $out .= '<br>' . $xml->days->day[$day-1]->description;
+           return $out;
+         }
+       }
+     }
    }
-   else {
-     $xmlStr = file_get_contents($wtdayfile);
-     $xml = simplexml_load_string($xmlStr);
-
-
-     $datexml  = $xml->days->day[$day-1]->date;
-     $pieces = explode("-", $datexml);
-
-     $xmlmonth = intval($pieces[1]);
-     if ($xmlmonth !== $thismonth) { return; }
-
-if ( $day === $today ) {
-  $out .= '<br><h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
-  $out .= '<br>' . $xml->days->day[$day-1]->description;
-  return $out;
-}
-
-if ( ($day < $today) and ($wtpara_last === 2)) { return '<br><b>' . $this->l->t('Unfortunately, you are too late, because this door is no longer available.') . '</b>'; }
-else {
-  $out .= '<br><h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
-  $out .= '<br>' . $xml->days->day[$day-1]->description;
-  return $out;
-}
-   }
-}
-    
  }
-
-
-}
