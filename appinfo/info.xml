@@ -3,16 +3,17 @@
 	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
 	<id>santacloud</id>
 	<name>Santa Cloud</name>
-	<summary>Short description of SantaCloud</summary>
+	<summary>SantaCloud is an advent calendar for Nextcloud</summary>
 	<description>Long description of SantaCloud</description>
 	<version>1.0.0</version>
 	<licence>agpl</licence>
-	<author mail="wtoedt@gmail.com" homepage="https://muster.com">Wolfgang Tödt</author>
+	<author mail="wtoedt@gmail.com" homepage="https://github.com/zomtec2311/santacloud">Wolfgang Tödt</author>
 	<namespace>SantaCloud</namespace>
 	<category>games</category>
-	<bugs>https://muster.com/issuetracking</bugs>
+	<bugs>https://github.com/zomtec2311/santacloud/issues</bugs>
+	<screenshot>https://github.com/zomtec2311/santacloud/blob/main/SantaCloud.png</screenshot>
 	<dependencies>
-		<nextcloud min-version="29" max-version="29"/>
+		<nextcloud min-version="29" max-version="31"/>
 	</dependencies>
 	<settings>
     <admin>OCA\SantaCloud\Settings\SantaCloudAdmin</admin>
