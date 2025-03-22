@@ -93,11 +93,23 @@ class DayController extends Controller {
  	}
 
   public function getday(string $day) {
+    /*
+    $pizza  = "2025-12-01";
+    $pieces = explode("-", $pizza);
+
+    $day = intval($pieces[2]);
+    $today = intval(date("j"));
+    $month = intval($pieces[1]);
+    $thismonth = intval(date("n"));
+
+    echo "<br> vom xml 2025-12-01 ist das datum: $day.$month. und heute ist $today.$thismonth.";
+    */
     //return "hallo";
     $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');
     $wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last');
     $day = intval($day);
     $today = intval(date("j"));
+    $thismonth = intval(date("n"));
     $out = "";
     // __DIR__ ist /var/www/html/apps/santacloud/lib/Controller
     $wtdayfile = __DIR__ . '/../../data/days.xml';
@@ -122,6 +134,13 @@ else {
    else {
      $xmlStr = file_get_contents($wtdayfile);
      $xml = simplexml_load_string($xmlStr);
+
+
+     $datexml  = $xml->days->day[$day-1]->date;
+     $pieces = explode("-", $datexml);
+
+     $xmlmonth = intval($pieces[1]);
+     if ($xmlmonth !== $thismonth) { return; }
 
 if ( $day === $today ) {
   $out .= '<br><h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
