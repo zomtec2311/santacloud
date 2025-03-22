@@ -1,6 +1,6 @@
 # Santa Cloud
 
-Advent calendar for Nextcloud
+Advent calendar App for Nextcloud
 
 ![https://github.com/zomtex2311/santacloud/blob/main/SantaCloud.png](https://github.com/zomtec2311/santacloud/blob/main/SantaCloud.png)​
 
