@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>santacloud</id>
+	<name>Santa Cloud</name>
+	<summary>Short description of SantaCloud</summary>
+	<description>Long description of SantaCloud</description>
+	<version>1.0.0</version>
+	<licence>agpl</licence>
+	<author mail="wtoedt@gmail.com" homepage="https://muster.com">Wolfgang Tödt</author>
+	<namespace>SantaCloud</namespace>
+	<category>games</category>
+	<bugs>https://muster.com/issuetracking</bugs>
+	<dependencies>
+		<nextcloud min-version="29" max-version="29"/>
+	</dependencies>
+	<settings>
+    <admin>OCA\SantaCloud\Settings\SantaCloudAdmin</admin>
+    <admin-section>OCA\SantaCloud\Sections\SantaCloudAdmin</admin-section>
+	</settings>
+	<navigations>
+		<navigation>
+			<id>santacloud</id>
+			<name>Santa Cloud</name>
+			<route>santacloud.page.index</route>
+			<icon>santacloud.svg</icon>
+			<type>link</type>
+		</navigation>
+	</navigations>
+</info>
