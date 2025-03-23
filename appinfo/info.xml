@@ -4,7 +4,12 @@
 	<id>santacloud</id>
 	<name>Santa Cloud</name>
 	<summary>SantaCloud is an advent calendar for Nextcloud</summary>
-	<description>Long description of SantaCloud</description>
+	<description><![CDATA[**SantaCloud is an advent calendar for Nextcloud**
+
+- ✅ Create your own content for the doors - e.g. competitions, reciepts...
+- ✅ Offer your customers entertainment during the Advent season.
+- ✅ With built-in test mode.
+- ✅ Easy setup via an XML file.]]></description>
 	<version>1.0.0</version>
 	<licence>agpl</licence>
 	<author mail="wtoedt@gmail.com" homepage="https://github.com/zomtec2311/santacloud">Wolfgang Tödt</author>
