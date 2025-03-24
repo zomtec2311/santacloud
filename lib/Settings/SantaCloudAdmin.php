@@ -47,23 +47,14 @@ class SantaCloudAdmin implements ISettings {
     public function getForm() {
         $wtpara_test = $this->config->getAppValue('santacloud', 'wtpara_test', '');
         $wtpara_last = $this->config->getAppValue('santacloud', 'wtpara_last', '');
+        $wtpara_lock = $this->config->getAppValue('santacloud', 'wtpara_lock', '');
     		$parameters = [
-          //'sample_wt_zeilen' => $sample_wt_zeilen,
           'wtpara_test' => $wtpara_test,
-          'wtpara_last' => $wtpara_last
+          'wtpara_last' => $wtpara_last,
+          'wtpara_lock' => $wtpara_lock,
     		];
         return new TemplateResponse('santacloud', 'settings/admin', $parameters, '');
     }
-
-    public function kgetForm() {
-  		$sample_wt_zeilen = $this->config->getAppValue('sample', 'sample_wt_zeilen', '');
-  		$sample_wt_art = $this->config->getAppValue('sample', 'sample_wt_art', '');
-  		$parameters = [
-  			'sample_wt_zeilen' => $sample_wt_zeilen,
-  			'sample_wt_art' => $sample_wt_art
-  		];
-  		return new TemplateResponse('sample', 'admin_settings', $parameters, '');
-  	}
 
     public function getSection() {
         return 'santacloud';

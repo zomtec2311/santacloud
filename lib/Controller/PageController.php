@@ -35,18 +35,70 @@ use OCP\AppFramework\Http\Attribute\NoCSRFRequired;
 use OCP\AppFramework\Http\Attribute\OpenAPI;
 use OCP\AppFramework\Http\TemplateResponse;
 
+use OCP\IUserSession;
+use OCP\IGroupManager;
+use OCP\IConfig;
+
 /**
  * @psalm-suppress UnusedClass
  */
 class PageController extends Controller {
+
+	public function __construct(private IConfig $config, IGroupManager $groupManager, IUserSession $userSession)
+	{
+			$this->config = $config;
+			$this->userSession = $userSession;
+			$this->groupManager = $groupManager;
+			//parent::__construct(Application::APP_ID, $request);
+	}
+
 	#[NoCSRFRequired]
 	#[NoAdminRequired]
 	#[OpenAPI(OpenAPI::SCOPE_IGNORE)]
 	#[FrontpageRoute(verb: 'POST', url: '/')]
 	public function index(): TemplateResponse {
+		$wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');
+		if (!isset($wtpara_test) or ($wtpara_test === 0)) {
+			 $wtpara_test = 1;
+			 $this->config->setAppValue('santacloud', 'wtpara_test', 1);
+		}
+		$wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last');
+		if (!isset($wtpara_last) or ($wtpara_last === 0)) {
+			 $wtpara_last = 2;
+			 $this->config->setAppValue('santacloud', 'wtpara_last', 2);
+		}
+		$wtpara_lock = (int)$this->config->getAppValue('santacloud', 'wtpara_lock');
+		if (!isset($wtpara_lock) or ($wtpara_lock === 0)) {
+			 $wtpara_lock = 1;
+			 $this->config->setAppValue('santacloud', 'wtpara_lock', 1);
+		}
+		$allowed = $this->isallowed($wtpara_lock);
+
+		switch ($allowed) {
+		case 1:
+				return new TemplateResponse(
+					Application::APP_ID,
+					'index',
+				);
+        break;
+    case 2:
+				return new TemplateResponse(
+					Application::APP_ID,
+					'wait',
+				);
+        break;
+}
 		return new TemplateResponse(
 			Application::APP_ID,
 			'index',
 		);
+	}
+	private function isallowed($wtpara_lock) {
+		$user = $this->userSession->getUser();
+		if ($this->groupManager->isAdmin($user->getUID())) {return 1;}
+		else {
+			if( $wtpara_lock === 2 ) { return 1; }
+			else { return 2; }
+		}
 	}
 }

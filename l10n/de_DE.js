@@ -11,6 +11,11 @@ OC.L10N.register(
     "Test yes or no. If the test is allowed, the setting for past days is ignored. In the Testmdus you can open all doors and an additional notice is displayed." : "Test ja oder nein. Ist der Test erlaubt, wird die Einstellung für vergangene Tage ignoriert. Im Testmdus kann man alle Türen öffnen und es wird zusätzlich ein Hinweis eingeblendet.",
     "Yes" : "Yes",
     "No" : "No",
-    "Allow to open doors for past days" : "Erlauben, Türen der vergangenen Tage zu öffnen"
+    "Allow to open doors for past days" : "Erlauben, Türen der vergangenen Tage zu öffnen",
+    "Lock mode ON" : "Sperrmodus AN",
+    "Lock mode OFF" : "Sperrmodus AUS",
+    "Lock mode yes or no. Lock mode ON means, that users are directed to a please-wait page. OFF means, that users are allowed to see the calendar." : "Sperrmodus ja oder nein. Sperrmodus AN bedeutet, dass User zu einer Bitte-warten Seite weitergeleitet werden. AUS bedeutet, dass User den Kalender sehen dürfen.",
+    "There is nothing to see here yet!! Please wait..." : "Hier gibt es noch nichts zu sehen!! Bitte warten...",
+    "If Test mode is ON, the Lock mode should also be ON. Otherwise users also can see the content of the doors while you are testing." : "Wenn der Testmodus AN ist, sollte der Sperrmodus ebenfalls AN sein. Ansonsten können User ebenfalls den Inhalt der Türen sehen während sie testen."
 },
 "nplurals=2; plural=(n != 1);");

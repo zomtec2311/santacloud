@@ -43,5 +43,26 @@ window.addEventListener('DOMContentLoaded', function () {
             );
         }
     }
-
+    {
+        const wtpara_lock = document.getElementById('wtpara_lock1');
+        wtpara_lock.onchange = function () {
+            $.post(
+                OC.generateUrl('/apps/santacloud/ajax/lock'),
+                {
+                    wtpara_lock: 1
+                }
+            );
+        }
+    }
+    {
+        const wtpara_lock = document.getElementById('wtpara_lock2');
+        wtpara_lock.onchange = function () {
+            $.post(
+                OC.generateUrl('/apps/santacloud/ajax/lock'),
+                {
+                    wtpara_lock: 2
+                }
+            );
+        }
+    }
 });

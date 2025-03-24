@@ -4,6 +4,17 @@
 	margin: 16px;
 }
 
+#santacloudwait {
+	width: 80%;
+	height: 80%;
+	text-align: center;
+	background-color: silver;
+	border-radius: 20px;
+	color: black;
+	justify-content: center;
+	margin: 50px;
+}
+
 .modal__content {
 	margin: 50px;
 	text-align: center;

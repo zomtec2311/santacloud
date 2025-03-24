@@ -30,5 +30,6 @@ return [
      ['name' => 'Day#getday', 'url' => '/day/{day}', 'verb' => 'GET'],
      ['name' => 'Day#setSettingTest', 'url' => '/ajax/test', 'verb' => 'POST'],
      ['name' => 'Day#setSettingLast', 'url' => '/ajax/last', 'verb' => 'POST'],
+     ['name' => 'Day#setSettingLock', 'url' => '/ajax/lock', 'verb' => 'POST'],
   ]
 ];

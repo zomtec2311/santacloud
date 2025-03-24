@@ -33,10 +33,17 @@ use OCP\IL10N;
 use OCP\IConfig;
 use OCP\IRequest;
 use OCP\AppFramework\Services\IInitialState;
-use OCA\LogReader\Service\SettingsService;
+use OCP\AppFramework\Http\Attribute\FrontpageRoute;
+use OCP\AppFramework\Http\Attribute\NoAdminRequired;
+use OCP\AppFramework\Http\Attribute\NoCSRFRequired;
+use OCP\AppFramework\Http\Attribute\OpenAPI;
+//use OCA\LogReader\Service\SettingsService;
 
 class DayController extends Controller {
-
+  #[NoCSRFRequired]
+  #[NoAdminRequired]
+  #[OpenAPI(OpenAPI::SCOPE_IGNORE)]
+  #[FrontpageRoute(verb: 'POST', url: '/')]
 	/**
 	 * @param string $query
 	 * @param int $count
@@ -51,12 +58,14 @@ class DayController extends Controller {
      IConfig $config,
      IRequest $request,
      private IInitialState $initialState,
-     private SettingsService $settingsService
+     //private SettingsService $settingsService
    ) {
      parent::__construct('santacloud', $request);
      $this->l = $l;
      $this->config = $config;
    }
+
+
 
    public function setSettingTest($wtpara_test) {
      $this->config->setAppValue('santacloud', 'wtpara_test', $wtpara_test);
@@ -68,30 +77,40 @@ class DayController extends Controller {
      return;
    }
 
+   public function setSettingLock($wtpara_lock) {
+     $this->config->setAppValue('santacloud', 'wtpara_lock', $wtpara_lock);
+     return;
+   }
+#[NoAdminRequired]
    public function getxml() {
      $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');
- 		 if (!isset($wtpara_test)) {
- 		    $wtpara_test = 1;
-        $this->config->setAppValue('santacloud', 'wtpara_test', 1);
- 		 }
-     $wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last');
-  	 if (!isset($wtpara_last)) {
-       $wtpara_last = 2;
-       $this->config->setAppValue('santacloud', 'wtpara_last', 2);
-  	 }
+     if (!isset($wtpara_test) or ($wtpara_test === 0)) {
+ 			 $wtpara_test = 1;
+ 			 $this->config->setAppValue('santacloud', 'wtpara_test', 1);
+ 		}
+ 		$wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last');
+ 		if (!isset($wtpara_last) or ($wtpara_last === 0)) {
+ 			 $wtpara_last = 2;
+ 			 $this->config->setAppValue('santacloud', 'wtpara_last', 2);
+ 		}
+    $wtpara_lock = (int)$this->config->getAppValue('santacloud', 'wtpara_lock');
+ 		if (!isset($wtpara_lock) or ($wtpara_lock === 0)) {
+ 			 $wtpara_lock = 1;
+ 			 $this->config->setAppValue('santacloud', 'wtpara_lock', 1);
+ 		}
      $wtdayfile = __DIR__ . '/../../data/days.xml';
      if (!file_exists($wtdayfile)) {
        return $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
      }
      else { return; }
  	 }
-
+#[NoAdminRequired]
    public function getday(string $day) {
      $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');
      $wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last');
      $day = intval($day);
-     $today = intval(date("j"));
-     $thismonth = intval(date("n"));
+     $today = 2;//intval(date("j"));
+     $thismonth = 12;//intval(date("n"));
      $out = "";
      $wtdayfile = __DIR__ . '/../../data/days.xml';
      if( $wtpara_test === 1) {
@@ -107,15 +126,19 @@ class DayController extends Controller {
      else {
        if ($day > $today) { return '<br><b>' . $this->l->t('Unfortunately, you are too early, because you are only allowed to open this door on the right day.') . '</b>'; }
        if (!file_exists($wtdayfile)) {
-         return;
+         return 'kapott';
        }
        else {
          $xmlStr = file_get_contents($wtdayfile);
          $xml = simplexml_load_string($xmlStr);
-         $datexml  = $xml->days->day[$day-1]->date;
+         //return 'datum: ' . $xml->days->day[$day-1]->date;
+         $datexml  = (string) $xml->days->day[$day-1]->date[0];
+         //die(var_dump($datexml[0]));
+         //die(var_dump((string) $xml->days->day[$day-1]->date[0]));
+         //die(var_dump($datexml));
          $pieces = explode("-", $datexml);
          $xmlmonth = intval($pieces[1]);
-         if ($xmlmonth !== $thismonth) { return; }
+         if ($xmlmonth !== $thismonth) { return $this->l->t('Unfortunately, you are too early, because you are only allowed to open this door on the right day.'); }
          if ( $day === $today ) {
            $out .= '<br><h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
            $out .= '<br>' . $xml->days->day[$day-1]->description;
