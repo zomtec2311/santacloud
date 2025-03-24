@@ -37,7 +37,6 @@ use OCP\AppFramework\Http\Attribute\FrontpageRoute;
 use OCP\AppFramework\Http\Attribute\NoAdminRequired;
 use OCP\AppFramework\Http\Attribute\NoCSRFRequired;
 use OCP\AppFramework\Http\Attribute\OpenAPI;
-//use OCA\LogReader\Service\SettingsService;
 
 class DayController extends Controller {
   #[NoCSRFRequired]
@@ -109,8 +108,8 @@ class DayController extends Controller {
      $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');
      $wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last');
      $day = intval($day);
-     $today = 2;//intval(date("j"));
-     $thismonth = 12;//intval(date("n"));
+     $today = intval(date("j"));
+     $thismonth = intval(date("n"));
      $out = "";
      $wtdayfile = __DIR__ . '/../../data/days.xml';
      if( $wtpara_test === 1) {
@@ -131,11 +130,7 @@ class DayController extends Controller {
        else {
          $xmlStr = file_get_contents($wtdayfile);
          $xml = simplexml_load_string($xmlStr);
-         //return 'datum: ' . $xml->days->day[$day-1]->date;
          $datexml  = (string) $xml->days->day[$day-1]->date[0];
-         //die(var_dump($datexml[0]));
-         //die(var_dump((string) $xml->days->day[$day-1]->date[0]));
-         //die(var_dump($datexml));
          $pieces = explode("-", $datexml);
          $xmlmonth = intval($pieces[1]);
          if ($xmlmonth !== $thismonth) { return $this->l->t('Unfortunately, you are too early, because you are only allowed to open this door on the right day.'); }
