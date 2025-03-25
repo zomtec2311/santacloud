@@ -73,32 +73,18 @@ class PageController extends Controller {
 			 $this->config->setAppValue('santacloud', 'wtpara_lock', 1);
 		}
 		$allowed = $this->isallowed($wtpara_lock);
-
-		switch ($allowed) {
-		case 1:
-				return new TemplateResponse(
-					Application::APP_ID,
-					'index',
-				);
-        break;
-    case 2:
-				return new TemplateResponse(
-					Application::APP_ID,
-					'wait',
-				);
-        break;
-}
 		return new TemplateResponse(
 			Application::APP_ID,
-			'index',
+			$allowed,
 		);
 	}
+
 	private function isallowed($wtpara_lock) {
 		$user = $this->userSession->getUser();
-		if ($this->groupManager->isAdmin($user->getUID())) {return 1;}
+		if ($this->groupManager->isAdmin($user->getUID())) {return 'index';}
 		else {
-			if( $wtpara_lock === 2 ) { return 1; }
-			else { return 2; }
+			if( $wtpara_lock === 2 ) { return 'index'; }
+			else { return 'wait'; }
 		}
 	}
 }

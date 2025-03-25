@@ -80,7 +80,8 @@ class DayController extends Controller {
      $this->config->setAppValue('santacloud', 'wtpara_lock', $wtpara_lock);
      return;
    }
-#[NoAdminRequired]
+
+   #[NoAdminRequired]
    public function getxml() {
      $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');
      if (!isset($wtpara_test) or ($wtpara_test === 0)) {
@@ -103,7 +104,8 @@ class DayController extends Controller {
      }
      else { return; }
  	 }
-#[NoAdminRequired]
+
+   #[NoAdminRequired]
    public function getday(string $day) {
      $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');
      $wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last');
