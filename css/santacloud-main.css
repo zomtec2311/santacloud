@@ -8,9 +8,9 @@
 	width: 80%;
 	height: 80%;
 	text-align: center;
-	background-color: silver;
+	background-color: var(--color-main-background);
 	border-radius: 20px;
-	color: black;
+	color: var(--color-main-text);
 	justify-content: center;
 	margin: 50px;
 }
