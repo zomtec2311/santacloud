@@ -15,7 +15,7 @@
 - It is recommended to download or install this app directly from the [Nextcloud App store](https://apps.nextcloud.com).
 - Alternatively you can download the [last santacloud release](https://github.com/zomtec2311/santacloud/releases) based on this repository.
 
-Once your app is ready follow the [instructions](https://) to
-upload it to the Appstore.
+To get started follow the [instructions](https://) to
+fill the advent calendar's doors with your content.
 
 ## Resources
