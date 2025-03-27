@@ -28,8 +28,7 @@ return [
      ['name' => 'page#index', 'url' => '/', 'verb' => 'GET'],
      ['name' => 'Day#getxml', 'url' => '/getxml', 'verb' => 'GET'],
      ['name' => 'Day#getday', 'url' => '/day/{day}', 'verb' => 'GET'],
-     ['name' => 'Day#setSettingTest', 'url' => '/ajax/test', 'verb' => 'POST'],
-     ['name' => 'Day#setSettingLast', 'url' => '/ajax/last', 'verb' => 'POST'],
-     ['name' => 'Day#setSettingLock', 'url' => '/ajax/lock', 'verb' => 'POST'],
+     ['name' => 'Day#setParam', 'url' => '/ajax/{who}/{wert}', 'verb' => 'GET'],
+     ['name' => 'Day#getParam', 'url' => '/getparam/{who}', 'verb' => 'GET'],
   ]
 ];

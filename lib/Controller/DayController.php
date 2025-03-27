@@ -64,22 +64,14 @@ class DayController extends Controller {
      $this->config = $config;
    }
 
+   public function getParam($who) {
+     return $this->config->getAppValue('santacloud', $who);
+   }
 
-
-   public function setSettingTest($wtpara_test) {
-     $this->config->setAppValue('santacloud', 'wtpara_test', $wtpara_test);
+   public function setParam($who,$wert) {
+     $this->config->setAppValue('santacloud', $who, $wert);
  		 return;
  	 }
-
-   public function setSettingLast($wtpara_last) {
-     $this->config->setAppValue('santacloud', 'wtpara_last', $wtpara_last);
-     return;
-   }
-
-   public function setSettingLock($wtpara_lock) {
-     $this->config->setAppValue('santacloud', 'wtpara_lock', $wtpara_lock);
-     return;
-   }
 
    #[NoAdminRequired]
    public function getxml() {
@@ -127,7 +119,7 @@ class DayController extends Controller {
      else {
        if ($day > $today) { return '<br><b>' . $this->l->t('Unfortunately, you are too early, because you are only allowed to open this door on the right day.') . '</b>'; }
        if (!file_exists($wtdayfile)) {
-         return 'kapott';
+         return;
        }
        else {
          $xmlStr = file_get_contents($wtdayfile);
