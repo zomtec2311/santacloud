@@ -21,3 +21,5 @@ To get started follow the instructions to fill the advent calendar's doors with 
 After installation you have to create the `apps/santacloud/data/days.xml` file if it is not created yet, you can copy the `apps/santacloud/data/days_example.xml` into same path and rename the copy from `days_example.xml`to `days.xml`. This is necessary, because on an update, this file would be overwritten.
 
 You can reach the admin settings for santacloud over the Administration Settings link or with the direct call over `YOUR_NEXTCLOUD/settings/admin/santacloud`.
+
+![https://raw.githubusercontent.com/zomtec2311/santacloud/refs/heads/main/santacloud-settings.png](https://raw.githubusercontent.com/zomtec2311/santacloud/refs/heads/main/santacloud-settings.png)
