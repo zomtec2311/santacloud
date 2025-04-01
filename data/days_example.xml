@@ -6,7 +6,7 @@
             <title><![CDATA[Here You can set a Title. Take a look at day 2025-12-02 for a full example]]></title>
             <description><![CDATA[
               <b>Here you can insert your wanted content for a door</b><br>
-              You can use HTML. Images should be stored into app's data/img/ folder and then use img src="./data/img/your_image"
+              You can use HTML. Images should be stored into app's data/img/ folder and then use img src="/apps/santacloud/data/img/your_image"
               like the example from 2025-12-02 <br>
               DO NOT USE http and/or www with domain for the images, because it will result in error
               ]]></description>
@@ -14,9 +14,9 @@
 
         <day>
             <date>2025-12-02</date>
-            <title><![CDATA[Today a Reciep for X-Mas Cookies]]></title>
+            <title><![CDATA[<center>Today a Reciep for X-Mas Cookies</center>]]></title>
             <description><![CDATA[
-              <img src="./data/img/xmas-cookies.png" width="500" />
+              <center><img src="/apps/santacloud/data/img/xmas-cookies.png" width="500" /></center>
               <div style="text-align: justify; margin: auto; width: 50%; border: 3px solid green; padding: 10px;">
                 <b>You need</b><br>
               <p>For the dough:
@@ -57,133 +57,133 @@
 
         <day>
             <date>2025-12-03</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-04</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-05</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-06</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-07</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-08</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-09</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-10</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-11</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-12</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-13</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-14</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-15</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-16</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-17</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-18</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-19</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-20</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-21</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-22</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-23</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
             <date>2025-12-24</date>
-            <title><![CDATA[Example-Tag]]></title>
+            <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
     </days>

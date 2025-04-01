@@ -28,7 +28,11 @@ return [
      ['name' => 'page#index', 'url' => '/', 'verb' => 'GET'],
      ['name' => 'Day#getxml', 'url' => '/getxml', 'verb' => 'GET'],
      ['name' => 'Day#getday', 'url' => '/day/{day}', 'verb' => 'GET'],
+     ['name' => 'Day#previewday', 'url' => '/previewday/{day}', 'verb' => 'GET'],
      ['name' => 'Day#setParam', 'url' => '/ajax/{who}/{wert}', 'verb' => 'GET'],
+     ['name' => 'Day#xmlcontent', 'url' => '/ajax/xmlcontent', 'verb' => 'GET'],
+     ['name' => 'Day#dayxmlcontent', 'url' => '/editday/{day}', 'verb' => 'GET'],
+     ['name' => 'Day#savedayxmlcontent', 'url' => '/saveday', 'verb' => 'POST'],
      ['name' => 'Day#getParam', 'url' => '/getparam/{who}', 'verb' => 'GET'],
   ]
 ];

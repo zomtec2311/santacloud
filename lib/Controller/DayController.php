@@ -29,6 +29,7 @@ namespace OCA\SantaCloud\Controller;
 
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\Response;
+use OCP\AppFramework\Http\JSONResponse;
 use OCP\IL10N;
 use OCP\IConfig;
 use OCP\IRequest;
@@ -56,12 +57,13 @@ class DayController extends Controller {
      IL10N $l,
      IConfig $config,
      IRequest $request,
-     private IInitialState $initialState,
+     private IInitialState $initialState
      //private SettingsService $settingsService
    ) {
      parent::__construct('santacloud', $request);
      $this->l = $l;
      $this->config = $config;
+     $this->request = $request;
    }
 
    public function getParam($who) {
@@ -92,10 +94,78 @@ class DayController extends Controller {
  		}
      $wtdayfile = __DIR__ . '/../../data/days.xml';
      if (!file_exists($wtdayfile)) {
+       $file = __DIR__ . '/../../data/days_example.xml';
+       if (!copy($file, $wtdayfile)) {
+         return "failed to copy $file... " . $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
+       }
        return $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
      }
      else { return; }
  	 }
+
+   public function xmlcontent() {
+     $wtdayfile = __DIR__ . '/../../data/days.xml';
+     $out = '';
+     $arr = array();
+     if (!file_exists($wtdayfile)) {
+       $file = __DIR__ . '/../../data/days_example.xml';
+       if (!copy($file, $wtdayfile)) {
+         return "failed to copy $file... " . $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
+       }
+       return $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
+     }
+     else {
+       $xmlStr = file_get_contents($wtdayfile);
+       $xml = simplexml_load_string($xmlStr);
+       for ($i = 0; $i <= 23; $i++) {
+         $xml->days->day[$i]->title = strval($xml->days->day[$i]->title);
+         $xml->days->day[$i]->description = strval($xml->days->day[$i]->description);
+       }
+       return $xml->days;
+     }
+    }
+
+    public function dayxmlcontent($day) {
+      $day = intval($day);
+      $wtdayfile = __DIR__ . '/../../data/days.xml';
+      $out = '';
+      $arr = array();
+      if (!file_exists($wtdayfile)) {
+        $file = __DIR__ . '/../../data/days_example.xml';
+        if (!copy($file, $wtdayfile)) {
+          return "failed to copy $file... " . $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
+        }
+        return $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
+      }
+      else {
+        $xmlStr = file_get_contents($wtdayfile);
+        $xml = simplexml_load_string($xmlStr);
+        $obja = new \stdClass();
+        $obja->day = $day;
+        $obja->date = strval($xml->days->day[$day-1]->date);
+        $obja->title = strval($xml->days->day[$day-1]->title);
+        $obja->description = strval($xml->days->day[$day-1]->description);
+        return $obja;
+      }
+     }
+
+     public function savedayxmlcontent($day, $date, $title, $description): JSONResponse {
+       $wtdayfile = __DIR__ . '/../../data/days.xml';
+       //$title = htmlspecialchars_decode($title);
+       $xmlStr = file_get_contents($wtdayfile);
+       $xml = simplexml_load_string($xmlStr);
+       $xml->days->day[$day-1]->date = $date;
+       $xml->days->day[$day-1]->title = '<![CDATA[' . $title . ']]>';
+       $xml->days->day[$day-1]->description = '<![CDATA[' . $description . ']]>';
+       file_put_contents($wtdayfile, html_entity_decode($xml->asXML()),LOCK_EX);
+       return new JSONResponse([
+         'day' => $day,
+         'date' => $date,
+         'title' => $title,
+        'description' => $description,
+		   ]);
+     }
+
 
    #[NoAdminRequired]
    public function getday(string $day) {
@@ -141,5 +211,19 @@ class DayController extends Controller {
          }
        }
      }
+   }
+
+   public function previewday(string $day) {
+     $day = intval($day);
+     $out = "";
+     $wtdayfile = __DIR__ . '/../../data/days.xml';
+       if (!file_exists($wtdayfile)) { return; }
+       else {
+         $xmlStr = file_get_contents($wtdayfile);
+         $xml = simplexml_load_string($xmlStr);
+         $out .= '<h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
+         $out .= '<br>' . $xml->days->day[$day-1]->description;
+         return $out;
+       }
    }
  }

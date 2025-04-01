@@ -21,6 +21,10 @@ OC.L10N.register(
     "Lock mode OFF" : "Lock mode OFF",
     "Lock mode yes or no. Lock mode ON means, that users are directed to a please-wait page. OFF means, that users are allowed to see the calendar." : "Lock mode yes or no. Lock mode ON means, that users are directed to a please-wait page. OFF means, that users are allowed to see the calendar.",
     "There is nothing to see here yet!! Please wait..." : "There is nothing to see here yet!! Please wait...",
-    "If Test mode is ON, the Lock mode should also be ON. Otherwise users also can see the content of the doors while you are testing." : "If Test mode is ON, the Lock mode should also be ON. Otherwise users also can see the content of the doors while you are testing."
+    "If Test mode is ON, the Lock mode should also be ON. Otherwise users also can see the content of the doors while you are testing." : "If Test mode is ON, the Lock mode should also be ON. Otherwise users also can see the content of the doors while you are testing.",
+    "Insert Content for the Calendar" : "Insert Content for the Calendar",
+    "Preview Content for the Calendar" : "Preview Content for the Calendar",
+    "send" : "send",
+    "Must be format YYYY-MM-DD" : "Must be format YYYY-MM-DD"
 },
 "nplurals=2; plural=(n != 1);");
