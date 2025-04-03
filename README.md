@@ -12,7 +12,7 @@
 
 ## Usage
 
-- It is recommended to download or install this app directly from the [Nextcloud App store](https://apps.nextcloud.com).
+- It is recommended to download or install this app directly from the [Nextcloud App store](https://apps.nextcloud.com/apps/santacloud).
 - Alternatively you can download the [last santacloud release](https://github.com/zomtec2311/santacloud/releases) based on this repository.
 
 To get started follow the instructions to fill the advent calendar's doors with your content.
