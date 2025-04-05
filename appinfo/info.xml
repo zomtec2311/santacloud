@@ -9,7 +9,7 @@
 - ✅ Offer your customers entertainment during the Advent season.
 - ✅ With built-in test mode.
 - ✅ Easy setup via an XML file.]]></description>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<licence>agpl</licence>
 	<author mail="wtoedt@gmail.com" homepage="https://github.com/zomtec2311/santacloud">Wolfgang Tödt</author>
 	<namespace>SantaCloud</namespace>
