@@ -166,7 +166,6 @@ class DayController extends Controller {
 		   ]);
      }
 
-
    #[NoAdminRequired]
    public function getday(string $day) {
      $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');

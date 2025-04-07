@@ -28,9 +28,13 @@ declare(strict_types=1);
 namespace OCA\SantaCloud\Settings;
 
 use OCP\AppFramework\Http\TemplateResponse;
+use OCA\SantaCloud\AppInfo\Application;
 use OCP\IConfig;
 use OCP\IL10N;
 use OCP\Settings\ISettings;
+use OCP\AppFramework\Http\ContentSecurityPolicy;
+use OCP\AppFramework\Http\Attribute\OpenAPI;
+use OCP\AppFramework\Http\Attribute\NoCSRFRequired;
 
 class SantaCloudAdmin implements ISettings {
     private IL10N $l;
@@ -44,16 +48,26 @@ class SantaCloudAdmin implements ISettings {
     /**
      * @return TemplateResponse
      */
-    public function getForm() {
+     #[NoCSRFRequired]
+     #[OpenAPI(OpenAPI::SCOPE_IGNORE)]
+    public function getForm(): TemplateResponse {
         $wtpara_test = $this->config->getAppValue('santacloud', 'wtpara_test', '');
         $wtpara_last = $this->config->getAppValue('santacloud', 'wtpara_last', '');
         $wtpara_lock = $this->config->getAppValue('santacloud', 'wtpara_lock', '');
-    		$parameters = [
+
+
+        $csp = new ContentSecurityPolicy();
+        $csp->addAllowedImageDomain('*');
+        $csp->addAllowedMediaDomain('*');
+        $parameters = [
           'wtpara_test' => $wtpara_test,
           'wtpara_last' => $wtpara_last,
           'wtpara_lock' => $wtpara_lock,
     		];
-        return new TemplateResponse('santacloud', 'settings/admin', $parameters, '');
+        \OC::$server->getContentSecurityPolicyManager()->addDefaultPolicy($csp);
+        $response = new TemplateResponse(Application::APP_ID, 'settings/admin', $parameters, '');
+
+        return $response;
     }
 
     public function getSection() {
@@ -68,6 +82,6 @@ class SantaCloudAdmin implements ISettings {
      * E.g.: 70
      */
     public function getPriority() {
-        return 10;
+        return 100;
     }
 }

@@ -34,6 +34,7 @@ use OCP\AppFramework\Http\Attribute\NoAdminRequired;
 use OCP\AppFramework\Http\Attribute\NoCSRFRequired;
 use OCP\AppFramework\Http\Attribute\OpenAPI;
 use OCP\AppFramework\Http\TemplateResponse;
+use OCP\AppFramework\Http\ContentSecurityPolicy;
 
 use OCP\IUserSession;
 use OCP\IGroupManager;
@@ -49,7 +50,6 @@ class PageController extends Controller {
 			$this->config = $config;
 			$this->userSession = $userSession;
 			$this->groupManager = $groupManager;
-			//parent::__construct(Application::APP_ID, $request);
 	}
 
 	#[NoCSRFRequired]
@@ -73,10 +73,15 @@ class PageController extends Controller {
 			 $this->config->setAppValue('santacloud', 'wtpara_lock', 1);
 		}
 		$allowed = $this->isallowed($wtpara_lock);
-		return new TemplateResponse(
+		$response = new TemplateResponse(
 			Application::APP_ID,
 			$allowed,
 		);
+		$csp = new ContentSecurityPolicy();
+		$csp->addAllowedImageDomain('*');
+		$csp->addAllowedMediaDomain('*');
+		$response->setContentSecurityPolicy($csp);
+		return $response;
 	}
 
 	private function isallowed($wtpara_lock) {
