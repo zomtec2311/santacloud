@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.3
+
+### Fixed
+- xml file is no longer overwritten on every update
+
 ## 1.0.2
 
 ### Added

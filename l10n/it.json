@@ -17,6 +17,7 @@
     "Allow to open doors for past days" : "Consentire di aprire le porte per i giorni passati",
     "Lock mode ON" : "Modalità di blocco SU",
     "Lock mode OFF" : "Modalità di blocco SPENTO",
+    "No days.xml found. %1$s copied to %2$s" : "Non è stato trovato days.xml. %1$s copiato in %2$s",
     "Lock mode yes or no. Lock mode ON means, that users are directed to a please-wait page. OFF means, that users are allowed to see the calendar." : "Modalità di blocco: sì o no. La modalità di blocco SU significa che gli utenti vengono indirizzati a una pagina di attesa. SPENTO significa che gli utenti possono vedere il calendario.",
     "There is nothing to see here yet!! Please wait..." : "Non c'è ancora niente da vedere qui!! Attendere prego...",
     "If Test mode is ON, the Lock mode should also be ON. Otherwise users also can see the content of the doors while you are testing." : "Se la modalità di test è SU, anche la modalità di blocco deve essere SU. In caso contrario, gli utenti possono vedere il contenuto delle porte durante il test.",

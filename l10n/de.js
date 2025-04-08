@@ -19,6 +19,7 @@ OC.L10N.register(
     "Allow to open doors for past days" : "Erlauben, Türen der vergangenen Tage zu öffnen",
     "Lock mode ON" : "Sperrmodus AN",
     "Lock mode OFF" : "Sperrmodus AUS",
+    "No days.xml found. %1$s copied to %2$s" : "Kein days.xml gefunden. %1$s kopiert nach %2$s",
     "Lock mode yes or no. Lock mode ON means, that users are directed to a please-wait page. OFF means, that users are allowed to see the calendar." : "Sperrmodus ja oder nein. Sperrmodus AN bedeutet, dass User zu einer Bitte-warten Seite weitergeleitet werden. AUS bedeutet, dass User den Kalender sehen dürfen.",
     "There is nothing to see here yet!! Please wait..." : "Hier gibt es noch nichts zu sehen!! Bitte warten...",
     "If Test mode is ON, the Lock mode should also be ON. Otherwise users also can see the content of the doors while you are testing." : "Wenn der Testmodus AN ist, sollte der Sperrmodus ebenfalls AN sein. Ansonsten können User ebenfalls den Inhalt der Türen sehen während du testest.",

@@ -92,27 +92,27 @@ class DayController extends Controller {
  			 $wtpara_lock = 1;
  			 $this->config->setAppValue('santacloud', 'wtpara_lock', 1);
  		}
-     $wtdayfile = __DIR__ . '/../../data/days.xml';
+     $wtdayfile = $this->config->getSystemValue('datadirectory') . '/days.xml';
      if (!file_exists($wtdayfile)) {
        $file = __DIR__ . '/../../data/days_example.xml';
        if (!copy($file, $wtdayfile)) {
-         return "failed to copy $file... " . $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
+         return "failed to copy $file... ";
        }
-       return $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
+       return $this->l->t('No days.xml found. %1$s copied to %2$s', ['days_example', $wtdayfile]);
      }
      else { return; }
  	 }
 
    public function xmlcontent() {
-     $wtdayfile = __DIR__ . '/../../data/days.xml';
+     $wtdayfile = $this->config->getSystemValue('datadirectory') . '/days.xml';
      $out = '';
      $arr = array();
      if (!file_exists($wtdayfile)) {
        $file = __DIR__ . '/../../data/days_example.xml';
        if (!copy($file, $wtdayfile)) {
-         return "failed to copy $file... " . $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
+         return "failed to copy $file... ";
        }
-       return $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
+       return $this->l->t('No days.xml found. %1$s copied to %2$s', ['days_example', $wtdayfile]);
      }
      else {
        $xmlStr = file_get_contents($wtdayfile);
@@ -127,15 +127,15 @@ class DayController extends Controller {
 
     public function dayxmlcontent($day) {
       $day = intval($day);
-      $wtdayfile = __DIR__ . '/../../data/days.xml';
+      $wtdayfile = $this->config->getSystemValue('datadirectory') . '/days.xml';
       $out = '';
       $arr = array();
       if (!file_exists($wtdayfile)) {
         $file = __DIR__ . '/../../data/days_example.xml';
         if (!copy($file, $wtdayfile)) {
-          return "failed to copy $file... " . $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
+          return "failed to copy $file... ";
         }
-        return $this->l->t('No days.xml file found. Instructions in README: Go to /apps/santacloud/data/ then copy days_example.xml and rename the copy to days.xml, edit and store days.xml!!');
+        return $this->l->t('No days.xml found. %1$s copied to %2$s', ['days_example', $wtdayfile]);
       }
       else {
         $xmlStr = file_get_contents($wtdayfile);
@@ -150,8 +150,7 @@ class DayController extends Controller {
      }
 
      public function savedayxmlcontent($day, $date, $title, $description): JSONResponse {
-       $wtdayfile = __DIR__ . '/../../data/days.xml';
-       //$title = htmlspecialchars_decode($title);
+       $wtdayfile = $this->config->getSystemValue('datadirectory') . '/days.xml';
        $xmlStr = file_get_contents($wtdayfile);
        $xml = simplexml_load_string($xmlStr);
        $xml->days->day[$day-1]->date = $date;
@@ -174,7 +173,7 @@ class DayController extends Controller {
      $today = intval(date("j"));
      $thismonth = intval(date("n"));
      $out = "";
-     $wtdayfile = __DIR__ . '/../../data/days.xml';
+     $wtdayfile = $this->config->getSystemValue('datadirectory') . '/days.xml';
      if( $wtpara_test === 1) {
        if (!file_exists($wtdayfile)) { return; }
        else {
@@ -215,7 +214,7 @@ class DayController extends Controller {
    public function previewday(string $day) {
      $day = intval($day);
      $out = "";
-     $wtdayfile = __DIR__ . '/../../data/days.xml';
+     $wtdayfile = $this->config->getSystemValue('datadirectory') . '/days.xml';
        if (!file_exists($wtdayfile)) { return; }
        else {
          $xmlStr = file_get_contents($wtdayfile);

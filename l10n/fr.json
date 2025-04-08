@@ -17,6 +17,7 @@
     "Allow to open doors for past days" : "Laisser ouvrir les portes des jours passés",
     "Lock mode ON" : "Mode de verrouillage SUR",
     "Lock mode OFF" : "Mode de verrouillage DE",
+    "No days.xml found. %1$s copied to %2$s" : "Aucun days.xml trouvé. %1$s copié vers %2$s",
     "Lock mode yes or no. Lock mode ON means, that users are directed to a please-wait page. OFF means, that users are allowed to see the calendar." : "Mode de verrouillage oui ou non. Le mode de verrouillage SUR signifie que les utilisateurs sont dirigés vers une page d'attente. DE signifie que les utilisateurs sont autorisés à voir le calendrier.",
     "There is nothing to see here yet!! Please wait..." : "Il n'y a encore rien à voir ici !! Veuillez patienter...",
     "If Test mode is ON, the Lock mode should also be ON. Otherwise users also can see the content of the doors while you are testing." : "Si le mode Test est SUR, le mode Verrouillage doit également être SUR. Sinon, les utilisateurs peuvent également voir le contenu des portes pendant que vous testez.",

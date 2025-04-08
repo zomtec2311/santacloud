@@ -6,9 +6,8 @@
             <title><![CDATA[Here You can set a Title. Take a look at day 2025-12-02 for a full example]]></title>
             <description><![CDATA[
               <b>Here you can insert your wanted content for a door</b><br>
-              You can use HTML. Images should be stored into app's data/img/ folder and then use img src="/apps/santacloud/data/img/your_image"
-              like the example from 2025-12-02 <br>
-              DO NOT USE http and/or www with domain for the images, because it will result in error
+              You can use HTML. Images can be stored into app's data/img/ folder and then use img src="/apps/santacloud/data/img/your_image"
+              like the example from 2025-12-02
               ]]></description>
         </day>
 

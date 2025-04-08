@@ -43,11 +43,11 @@ padding: 48px;
 }
 ```
 
-and don't forget to clean up browser cache</details> 
+and don't forget to clean up browser cache</details>
 
 <details>
   <summary><b>All of the text is in English?</b></summary>
 	Maybe your language files are missing.
-  
+
   You might want to help translating the app to new languages or report errors in existing translations. So feel free and send me translations.
 </details>
