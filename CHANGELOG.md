@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.4
+- Responsive appearance for smaller devices such as smartphones
+
 ## 1.0.3
 
 ### Fixed
