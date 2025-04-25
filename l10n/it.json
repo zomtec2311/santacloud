@@ -24,6 +24,8 @@
     "Insert Content for the Calendar" : "Inserire contenuti per il calendario",
     "Preview Content for the Calendar" : "Anteprima del contenuto per il calendario",
     "send" : "Invia",
-    "Must be format YYYY-MM-DD" : "Deve essere nel formato AAAA-MM-GG"
+    "Must be format YYYY-MM-DD" : "Deve essere nel formato AAAA-MM-GG",
+    "Write something.." : "Scrivi qualcosa..",
+    "Show own text if lock mode is ON" : "Visualizza testo personalizzato quando la modalità di blocco SU"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

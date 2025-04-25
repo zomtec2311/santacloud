@@ -26,6 +26,8 @@ OC.L10N.register(
     "Insert Content for the Calendar" : "Kalender mit Inhalt füllen",
     "Preview Content for the Calendar" : "Vorschau des Kalenderinhaltes",
     "send" : "abschicken",
-    "Must be format YYYY-MM-DD" : "Muss vom Format YYYY-MM-DD sein"
+    "Must be format YYYY-MM-DD" : "Muss vom Format YYYY-MM-DD sein",
+    "Write something.." : "Schreiben Sie etwas..",
+    "Show own text if lock mode is ON" : "Eigenen Text anzeigen wenn Sperrmodus AN ist"
 },
 "nplurals=2; plural=(n != 1);");

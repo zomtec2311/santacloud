@@ -26,6 +26,8 @@ OC.L10N.register(
     "Insert Content for the Calendar" : "Insérer du contenu pour le calendrier",
     "Preview Content for the Calendar" : "Prévisualiser le contenu du calendrier",
     "send" : "Envoyer",
-    "Must be format YYYY-MM-DD" : "Doit être au format AAAA-MM-JJ"
+    "Must be format YYYY-MM-DD" : "Doit être au format AAAA-MM-JJ",
+    "Write something.." : "Écrivez quelque chose..",
+    "Show own text if lock mode is ON" : "Affichage du texte personnalisé lorsque le mode de verrouillage est SUR"
 },
 "nplurals=2; plural=(n != 1);");
