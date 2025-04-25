@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.5
+
+### Added
+- Some new setting parameters
+
 ## 1.0.4
 - Responsive appearance for smaller devices such as smartphones
 
