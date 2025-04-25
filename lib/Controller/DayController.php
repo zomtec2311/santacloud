@@ -75,6 +75,11 @@ class DayController extends Controller {
  		 return;
  	 }
 
+   public function saveowntext($text) {
+     $this->config->setAppValue('santacloud', 'owntext', $text);
+ 		 return;
+ 	 }
+
    #[NoAdminRequired]
    public function getxml() {
      $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');

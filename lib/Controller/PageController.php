@@ -29,6 +29,7 @@ namespace OCA\SantaCloud\Controller;
 
 use OCA\SantaCloud\AppInfo\Application;
 use OCP\AppFramework\Controller;
+use OCP\IL10N;
 use OCP\AppFramework\Http\Attribute\FrontpageRoute;
 use OCP\AppFramework\Http\Attribute\NoAdminRequired;
 use OCP\AppFramework\Http\Attribute\NoCSRFRequired;
@@ -45,11 +46,12 @@ use OCP\IConfig;
  */
 class PageController extends Controller {
 
-	public function __construct(private IConfig $config, IGroupManager $groupManager, IUserSession $userSession)
+	public function __construct(IL10N $l, private IConfig $config, IGroupManager $groupManager, IUserSession $userSession)
 	{
 			$this->config = $config;
 			$this->userSession = $userSession;
 			$this->groupManager = $groupManager;
+			$this->l = $l;
 	}
 
 	#[NoCSRFRequired]
@@ -73,9 +75,19 @@ class PageController extends Controller {
 			 $this->config->setAppValue('santacloud', 'wtpara_lock', 1);
 		}
 		$allowed = $this->isallowed($wtpara_lock);
+		if ($allowed === 'wait') {
+			$wtown = (int)$this->config->getAppValue('santacloud', 'wtpara_own');
+			if ($wtown === 1) {
+				$waittext = $this->config->getAppValue('santacloud', 'owntext');
+			}
+			else { $waittext = $this->l->t("There is nothing to see here yet!! Please wait..."); }
+			$params = ['waittext' => $waittext];
+		}
+		else { $params = []; }
 		$response = new TemplateResponse(
 			Application::APP_ID,
 			$allowed,
+			$params
 		);
 		$csp = new ContentSecurityPolicy();
 		$csp->addAllowedImageDomain('*');
