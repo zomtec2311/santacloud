@@ -31,4 +31,4 @@ use OCP\Util;
 Util::addStyle(OCA\SantaCloud\AppInfo\Application::APP_ID, 'santacloud-main');
 
 ?>
-<div id="santacloudwait"><br><br><br><h1><?php p($l->t("There is nothing to see here yet!! Please wait...")); ?></h1></div>
+<div id="santacloudwait"><br><br><br><h1><?php echo $waittext; ?></h1></div>
