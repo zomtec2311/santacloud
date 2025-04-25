@@ -33,6 +33,7 @@ return [
      ['name' => 'Day#xmlcontent', 'url' => '/ajax/xmlcontent', 'verb' => 'GET'],
      ['name' => 'Day#dayxmlcontent', 'url' => '/editday/{day}', 'verb' => 'GET'],
      ['name' => 'Day#savedayxmlcontent', 'url' => '/saveday', 'verb' => 'POST'],
+     ['name' => 'Day#saveowntext', 'url' => '/saveowntext', 'verb' => 'POST'],
      ['name' => 'Day#getParam', 'url' => '/getparam/{who}', 'verb' => 'GET'],
   ]
 ];
