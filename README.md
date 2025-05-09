@@ -53,3 +53,8 @@ and don't forget to clean up browser cache</details>
 
   You might want to help translating the app to new languages or report errors in existing translations. So feel free and send me translations.
 </details>
+
+<details>
+  <summary><b>Very bad translation?</b></summary>
+  We used the AI-based Google translator to generate language files. Of course, there were limitations to the translation depending on the quality of the AI. If you'd like to help improve your language file, open an issue and report your suggestion for improvement. Thank you
+</details>
