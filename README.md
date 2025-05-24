@@ -4,7 +4,7 @@
 ![GitHub all downloads](https://img.shields.io/github/downloads/zomtec2311/santacloud/total?logo=github) ![GitHub all releases](https://img.shields.io/github/release/zomtec2311/santacloud)
 # Santa Cloud
 
-### Advent calendar App for Nextcloud
+### Advent calendar app for Nextcloud
 
 - ✅ Create your own content for the doors - e.g. competitions, reciepts, poems...
 - ✅ Offer your customers entertainment during the Advent season.
@@ -48,7 +48,7 @@ padding: 48px;
 and don't forget to clean up browser cache</details>
 
 <details>
-  <summary><b>All of the text is in English?</b></summary>
+  <summary><b>All of the text is in english?</b></summary>
 	Maybe your language files are missing.
 
   You might want to help translating the app to new languages or report errors in existing translations. So feel free and send me translations.
