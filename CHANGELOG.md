@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.7
+
+### Added
+- Nextcloud 32 compatibility
+
 ## 1.0.6
 
 ### Added
