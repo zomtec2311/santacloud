@@ -32,6 +32,7 @@ use OCA\SantaCloud\AppInfo\Application;
 use OCP\IConfig;
 use OCP\IL10N;
 use OCP\Settings\ISettings;
+use OCP\Security\IContentSecurityPolicyManager;
 use OCP\AppFramework\Http\ContentSecurityPolicy;
 use OCP\AppFramework\Http\Attribute\OpenAPI;
 use OCP\AppFramework\Http\Attribute\NoCSRFRequired;
@@ -65,6 +66,9 @@ class SantaCloudAdmin implements ISettings {
     		];
         if ($wtncversion < 32) {
             \OC::$server->getContentSecurityPolicyManager()->addDefaultPolicy($csp);
+        }
+        else {
+            \OCP\Server::get(IContentSecurityPolicyManager::class)->addDefaultPolicy($csp);
         }
         $response = new TemplateResponse(Application::APP_ID, 'settings/admin', $parameters, '');
         return $response;
