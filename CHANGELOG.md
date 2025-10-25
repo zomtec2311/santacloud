@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.8
+
+### Fixed
+- Content Security Policy error while using nextcloud 32 
+
 ## 1.0.7
 
 ### Added
