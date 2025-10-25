@@ -54,8 +54,7 @@ class SantaCloudAdmin implements ISettings {
         $wtpara_test = $this->config->getAppValue('santacloud', 'wtpara_test', '');
         $wtpara_last = $this->config->getAppValue('santacloud', 'wtpara_last', '');
         $wtpara_lock = $this->config->getAppValue('santacloud', 'wtpara_lock', '');
-
-
+        $wtncversion = $this->config->getSystemValue('version');
         $csp = new ContentSecurityPolicy();
         $csp->addAllowedImageDomain('*');
         $csp->addAllowedMediaDomain('*');
@@ -64,9 +63,10 @@ class SantaCloudAdmin implements ISettings {
           'wtpara_last' => $wtpara_last,
           'wtpara_lock' => $wtpara_lock,
     		];
-        \OC::$server->getContentSecurityPolicyManager()->addDefaultPolicy($csp);
+        if ($wtncversion < 32) {
+            \OC::$server->getContentSecurityPolicyManager()->addDefaultPolicy($csp);
+        }
         $response = new TemplateResponse(Application::APP_ID, 'settings/admin', $parameters, '');
-
         return $response;
     }
 
