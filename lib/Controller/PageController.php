@@ -44,6 +44,7 @@ use OCP\IConfig;
 /**
  * @psalm-suppress UnusedClass
  */
+#[\AllowDynamicProperties]
 class PageController extends Controller {
 
 	public function __construct(IL10N $l, private IConfig $config, IGroupManager $groupManager, IUserSession $userSession)

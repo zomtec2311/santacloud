@@ -38,6 +38,7 @@ use OCP\AppFramework\Http\Attribute\FrontpageRoute;
 use OCP\AppFramework\Http\Attribute\NoAdminRequired;
 use OCP\AppFramework\Http\Attribute\NoCSRFRequired;
 use OCP\AppFramework\Http\Attribute\OpenAPI;
+use OCP\AppFramework\Http\DataResponse;
 
 class DayController extends Controller {
   #[NoCSRFRequired]
@@ -66,10 +67,12 @@ class DayController extends Controller {
      $this->request = $request;
    }
 
-   public function getParam($who) {
-     return $this->config->getAppValue('santacloud', $who);
+   public function getParam($who): DataResponse {
+     return new DataResponse([
+                'value' => $this->config->getAppValue('santacloud', $who),
+            ]);
    }
-
+   
    public function setParam($who,$wert) {
      $this->config->setAppValue('santacloud', $who, $wert);
  		 return;
@@ -81,7 +84,7 @@ class DayController extends Controller {
  	 }
 
    #[NoAdminRequired]
-   public function getxml() {
+   public function getxml(): DataResponse {
      $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');
      if (!isset($wtpara_test) or ($wtpara_test === 0)) {
  			 $wtpara_test = 1;
@@ -101,23 +104,31 @@ class DayController extends Controller {
      if (!file_exists($wtdayfile)) {
        $file = __DIR__ . '/../../data/days_example.xml';
        if (!copy($file, $wtdayfile)) {
-         return "failed to copy $file... ";
+         return new DataResponse([
+								'msg' => "failed to copy $file... ",
+            ]);
        }
-       return $this->l->t('No days.xml found. %1$s copied to %2$s', ['days_example', $wtdayfile]);
+       return new DataResponse([
+								'msg' => $this->l->t('No days.xml found. %1$s copied to %2$s', ['days_example', $wtdayfile]),
+            ]);
      }
-     else { return; }
+     else {
+       return new DataResponse([
+								'msg' => "",
+            ]);
+    }
  	 }
 
-   public function xmlcontent() {
+   public function xmlcontent(): DataResponse {
      $wtdayfile = $this->config->getSystemValue('datadirectory') . '/days.xml';
      $out = '';
      $arr = array();
      if (!file_exists($wtdayfile)) {
        $file = __DIR__ . '/../../data/days_example.xml';
        if (!copy($file, $wtdayfile)) {
-         return "failed to copy $file... ";
+         $xmlcontent = "failed to copy $file... ";
        }
-       return $this->l->t('No days.xml found. %1$s copied to %2$s', ['days_example', $wtdayfile]);
+       $xmlcontent = $this->l->t('No days.xml found. %1$s copied to %2$s', ['days_example', $wtdayfile]);
      }
      else {
        $xmlStr = file_get_contents($wtdayfile);
@@ -126,8 +137,11 @@ class DayController extends Controller {
          $xml->days->day[$i]->title = strval($xml->days->day[$i]->title);
          $xml->days->day[$i]->description = strval($xml->days->day[$i]->description);
        }
-       return $xml->days;
+       $xmlcontent = $xml->days;
      }
+     return new DataResponse([
+								'xmlcontent' => $xmlcontent,
+            ]);
     }
 
     public function dayxmlcontent($day) {
