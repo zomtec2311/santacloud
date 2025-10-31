@@ -9,7 +9,7 @@
 - ✅ Offer your customers entertainment during the Advent season.
 - ✅ With built-in test mode.
 - ✅ Easy setup via an XML file.]]></description>
-	<version>1.0.8</version>
+	<version>1.0.9</version>
 	<licence>agpl</licence>
 	<author mail="wtoedt@gmail.com" homepage="https://github.com/zomtec2311/santacloud">Wolfgang Tödt</author>
 	<namespace>SantaCloud</namespace>
@@ -18,7 +18,7 @@
 	<website>https://github.com/zomtec2311/santacloud</website>
 	<screenshot>https://raw.githubusercontent.com/zomtec2311/santacloud/refs/heads/main/SantaCloud.png</screenshot>
 	<dependencies>
-		<nextcloud min-version="29" max-version="32"/>
+		<nextcloud min-version="31" max-version="32"/>
 	</dependencies>
 	<settings>
     <admin>OCA\SantaCloud\Settings\SantaCloudAdmin</admin>
