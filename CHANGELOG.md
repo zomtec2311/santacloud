@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.9
+
+### Fixed
+- code changes due to deprecated methods
+- some code cleanups
+
 ## 1.0.8
 
 ### Fixed
