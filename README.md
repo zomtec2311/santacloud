@@ -4,6 +4,8 @@
 ![GitHub all downloads](https://img.shields.io/github/downloads/zomtec2311/santacloud/total?logo=github) ![GitHub all releases](https://img.shields.io/github/release/zomtec2311/santacloud)
 # Santa Cloud
 
+## ✨ About
+
 ### Advent calendar app for Nextcloud
 
 - ✅ Create your own content for the doors - e.g. competitions, reciepts, poems...
@@ -13,21 +15,21 @@
 
 ![https://raw.githubusercontent.com/zomtec2311/santacloud/refs/heads/main/SantaCloud.png](https://raw.githubusercontent.com/zomtec2311/santacloud/refs/heads/main/SantaCloud.png)​
 
-## Usage
+## ⚙️ Usage
 
 - It is recommended to download or install this app directly from the [Nextcloud App store](https://apps.nextcloud.com/apps/santacloud).
 - Alternatively you can download the [latest santacloud release](https://github.com/zomtec2311/santacloud/releases) based on this repository.
 
 To get started follow the instructions to fill the advent calendar's doors with your content.
 
-## Instructions
+## ⚙️ Instructions
 After installation `days_example.xml` will be copied to `nextcloud-datadirectory/days.xml`.
 
 You can reach the admin settings for santacloud over the Administration Settings link or with the direct call over `YOUR_NEXTCLOUD/settings/admin/santacloud`.
 
 ![https://raw.githubusercontent.com/zomtec2311/santacloud/refs/heads/main/santacloud-settings.png](https://raw.githubusercontent.com/zomtec2311/santacloud/refs/heads/main/santacloud-settings.png)
 
-## F.A.Q.
+## 💡 F.A.Q.
 
 <details>
   <summary><b>How to change background image?</b></summary>
