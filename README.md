@@ -60,3 +60,10 @@ and don't forget to clean up browser cache</details>
   <summary><b>Very bad translation?</b></summary>
   We used the AI-based Google translator to generate language files. Of course, there were limitations to the translation depending on the quality of the AI. If you'd like to help improve your language file, open an issue and report your suggestion for improvement. Thank you
 </details>
+
+## 🤝 How you can support this project
+
+1. **🌟 Star this repository**: This is the easiest way to support SantaCloud and it costs nothing.
+1. **🪲 Report bugs**: Report any bugs you find on the issue tracker.
+1. **📖 Translate**: Help translate SantaCloud into your language, if the AI-based Google translator generated language files are poorly translated
+1. **📝 Contribute**: Read and file or comment on an issue and ask for guidance or give advice.
