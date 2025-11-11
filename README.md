@@ -22,7 +22,7 @@
 
 To get started follow the instructions to fill the advent calendar's doors with your content.
 
-## ⚙️ Instructions
+## 🚀 Instructions
 After installation `days_example.xml` will be copied to `nextcloud-datadirectory/days.xml`.
 
 You can reach the admin settings for santacloud over the Administration Settings link or with the direct call over `YOUR_NEXTCLOUD/settings/admin/santacloud`.
