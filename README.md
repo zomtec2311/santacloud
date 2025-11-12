@@ -64,6 +64,7 @@ and don't forget to clean up browser cache</details>
 ## 🤝 How you can support this project
 
 1. **🌟 Star this repository**: This is the easiest way to support SantaCloud and it costs nothing.
-1. **🪲 Report bugs**: Report any bugs you find on the issue tracker.
-1. **📖 Translate**: Help translate SantaCloud into your language, if the AI-based Google translator generated language files are poorly translated
-1. **📝 Contribute**: Read and file or comment on an issue and ask for guidance or give advice.
+2. **⭐ Rate and/or 💬 comment** on SantaCloud in the [ Nextcloud AppStore](https://apps.nextcloud.com/apps/santacloud)
+3. **🪲 Report bugs**: Report any bugs you find on the issue tracker.
+4. **📖 Translate**: Help translate SantaCloud into your language, if the AI-based Google translator generated language files are poorly translated
+5. **📝 Contribute**: Read and file or comment on an issue and ask for guidance or give advice.
