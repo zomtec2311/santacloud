@@ -39,6 +39,8 @@ You can reach the admin settings for santacloud over the Administration Settings
 > An image "imageABC.png" is stored in <code>nextcloud-datadirectory/santacloud/img/imageABC.png</code> you can use it in your HTML code this way:
 > ```html
 > <img src="YOUR-DOMAIN/index.php/apps/santacloud/image/imageABC.png" />
+>
+> <img src="/apps/santacloud/image/imageABC.png" />
 
 ## 💡 F.A.Q.
 
