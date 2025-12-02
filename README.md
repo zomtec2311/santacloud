@@ -32,7 +32,7 @@ You can reach the admin settings for santacloud over the Administration Settings
 > 
 > DO NOT store images within the apps data or image folder, because they will be deleted on the next app update automatically!!!
 >
-> Starting with version 1.2.0, a folder named <code>nextcloud-datadirectory/santacloud/img</code> will be created to store all images used in the Advent calendar doors. These images will remain unaffected by future app updates and will therefore not be lost.
+> Starting with version 1.1.0, a folder named <code>nextcloud-datadirectory/santacloud/img</code> will be created to store all images used in the Advent calendar doors. These images will remain unaffected by future app updates and will therefore not be lost.
 >
 > Example:
 >
