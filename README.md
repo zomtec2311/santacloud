@@ -32,13 +32,13 @@ You can reach the admin settings for santacloud over the Administration Settings
 > 
 > DO NOT store images within the apps data or image folder, because they will be deleted on the next app update automatically!!!
 >
-> Starting with version 1.1.0, a folder named <code>nextcloud-datadirectory/santacloud/img</code> will be created to store all images used in the Advent calendar doors. These images will remain unaffected by future app updates and will therefore not be lost.
+> Starting with version 1.1.0, a folder named <code>nextcloud-datadirectory/appdata_your-instanceid/santacloud/img</code> will be created to store all images used in the Advent calendar doors. These images will remain unaffected by future app updates and will therefore not be lost.
 >
 > Example:
 >
-> An image "imageABC.png" is stored in <code>nextcloud-datadirectory/santacloud/img/imageABC.png</code> you can use it in your HTML code this way:
+> An image "imageABC.png" is stored in <code>nextcloud-datadirectory/appdata_your-instanceid/santacloud/img/imageABC.png</code> you can use it in your HTML code this way:
 > ```html
-> <img src="YOUR-DOMAIN/index.php/apps/santacloud/image/imageABC.png" />
+> <img src="YOUR-DOMAIN/apps/santacloud/image/imageABC.png" />
 >
 > <img src="/apps/santacloud/image/imageABC.png" />
 
