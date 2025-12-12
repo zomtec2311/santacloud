@@ -92,70 +92,9 @@ class DayController extends Controller {
      $this->config->setAppValue('santacloud', 'owntext', $text);
  		 return;
  	 }
-/*
-   #[NoAdminRequired]
-   public function getxml(): DataResponse {
-     $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');
-     if (!isset($wtpara_test) or ($wtpara_test === 0)) {
- 			 $wtpara_test = 1;
- 			 $this->config->setAppValue('santacloud', 'wtpara_test', 1);
- 		}
- 		$wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last');
- 		if (!isset($wtpara_last) or ($wtpara_last === 0)) {
- 			 $wtpara_last = 2;
- 			 $this->config->setAppValue('santacloud', 'wtpara_last', 2);
- 		}
-    $wtpara_lock = (int)$this->config->getAppValue('santacloud', 'wtpara_lock');
- 		if (!isset($wtpara_lock) or ($wtpara_lock === 0)) {
- 			 $wtpara_lock = 1;
- 			 $this->config->setAppValue('santacloud', 'wtpara_lock', 1);
- 		}
- 		 $this->checkdatafolder();
-         
- 		$wtdayfile = $this->config->getSystemValue('datadirectory') . '/days.xml';
-        $newwtdayfile = $this->config->getSystemValue('datadirectory') . '/santacloud/days.xml';
-        if (!file_exists($wtdayfile) AND !file_exists($newwtdayfile)) {
-          if (!is_dir($this->config->getSystemValue('datadirectory') . '/santacloud')) {
-            if (!mkdir($this->config->getSystemValue('datadirectory') . '/santacloud/', 0777, true)) {
-              return new DataResponse([ 'msg' => "failed to create directory... ", ]);
-            }
-          }
-          $file = __DIR__ . '/../../data/days_example.xml';
-          if (!copy($file, $newwtdayfile)) {
-            return new DataResponse([
-								'msg' => "failed to copy $file... ",
-            ]);
-          }
-          return new DataResponse([
-								'msg' => $this->l->t('No days.xml found. %1$s copied to %2$s', ['days_example', $newwtdayfile]),
-          ]);
-        }
-        elseif (file_exists($wtdayfile)) {
-          if (!is_dir($this->config->getSystemValue('datadirectory') . '/santacloud')) {
-            if (!mkdir($this->config->getSystemValue('datadirectory') . '/santacloud/', 0777, true)) {
-              return new DataResponse([ 'msg' => "failed to create directory... ", ]);
-            }
-          }
-          if (!rename($wtdayfile, $newwtdayfile)) {
-            return new DataResponse([
-								'msg' => "failed to copy $wtdayfile... ",
-            ]);
-          }
-          return new DataResponse([
-								'msg' => $this->l->t('No days.xml found. %1$s copied to %2$s', ['existing days.xml', $newwtdayfile]),
-          ]);
-        }
-        else {
-          return new DataResponse([
-								'msg' => "",
-          ]);
-        }
- 	 }
-*/
-   public function xmlcontent(): DataResponse {
-     //$this->genfile();
+ 	 
+  public function xmlcontent(): DataResponse {
      $this->checkdatafolder();
-     //$wtdayfile = $this->config->getSystemValue('datadirectory') . '/santacloud/days.xml';
      $wtdayfile = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/xml/days.xml';
      $out = '';
      $arr = array();
@@ -173,9 +112,7 @@ class DayController extends Controller {
 
     public function dayxmlcontent($day) {
       $day = intval($day);
-      //$this->genfile();
       $this->checkdatafolder();
-      //$wtdayfile = $this->config->getSystemValue('datadirectory') . '/santacloud/days.xml';
       $wtdayfile = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/xml/days.xml';
       $out = '';
       $arr = array();
@@ -190,7 +127,6 @@ class DayController extends Controller {
      }
 
      public function savedayxmlcontent($day, $date, $title, $description): JSONResponse {
-       //$wtdayfile = $this->config->getSystemValue('datadirectory') . '/santacloud/days.xml';
        $wtdayfile = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/xml/days.xml';
        $xmlStr = file_get_contents($wtdayfile);
        $xml = simplexml_load_string($xmlStr);
@@ -214,7 +150,6 @@ class DayController extends Controller {
      $today = intval(date("j"));
      $thismonth = intval(date("n"));
      $out = "";
-     //$wtdayfile = $this->config->getSystemValue('datadirectory') . '/santacloud/days.xml';
      $wtdayfile = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/xml/days.xml';
      if( $wtpara_test === 1) {
        if (!file_exists($wtdayfile)) { return; }
@@ -256,7 +191,6 @@ class DayController extends Controller {
    public function previewday(string $day) {
      $day = intval($day);
      $out = "";
-     //$wtdayfile = $this->config->getSystemValue('datadirectory') . '/santacloud/days.xml';
      $wtdayfile = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/xml/days.xml';
        if (!file_exists($wtdayfile)) { return; }
        else {
@@ -267,69 +201,7 @@ class DayController extends Controller {
          return $out;
        }
    }
- /*  
-   public function genfile() {
-      $wtdayfile = $this->config->getSystemValue('datadirectory') . '/days.xml';
-      $newwtdayfile = $this->config->getSystemValue('datadirectory') . '/santacloud/days.xml';
-      $wtimg = $this->config->getSystemValue('datadirectory') . '/santacloud/img/xmas-cookies.png';
-      if (!file_exists($wtdayfile) AND !file_exists($newwtdayfile)) {
-        if (!is_dir($this->config->getSystemValue('datadirectory') . '/santacloud')) {
-          mkdir($this->config->getSystemValue('datadirectory') . '/santacloud/', 0777, true);
-        }
-        $file = __DIR__ . '/../../data/days_example.xml';
-        copy($file, $newwtdayfile);
-      }
-      elseif (file_exists($wtdayfile)) {
-        if (!is_dir($this->config->getSystemValue('datadirectory') . '/santacloud')) {
-          mkdir($this->config->getSystemValue('datadirectory') . '/santacloud/', 0777, true);
-        }
-        rename($wtdayfile, $newwtdayfile);
-      }
-      if (!file_exists($wtimg)) {
-        $file = __DIR__ . '/../../data/img/xmas-cookies.png';
-        if (!is_dir($this->config->getSystemValue('datadirectory') . '/santacloud/img')) {
-          mkdir($this->config->getSystemValue('datadirectory') . '/santacloud/img/', 0777, true);
-        }
-        copy($file, $wtimg);
-        $this->savedayxmlcontent(2, "2025-12-02", '<center>Today a Reciep for X-Mas Cookies</center>', '<center><img src="'.$wtimg.'" width="500" /></center>
-              <div style="text-align: justify; margin: auto; width: 50%; border: 3px solid green; padding: 10px;">
-                <b>You need</b><br>
-              <p>For the dough:
-                <ul>
-                  <li>4 cups (500g) all-purpose flour</li>
-                  <li>1 1/2 tsp. baking powder</li>
-                  <li>3/4 cup (150g) sugar</li>
-                  <li>1 pinch of salt</li>
-                  <li>1 cup (250g) butter</li>
-                  <li>1 tsp. vanilla extract</li>
-                  <li>2 medium eggs</li>
-
-                  <li>2 egg yolks for brushing the cookies</li>
-                  <li>1 tbsp. water</li>
-                </ul>
-              </p>
-              <br>
-              <p>For the decoration:
-                <ul>
-                  <li>1 1/2 cups (200g) confectioner’s sugar</li>
-                  <li>2-3 tbsp. lemon juice (or rum if you are not baking for kids)</li>
-                  <li>food color (optional)</li>
-                  <li>sugar pearls/sprinkles</li>
-                </ul>
-              </p>
-            </div>
-            <br>
-            <div style="text-align: justify; margin: auto; width: 50%; border: 3px solid green; padding: 10px;">
-              <ul>
-                <li>1. In a large bowl, mix flour with baking powder, sugar, and salt until well combined. Add the butter in small pieces, vanilla extract and the eggs and knead until you get a nice smooth dough (best to do it first with the machine and then with your hands). Wrap in plastic wrap and let rest for 30 minutes in the fridge.</li>
-                <li>2. Preheat the oven to 350˚F (180°C). Line several baking sheets with baking parchment. Roll out the dough on a floured surface to a thickness of 0.08 inch (2mm). Use cookie cutters in any shape you want and place the cookies on the prepared baking sheets. Knead the remaining dough and roll out again to cut out more cookies until all dough is used.</li>
-                <li>3. Whisk the egg yolks with the water and brush the cookies. Bake one baking sheet at a time for 10-12 minutes. Let the cookies cool down on a wire rack.</li>
-                <li>4. For the glaze, sift the confectioner’s sugar in a bowl, add lemon juice (or rum) and mix until you get a smooth mixture. Add now some drops of food color if you like (optional). Glaze the cookies and sprinkle with sugar pearls or sprinkles. Let the glaze dry completely and store the cookies in a tin box in a cool place.</li>
-              </ul>
-            </div>');
-      }
-  }
- */ 
+ 
   public function checkdatafolder() {
         $appdataroot = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud';
  		if (!is_dir($appdataroot . '/img')) $this->appData->newFolder('img');

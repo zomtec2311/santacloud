@@ -99,7 +99,6 @@ class ApiController extends Controller {
                 throw new \Exception('SantaCloud: Invalid file name after cleanup.');
             }
             $targetDir = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/img';
-            //$targetDir = $dataDir . '/' . $this->appName . '/img';
             $targetFile = $targetDir . '/' . $sanitizedName;
             if (!is_writable($targetDir)) {
                  throw new \Exception('SantaCloud Error: Target folder (' . $targetDir . ') is not writable .');

@@ -316,7 +316,6 @@ class ImageController extends Controller {
             $internalFilePath = $this->appName . '/bgimage/' . $sanitizedName;
             
             $finalImageUrl = $this->urlGenerator->getAbsoluteURL('/apps/') . $internalFilePath;
-            //$this->config->setAppValue('santacloud', 'wtpara_background_image', $sanitizedName);
             
             return new DataResponse([
                 'filePath' => $finalImageUrl,
