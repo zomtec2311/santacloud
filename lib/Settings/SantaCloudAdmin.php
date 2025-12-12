@@ -52,9 +52,30 @@ class SantaCloudAdmin implements ISettings {
      #[NoCSRFRequired]
      #[OpenAPI(OpenAPI::SCOPE_IGNORE)]
     public function getForm(): TemplateResponse {
-        $wtpara_test = $this->config->getAppValue('santacloud', 'wtpara_test', '');
-        $wtpara_last = $this->config->getAppValue('santacloud', 'wtpara_last', '');
-        $wtpara_lock = $this->config->getAppValue('santacloud', 'wtpara_lock', '');
+        $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test', '');
+        $wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last', '');
+        $wtpara_lock = (int)$this->config->getAppValue('santacloud', 'wtpara_lock', '');
+        $wtpara_own = (int)$this->config->getAppValue('santacloud', 'wtpara_own', '');
+		if (!isset($wtpara_test) or ($wtpara_test === 0)) {
+			 $wtpara_test = 1;
+			 $this->config->setAppValue('santacloud', 'wtpara_test', 1);
+		}
+		if (!isset($wtpara_last) or ($wtpara_last === 0)) {
+			 $wtpara_last = 2;
+			 $this->config->setAppValue('santacloud', 'wtpara_last', 2);
+		}
+		if (!isset($wtpara_lock) or ($wtpara_lock === 0)) {
+			 $wtpara_lock = 1;
+			 $this->config->setAppValue('santacloud', 'wtpara_lock', 1);
+		}
+		if (!isset($wtpara_own) or ($wtpara_own === 0)) {
+			 $wtpara_own = 1;
+			 $this->config->setAppValue('santacloud', 'wtpara_own', 2);
+		}
+        
+        
+        
+        
         $csp = new ContentSecurityPolicy();
         $csp->addAllowedImageDomain('*');
         $csp->addAllowedMediaDomain('*');
@@ -62,6 +83,7 @@ class SantaCloudAdmin implements ISettings {
           'wtpara_test' => $wtpara_test,
           'wtpara_last' => $wtpara_last,
           'wtpara_lock' => $wtpara_lock,
+          'wtpara_own' => $wtpara_own,
     		];
         ($this->config->getSystemValue('version') < 32 ? \OC::$server->getContentSecurityPolicyManager()->addDefaultPolicy($csp) : \OCP\Server::get(IContentSecurityPolicyManager::class)->addDefaultPolicy($csp));
         $response = new TemplateResponse(Application::APP_ID, 'settings/admin', $parameters, '');

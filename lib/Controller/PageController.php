@@ -75,6 +75,11 @@ class PageController extends Controller {
 			 $wtpara_lock = 1;
 			 $this->config->setAppValue('santacloud', 'wtpara_lock', 1);
 		}
+		$wtpara_own = (int)$this->config->getAppValue('santacloud', 'wtpara_own');
+		if (!isset($wtpara_own) or ($wtpara_own === 0)) {
+			 $wtpara_own = 1;
+			 $this->config->setAppValue('santacloud', 'wtpara_own', 2);
+		}
 		$allowed = $this->isallowed($wtpara_lock);
 		if ($allowed === 'wait') {
 			$wtown = (int)$this->config->getAppValue('santacloud', 'wtpara_own');

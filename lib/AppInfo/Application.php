@@ -31,18 +31,27 @@ use OCP\AppFramework\App;
 use OCP\AppFramework\Bootstrap\IBootContext;
 use OCP\AppFramework\Bootstrap\IBootstrap;
 use OCP\AppFramework\Bootstrap\IRegistrationContext;
+use OCP\IConfig;
+use OCP\App\IAppManager;
+use OCP\Server;
+use OC;
+
+
 
 class Application extends App implements IBootstrap {
 	public const APP_ID = 'santacloud';
 
-	/** @psalm-suppress PossiblyUnusedMethod */
-	public function __construct() {
-		parent::__construct(self::APP_ID);
-	}
+	public function __construct(array $urlParams = []) {
+        parent::__construct(self::APP_ID, $urlParams);
+    }
 
 	public function register(IRegistrationContext $context): void {
-	}
+    }
 
-	public function boot(IBootContext $context): void {
-	}
+    public function boot(IBootContext $context): void {
+    }
+    
+    public function install(): void {
+    }
+
 }
