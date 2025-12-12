@@ -29,6 +29,5 @@ use OCP\Util;
 
 //Util::addScript(OCA\SantaCloud\AppInfo\Application::APP_ID, 'santacloud-main');
 Util::addStyle(OCA\SantaCloud\AppInfo\Application::APP_ID, 'santacloud-main');
-
 ?>
 <div id="santacloudwait"><br><br><br><h1><?php echo $waittext; ?></h1></div>

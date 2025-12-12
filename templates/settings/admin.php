@@ -27,9 +27,8 @@ declare(strict_types=1);
 
 /** @var $l \OCP\IL10N */
 /** @var $_ array */
-
-//Util::addScript(OCA\SantaCloud\AppInfo\Application::APP_ID, 'santacloud-main');
-//Util::addStyle(OCA\SantaCloud\AppInfo\Application::APP_ID, 'santacloud-main');
-script('santacloud', 'santacloud-admin');
+use OCP\Util;
+Util::addScript(OCA\SantaCloud\AppInfo\Application::APP_ID, 'santacloud-admin');
+Util::addStyle(OCA\SantaCloud\AppInfo\Application::APP_ID, 'santacloud-admin');
 ?>
 <div id="santacloud_admin"></div>
