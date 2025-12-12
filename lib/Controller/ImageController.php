@@ -61,6 +61,7 @@ class ImageController extends Controller {
         $this->logger = $logger;
     }   
     
+    #[NoAdminRequired]
     #[NoCSRFRequired]
     public function get(string $filename): StreamResponse {
     $cleanFilename = str_replace('..', '', $filename);
@@ -97,6 +98,7 @@ class ImageController extends Controller {
     }
     }
     
+    #[NoAdminRequired]
     #[NoCSRFRequired]
     public function bgget(string $filename): StreamResponse {
     $cleanFilename = str_replace('..', '', $filename);
