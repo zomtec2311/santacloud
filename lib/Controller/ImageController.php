@@ -182,6 +182,7 @@ class ImageController extends Controller {
             }
 
             unlink($file);
+            $this->setbg('background.jpg');
             
             return new JSONResponse([
                 'message' => 'SantaCloud: file successful feleted: ' . $fileName,
@@ -225,6 +226,7 @@ class ImageController extends Controller {
             }
 
             unlink($file);
+            $this->setbg('background.jpg');
             
             return new JSONResponse([
                 'message' => 'SantaCloud: file successful feleted: ' . $fileName,
