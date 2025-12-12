@@ -26,7 +26,7 @@
 return [
   'routes' => [
      ['name' => 'page#index', 'url' => '/', 'verb' => 'GET'],
-     ['name' => 'Day#getxml', 'url' => '/getxml', 'verb' => 'GET'],
+     //['name' => 'Day#getxml', 'url' => '/getxml', 'verb' => 'GET'],
      ['name' => 'Day#getday', 'url' => '/day/{day}', 'verb' => 'GET'],
      ['name' => 'Day#previewday', 'url' => '/previewday/{day}', 'verb' => 'GET'],
      ['name' => 'Day#setParam', 'url' => '/ajax/{who}/{wert}', 'verb' => 'GET'],
@@ -35,5 +35,38 @@ return [
      ['name' => 'Day#savedayxmlcontent', 'url' => '/saveday', 'verb' => 'POST'],
      ['name' => 'Day#saveowntext', 'url' => '/saveowntext', 'verb' => 'POST'],
      ['name' => 'Day#getParam', 'url' => '/getparam/{who}', 'verb' => 'GET'],
+     ['name' => 'image#get', 'url' => '/image/{filename}', 'verb' => 'GET'],
+     ['name' => 'image#bgget', 'url' => '/bgimage/{filename}', 'verb' => 'GET'],
+     ['name' => 'image#getimages', 'url' => '/getimages', 'verb' => 'GET'],
+     ['name' => 'image#getbgimages', 'url' => '/getbgimages', 'verb' => 'GET'],
+     ['name' => 'image#getbg', 'url' => '/ajax/getbg', 'verb' => 'GET'],
+     ['name' => 'image#deleteimage', 'url' => '/deleteimage', 'verb' => 'DELETE'],
+     ['name' => 'image#deletebgimage', 'url' => '/deletebgimage', 'verb' => 'DELETE'],
+     ['name' => 'image#setbg', 'url' => '/setbgimage/{imagePath}', 'verb' => 'GET'],
+     ['name' => 'image#uploadFile', 
+ 'url' => '/upload-bg-image', 
+ 'verb' => 'POST',
+ 'defaults' => [ // FÜGEN SIE DIES HINZU
+    'action' => 'uploadFile', // Muss exakt der Methodenname in Ihrem Controller sein
+    'insecure' => true,      // Wichtig für API-Zugriffe ohne volle Session-Checks
+ ],
+],
+
+     [
+            'name' => 'Api#uploadFile', 
+            'url' => '/upload',
+            'verb' => 'POST',
+            'defaults' => [
+                'action' => 'uploadFile', 
+                'insecure' => true,
+            ],
+        ],
+    
   ]
 ];
+
+
+    
+        
+    
+
