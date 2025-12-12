@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.1.0
+
+### Added
+- function image upload
+- function background image upload
+- using appdata folder for storing images
+- new settings
+
+### Fixed
+- language files updated
+- Content Security Policy error while using images
+- some code cleanups
+
 ## 1.0.9
 
 ### Fixed
