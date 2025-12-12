@@ -1,0 +1,100 @@
+.filesList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filesList > .filesListItem {
+  border-radius: 0.25rem;
+  /* Fügen Sie diese ZWEI ZEILEN hinzu: */
+    min-height: 150px; 
+    min-width: 150px; 
+    /* -------------------------------- */
+  border: 1.5px dashed lightgray;
+  background-color: whitesmoke;
+  text-align: center;
+  cursor: pointer;
+  margin: 0.5rem;
+  position: relative;
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+.--uploaded {
+  border-color: #373737 !important;
+  color: #373737 !important;
+}
+.filesListItem .btnDelete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 0.6rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  transform: translate(50%, -50%);
+  border: 1.5px dashed #373737;
+  background-color: whitesmoke;
+  opacity: 0;
+  transition: all 0.15s;
+}
+.filesListItem:hover .btnDelete {
+  opacity: 1;
+}
+.filesListItem img,
+.filesListItem video { /* NUR img und video zentrieren */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+max-width: 90%;
+max-height: calc(100% - 25px); /* Korrigiert: max-height muss den Text am unteren Rand freilassen */
+object-fit: cover;
+}
+
+/* Der div.message Selektor muss separat behandelt werden, falls er zentriert werden soll, 
+   aber er darf die gleichen max-width/height Beschränkungen nicht haben. */
+.filesListItem div.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+}
+.fileName {
+  font-size: 0.8rem;
+  overflow: hidden;
+}
+.filesListItem .url-info {
+    position: absolute !important; /* Erzwingt die absolute Positionierung */
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    padding: 3px 5px !important;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #373737;
+    font-size: 0.7rem; /* Kleine Schriftgröße */
+    box-sizing: border-box;
+    text-align: left;
+    z-index: 10 !important; 
+    overflow: hidden !important; /* WICHTIG: Überspringenden Inhalt abschneiden */
+    text-overflow: ellipsis;
+    white-space: nowrap; /* WICHTIG: Erzwingt eine Zeile */
+}
+
+/* Margen für den Text entfernen */
+.filesListItem .url-info p {
+    margin: 0;
+    line-height: 1.2;
+}
+#imageslist {
+  overflow-y: scroll;
+  height: 120px;
+  width:400px;
+  resize: none;
+  font-size: 0.8em;
+  padding: 5px;
+  background: whitesmoke;
+  color: black;
+}

@@ -6,8 +6,8 @@
             <title><![CDATA[Here You can set a Title. Take a look at day 2025-12-02 for a full example]]></title>
             <description><![CDATA[
               <b>Here you can insert your wanted content for a door</b><br>
-              You can use HTML. Images can be stored into app's data/img/ folder and then use img src="/apps/santacloud/data/img/your_image"
-              like the example from 2025-12-02
+                  You can use HTML. Images can be stored into nextcloud's appdata/santacloud/img/ folder and then use img src="YOUR-DOMAIN/apps/santacloud/image/imageABC.png" or img src="/apps/santacloud/image/imageABC.png"<br>like the example from 2025-12-02<br><p style="padding: 20px;background-color: #f44336;color: white;margin-bottom: 15px;width: 450px;font-size: 0.8em;"><b>Attention!!!</b><br>Please do not place images or other content within the app folder, as these will be lost during an update.<br>Instead, place images or other content for the Advent calendar doors in the Nextcloud appdata folder.<br><b>Very important!</b>
+					</p>
               ]]></description>
         </day>
 
@@ -15,7 +15,7 @@
             <date>2025-12-02</date>
             <title><![CDATA[<center>Today a Reciep for X-Mas Cookies</center>]]></title>
             <description><![CDATA[
-              <center><img src="/apps/santacloud/data/img/xmas-cookies.png" width="500" /></center>
+              <center><img src="/apps/santacloud/image/xmas-cookies.png" width="500" /></center>
               <div style="text-align: justify; margin: auto; width: 50%; border: 3px solid green; padding: 10px;">
                 <b>You need</b><br>
               <p>For the dough:
