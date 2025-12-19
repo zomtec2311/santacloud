@@ -187,7 +187,7 @@ class ImageController extends Controller {
             $this->setbg('background.jpg');
             
             return new JSONResponse([
-                'message' => 'SantaCloud: file successful feleted: ' . $fileName,
+                'message' => 'SantaCloud: file successful deleted: ' . $fileName,
                 'deletedFile' => $fileName,
             ], 200);
 
@@ -231,7 +231,7 @@ class ImageController extends Controller {
             $this->setbg('background.jpg');
             
             return new JSONResponse([
-                'message' => 'SantaCloud: file successful feleted: ' . $fileName,
+                'message' => 'SantaCloud: file successful deleted: ' . $fileName,
                 'deletedFile' => $fileName,
             ], 200);
 
