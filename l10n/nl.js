@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "Sluit upload achtergrondafbeelding",
     "upload background image": "achtergrondafbeelding uploaden",
     "close upload image": "afbeelding uploaden sluiten",
-    "upload image": "afbeelding uploaden"
+    "upload image": "afbeelding uploaden",
+    "Could not fetch settings": "Kan instellingen niet ophalen",
+    "Could not set settings": "Kan instellingen niet instellen",
+    "Image successfully set as new background": "Afbeelding succesvol ingesteld als nieuwe achtergrond",
+    "Rename your image first. This filename is reserved for the App core image": "Hernoem eerst uw afbeelding. Deze bestandsnaam is gereserveerd voor de app-kernimage",
+    "Choose an Image!": "Kies een afbeelding!",
+    "upload error": "uploadfout",
+    "this image can not be deleted because it is an App core image": "deze afbeelding kan niet worden verwijderd omdat het een app-kernafbeelding is",
+    "HTML-code copied": "HTML-code gekopieerd"
 },
 "nplurals=2; plural=n != 1;");

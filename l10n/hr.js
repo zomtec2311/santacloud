@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "zatvori pozadinsku sliku za prijenos",
     "upload background image": "učitaj pozadinsku sliku",
     "close upload image": "zatvori upload slike",
-    "upload image": "učitaj sliku"
+    "upload image": "učitaj sliku",
+    "Could not fetch settings": "Nije moguće dohvatiti postavke",
+    "Could not set settings": "Nije moguće postaviti postavke",
+    "Image successfully set as new background": "Slika je uspješno postavljena kao nova pozadina",
+    "Rename your image first. This filename is reserved for the App core image": "Prvo preimenujte svoju sliku. Ovaj naziv datoteke rezerviran je za sliku jezgre aplikacije",
+    "Choose an Image!": "Odaberite sliku!",
+    "upload error": "pogreška pri učitavanju",
+    "this image can not be deleted because it is an App core image": "ovu sliku nije moguće izbrisati jer je to slika jezgre aplikacije",
+    "HTML-code copied": "HTML kod kopiran"
 },
 "nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);");

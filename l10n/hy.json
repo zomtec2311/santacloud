@@ -55,6 +55,14 @@
     "close upload background image": "փակել վերբեռնման ֆոնային պատկերը",
     "upload background image": "վերբեռնել ֆոնային պատկեր",
     "close upload image": "փակել վերբեռնման պատկերը",
-    "upload image": "վերբեռնել պատկերը"
+    "upload image": "վերբեռնել պատկերը",
+    "Could not fetch settings": "Չհաջողվեց բեռնել կարգավորումները",
+    "Could not set settings": "Չհաջողվեց կարգավորումներ սահմանել",
+    "Image successfully set as new background": "Պատկերը հաջողությամբ սահմանվեց որպես նոր ֆոն",
+    "Rename your image first. This filename is reserved for the App core image": "Նախ վերանվանեք ձեր պատկերը: Այս ֆայլի անունը վերապահված է Հավելվածի հիմնական պատկերի համար",
+    "Choose an Image!": "Ընտրեք պատկեր:",
+    "upload error": "վերբեռնման սխալ",
+    "this image can not be deleted because it is an App core image": "այս պատկերը չի կարող ջնջվել, քանի որ այն հավելվածի հիմնական պատկերն է",
+    "HTML-code copied": "HTML կոդը պատճենվեց"
 },"pluralForm" :"nplurals=2; plural=n > 1;"
 }

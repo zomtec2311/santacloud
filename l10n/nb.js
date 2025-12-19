@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "lukk opplasting av bakgrunnsbilde",
     "upload background image": "last opp bakgrunnsbilde",
     "close upload image": "lukk opplastingsbilde",
-    "upload image": "last opp bilde"
+    "upload image": "last opp bilde",
+    "Could not fetch settings": "Kunne ikke hente innstillinger",
+    "Could not set settings": "Kunne ikke angi innstillinger",
+    "Image successfully set as new background": "Bildet ble satt som ny bakgrunn",
+    "Rename your image first. This filename is reserved for the App core image": "Gi bildet nytt navn først. Dette filnavnet er reservert for app-kjernebildet",
+    "Choose an Image!": "Velg et bilde!",
+    "upload error": "opplastingsfeil",
+    "this image can not be deleted because it is an App core image": "Dette bildet kan ikke slettes fordi det er et app-kjernebilde",
+    "HTML-code copied": "HTML-kode kopiert"
 },
 "nplurals=2; plural=n != 1;");

@@ -55,6 +55,14 @@
     "close upload background image": "затворете ја подигната слика за позадина",
     "upload background image": "прикачете слика за позадина",
     "close upload image": "затворете ја прикачената слика",
-    "upload image": "прикачи слика"
+    "upload image": "прикачи слика",
+    "Could not fetch settings": "Не може да се преземат поставките",
+    "Could not set settings": "Не може да се постават поставките",
+    "Image successfully set as new background": "Сликата е успешно поставена како нова позадина",
+    "Rename your image first. This filename is reserved for the App core image": "Прво преименувајте ја вашата слика. Ова име на датотека е резервирано за основната слика на апликацијата",
+    "Choose an Image!": "Изберете слика!",
+    "upload error": "грешка при прикачување",
+    "this image can not be deleted because it is an App core image": "оваа слика не може да се избрише бидејќи е основна слика на апликацијата",
+    "HTML-code copied": "HTML-кодот е копиран"
 },"pluralForm" :"nplurals=2; plural=n % 10 != 1 || n % 100 == 11;"
 }

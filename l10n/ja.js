@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "背景画像をアップロードして閉じる",
     "upload background image": "背景画像をアップロードする",
     "close upload image": "画像のアップロードを閉じる",
-    "upload image": "画像をアップロードする"
+    "upload image": "画像をアップロードする",
+    "Could not fetch settings": "設定を取得できませんでした",
+    "Could not set settings": "設定を設定できませんでした",
+    "Image successfully set as new background": "画像が新しい背景として正常に設定されました",
+    "Rename your image first. This filename is reserved for the App core image": "まず画像の名前を変更します。このファイル名はアプリのコアイメージ用に予約されています",
+    "Choose an Image!": "画像を選択してください!",
+    "upload error": "アップロードエラー",
+    "this image can not be deleted because it is an App core image": "このイメージはアプリのコアイメージであるため削除できません",
+    "HTML-code copied": "HTMLコードがコピーされました"
 },
 "nplurals=1; plural=0;");

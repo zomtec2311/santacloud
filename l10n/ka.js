@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "დახურეთ ატვირთვის ფონის სურათი",
     "upload background image": "ატვირთეთ ფონის სურათი",
     "close upload image": "სურათის ატვირთვის დახურვა",
-    "upload image": "სურათის ატვირთვა"
+    "upload image": "სურათის ატვირთვა",
+    "Could not fetch settings": "პარამეტრების მიღება ვერ მოხერხდა",
+    "Could not set settings": "პარამეტრების დაყენება ვერ მოხერხდა",
+    "Image successfully set as new background": "სურათი წარმატებით დაყენებულია ახალ ფონად",
+    "Rename your image first. This filename is reserved for the App core image": "ჯერ გადაარქვით თქვენი სურათი. ეს ფაილის სახელი დაცულია აპლიკაციის ძირითადი სურათისთვის",
+    "Choose an Image!": "აირჩიეთ სურათი!",
+    "upload error": "ატვირთვის შეცდომა",
+    "this image can not be deleted because it is an App core image": "ამ სურათის წაშლა შეუძლებელია, რადგან ეს არის აპლიკაციის ძირითადი სურათი",
+    "HTML-code copied": "HTML-კოდი კოპირებულია"
 },
 "nplurals=2; plural=n != 1;");

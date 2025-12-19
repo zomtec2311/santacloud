@@ -55,6 +55,14 @@
     "close upload background image": "loka upphleðslu bakgrunnsmynd",
     "upload background image": "hlaða inn bakgrunnsmynd",
     "close upload image": "loka upphleðslu mynd",
-    "upload image": "hlaða upp mynd"
+    "upload image": "hlaða upp mynd",
+    "Could not fetch settings": "Ekki tókst að sækja stillingar",
+    "Could not set settings": "Gat ekki stillt stillingar",
+    "Image successfully set as new background": "Mynd tekin upp sem nýr bakgrunnur",
+    "Rename your image first. This filename is reserved for the App core image": "Endurnefna myndina þína fyrst. Þetta skráarnafn er frátekið fyrir app kjarnamyndina",
+    "Choose an Image!": "Veldu mynd!",
+    "upload error": "upphleðsluvilla",
+    "this image can not be deleted because it is an App core image": "Ekki er hægt að eyða þessari mynd vegna þess að hún er app kjarnamynd",
+    "HTML-code copied": "HTML-kóði afritaður"
 },"pluralForm" :"nplurals=2; plural=n % 10 != 1 || n % 100 == 11;"
 }

@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "tutup unggah gambar latar belakang",
     "upload background image": "unggah gambar latar belakang",
     "close upload image": "tutup unggahan gambar",
-    "upload image": "mengunggah gambar"
+    "upload image": "mengunggah gambar",
+    "Could not fetch settings": "Tidak dapat mengambil setelan",
+    "Could not set settings": "Tidak dapat menyetel setelan",
+    "Image successfully set as new background": "Gambar berhasil ditetapkan sebagai latar belakang baru",
+    "Rename your image first. This filename is reserved for the App core image": "Ganti nama gambar Anda terlebih dahulu. Nama file ini dicadangkan untuk gambar inti Aplikasi",
+    "Choose an Image!": "Pilih Gambar!",
+    "upload error": "kesalahan pengunggahan",
+    "this image can not be deleted because it is an App core image": "gambar ini tidak dapat dihapus karena merupakan gambar inti Aplikasi",
+    "HTML-code copied": "Kode HTML disalin"
 },
 "nplurals=1; plural=0;");

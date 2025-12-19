@@ -55,6 +55,14 @@
     "close upload background image": "zoumaachen Eroplueden Hannergrond Bild",
     "upload background image": "Eroplueden Hannergrond Bild",
     "close upload image": "zoumaachen eropluede Bild",
-    "upload image": "eropluede Bild"
+    "upload image": "eropluede Bild",
+    "Could not fetch settings": "Konnt d'Astellunge net erofhuelen",
+    "Could not set settings": "Konnt d'Astellunge net astellen",
+    "Image successfully set as new background": "Bild erfollegräich als neien Hannergrond gesat",
+    "Rename your image first. This filename is reserved for the App core image": "Umbenannt Äert Bild als éischt. Dëse Dateinumm ass fir d'App Kärbild reservéiert",
+    "Choose an Image!": "Wielt e Bild!",
+    "upload error": "Eroplueden Feeler",
+    "this image can not be deleted because it is an App core image": "dëst Bild kann net geläscht ginn well et eng App Kär Bild ass",
+    "HTML-code copied": "HTML-Code kopéiert"
 },"pluralForm" :"nplurals=2; plural=n != 1;"
 }

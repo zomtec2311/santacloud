@@ -55,6 +55,14 @@
     "close upload background image": "aizvērt augšupielādes fona attēlu",
     "upload background image": "augšupielādēt fona attēlu",
     "close upload image": "aizvērt augšupielādes attēlu",
-    "upload image": "augšupielādēt attēlu"
+    "upload image": "augšupielādēt attēlu",
+    "Could not fetch settings": "Nevarēja ienest iestatījumus",
+    "Could not set settings": "Nevarēja iestatīt iestatījumus",
+    "Image successfully set as new background": "Attēls veiksmīgi iestatīts kā jauns fons",
+    "Rename your image first. This filename is reserved for the App core image": "Vispirms pārdēvējiet savu attēlu. Šis faila nosaukums ir rezervēts lietotnes pamata attēlam",
+    "Choose an Image!": "Izvēlieties attēlu!",
+    "upload error": "augšupielādes kļūda",
+    "this image can not be deleted because it is an App core image": "šo attēlu nevar izdzēst, jo tas ir lietotnes pamata attēls",
+    "HTML-code copied": "HTML kods ir nokopēts"
 },"pluralForm" :"nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= 19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);"
 }

@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "ປິດຮູບພາບພື້ນຫລັງ",
     "upload background image": "ອັບໂຫລດຮູບພາບພື້ນຫລັງ",
     "close upload image": "ປິດຮູບພາບທີ່ປິດ",
-    "upload image": "ອັບໂຫລດຮູບພາບ"
+    "upload image": "ອັບໂຫລດຮູບພາບ",
+    "Could not fetch settings": "ບໍ່ສາມາດດຶງຂໍ້ມູນການຕັ້ງຄ່າໄດ້",
+    "Could not set settings": "ບໍ່ສາມາດຕັ້ງຄ່າໄດ້",
+    "Image successfully set as new background": "ຕັ້ງຮູບເປັນພື້ນຫຼັງໃໝ່ສຳເລັດແລ້ວ",
+    "Rename your image first. This filename is reserved for the App core image": "ປ່ຽນຊື່ຮູບຂອງເຈົ້າກ່ອນ. ຊື່ໄຟລ໌ນີ້ຖືກສະຫງວນໄວ້ສໍາລັບຮູບພາບຫຼັກຂອງ App",
+    "Choose an Image!": "ເລືອກຮູບ!",
+    "upload error": "ອັບໂຫລດຜິດພາດ",
+    "this image can not be deleted because it is an App core image": "ຮູບພາບນີ້ບໍ່ສາມາດຖືກລຶບໄດ້ເພາະວ່າມັນເປັນຮູບພາບຫຼັກຂອງ App",
+    "HTML-code copied": "ສຳເນົາລະຫັດ HTML ແລ້ວ"
 },
 "nplurals=1; plural=0;");

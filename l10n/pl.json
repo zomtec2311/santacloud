@@ -55,6 +55,14 @@
     "close upload background image": "zamknij przesyłanie obrazu tła",
     "upload background image": "prześlij obraz tła",
     "close upload image": "zamknij przesyłanie obrazu",
-    "upload image": "prześlij obraz"
+    "upload image": "prześlij obraz",
+    "Could not fetch settings": "Nie udało się pobrać ustawień",
+    "Could not set settings": "Nie można skonfigurować ustawień",
+    "Image successfully set as new background": "Obraz pomyślnie ustawiony jako nowe tło",
+    "Rename your image first. This filename is reserved for the App core image": "Najpierw zmień nazwę swojego obrazu. Ta nazwa pliku jest zarezerwowana dla obrazu rdzenia aplikacji",
+    "Choose an Image!": "Wybierz obraz!",
+    "upload error": "błąd przesyłania",
+    "this image can not be deleted because it is an App core image": "tego obrazu nie można usunąć, ponieważ jest to obraz rdzenia aplikacji",
+    "HTML-code copied": "Skopiowano kod HTML"
 },"pluralForm" :"nplurals=3; plural=(n == 1) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);"
 }

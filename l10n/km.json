@@ -55,6 +55,14 @@
     "close upload background image": "បិទរូបភាពផ្ទៃខាងក្រោយផ្ទុកឡើង",
     "upload background image": "ផ្ទុកឡើងរូបភាពផ្ទៃខាងក្រោយ",
     "close upload image": "បិទរូបភាពផ្ទុកឡើង",
-    "upload image": "ផ្ទុកឡើងរូបភាព"
+    "upload image": "ផ្ទុកឡើងរូបភាព",
+    "Could not fetch settings": "មិនអាចទៅយកការកំណត់បានទេ។",
+    "Could not set settings": "មិនអាចកំណត់ការកំណត់បានទេ។",
+    "Image successfully set as new background": "កំណត់រូបភាពជាផ្ទៃខាងក្រោយថ្មីដោយជោគជ័យ",
+    "Rename your image first. This filename is reserved for the App core image": "ប្តូរឈ្មោះរូបភាពរបស់អ្នកជាមុនសិន។ ឈ្មោះឯកសារនេះត្រូវបានបម្រុងទុកសម្រាប់រូបភាពស្នូលកម្មវិធី",
+    "Choose an Image!": "ជ្រើសរើសរូបភាព!",
+    "upload error": "កំហុសក្នុងការបង្ហោះ",
+    "this image can not be deleted because it is an App core image": "រូបភាព​នេះ​មិន​អាច​ត្រូវ​បាន​លុប​បាន​ទេ​ព្រោះ​វា​ជា​រូបភាព​ស្នូល​របស់​កម្មវិធី",
+    "HTML-code copied": "កូដ HTML ត្រូវបានចម្លង"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

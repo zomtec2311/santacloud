@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "배경 이미지 업로드 닫기",
     "upload background image": "배경 이미지 업로드",
     "close upload image": "업로드 이미지 닫기",
-    "upload image": "이미지 업로드"
+    "upload image": "이미지 업로드",
+    "Could not fetch settings": "설정을 가져올 수 없습니다.",
+    "Could not set settings": "설정을 지정할 수 없습니다.",
+    "Image successfully set as new background": "이미지가 새 배경으로 설정되었습니다.",
+    "Rename your image first. This filename is reserved for the App core image": "먼저 이미지의 이름을 바꾸세요. 이 파일 이름은 앱 코어 이미지용으로 예약되어 있습니다.",
+    "Choose an Image!": "이미지를 선택하세요!",
+    "upload error": "업로드 오류",
+    "this image can not be deleted because it is an App core image": "이 이미지는 앱 코어 이미지이므로 삭제할 수 없습니다.",
+    "HTML-code copied": "HTML 코드 복사됨"
 },
 "nplurals=1; plural=0;");

@@ -55,6 +55,14 @@
     "close upload background image": "ปิดการอัพโหลดภาพพื้นหลัง",
     "upload background image": "อัพโหลดภาพพื้นหลัง",
     "close upload image": "ปิดการอัพโหลดรูปภาพ",
-    "upload image": "อัพโหลดภาพ"
+    "upload image": "อัพโหลดภาพ",
+    "Could not fetch settings": "ไม่สามารถดึงข้อมูลการตั้งค่าได้",
+    "Could not set settings": "ไม่สามารถตั้งค่าได้",
+    "Image successfully set as new background": "ตั้งค่ารูปภาพเป็นพื้นหลังใหม่สำเร็จแล้ว",
+    "Rename your image first. This filename is reserved for the App core image": "เปลี่ยนชื่อรูปภาพของคุณก่อน ชื่อไฟล์นี้สงวนไว้สำหรับอิมเมจหลักของแอป",
+    "Choose an Image!": "เลือกรูปภาพ!",
+    "upload error": "ข้อผิดพลาดในการอัปโหลด",
+    "this image can not be deleted because it is an App core image": "ไม่สามารถลบรูปภาพนี้ได้เนื่องจากเป็นรูปภาพหลักของแอป",
+    "HTML-code copied": "คัดลอกโค้ด HTML แล้ว"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

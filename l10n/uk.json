@@ -55,6 +55,14 @@
     "close upload background image": "закрити фонове зображення для завантаження",
     "upload background image": "завантажити фонове зображення",
     "close upload image": "закрити зображення для завантаження",
-    "upload image": "завантажити зображення"
+    "upload image": "завантажити зображення",
+    "Could not fetch settings": "Не вдалося отримати налаштування",
+    "Could not set settings": "Не вдалося встановити налаштування",
+    "Image successfully set as new background": "Зображення успішно встановлено як нове тло",
+    "Rename your image first. This filename is reserved for the App core image": "Спочатку перейменуйте своє зображення. Це ім’я файлу зарезервовано для основного образу програми",
+    "Choose an Image!": "Виберіть зображення!",
+    "upload error": "помилка завантаження",
+    "this image can not be deleted because it is an App core image": "це зображення не можна видалити, оскільки це зображення ядра програми",
+    "HTML-code copied": "HTML-код скопійовано"
 },"pluralForm" :"nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);"
 }

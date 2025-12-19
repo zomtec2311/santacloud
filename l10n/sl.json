@@ -55,6 +55,14 @@
     "close upload background image": "zapri nalaganje ozadja",
     "upload background image": "naloži sliko ozadja",
     "close upload image": "zapri nalaganje slike",
-    "upload image": "naloži sliko"
+    "upload image": "naloži sliko",
+    "Could not fetch settings": "Ni bilo mogoče pridobiti nastavitev",
+    "Could not set settings": "Nastavitev ni bilo mogoče nastaviti",
+    "Image successfully set as new background": "Slika je bila uspešno nastavljena kot novo ozadje",
+    "Rename your image first. This filename is reserved for the App core image": "Najprej preimenujte svojo sliko. To ime datoteke je rezervirano za sliko jedra aplikacije",
+    "Choose an Image!": "Izberite sliko!",
+    "upload error": "napaka pri nalaganju",
+    "this image can not be deleted because it is an App core image": "te slike ni mogoče izbrisati, ker je osrednja slika aplikacije",
+    "HTML-code copied": "HTML-koda je kopirana"
 },"pluralForm" :"nplurals=4; plural=(n % 100 == 1) ? 0 : ((n % 100 == 2) ? 1 : ((n % 100 == 3 || n % 100 == 4) ? 2 : 3));"
 }

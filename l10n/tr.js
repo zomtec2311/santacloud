@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "arka plan resmini yüklemeyi kapat",
     "upload background image": "arka plan resmini yükle",
     "close upload image": "resmi yüklemeyi kapat",
-    "upload image": "resim yükle"
+    "upload image": "resim yükle",
+    "Could not fetch settings": "Ayarlar getirilemedi",
+    "Could not set settings": "Ayarlar yapılamadı",
+    "Image successfully set as new background": "Resim başarıyla yeni arka plan olarak ayarlandı",
+    "Rename your image first. This filename is reserved for the App core image": "Önce resminizi yeniden adlandırın. Bu dosya adı Uygulama çekirdek görüntüsü için ayrılmıştır",
+    "Choose an Image!": "Bir Resim Seçin!",
+    "upload error": "yükleme hatası",
+    "this image can not be deleted because it is an App core image": "Bu resim bir Uygulama çekirdek resmi olduğu için silinemez",
+    "HTML-code copied": "HTML kodu kopyalandı"
 },
 "nplurals=2; plural=n != 1;");

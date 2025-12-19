@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "uždaryti fono paveikslėlio įkėlimą",
     "upload background image": "įkelti fono paveikslėlį",
     "close upload image": "uždaryti įkėlimo vaizdą",
-    "upload image": "įkelti vaizdą"
+    "upload image": "įkelti vaizdą",
+    "Could not fetch settings": "Nepavyko gauti nustatymų",
+    "Could not set settings": "Nepavyko nustatyti nustatymų",
+    "Image successfully set as new background": "Vaizdas sėkmingai nustatytas kaip naujas fonas",
+    "Rename your image first. This filename is reserved for the App core image": "Pirmiausia pervardykite vaizdą. Šis failo pavadinimas yra skirtas pagrindiniam programos vaizdui",
+    "Choose an Image!": "Pasirinkite vaizdą!",
+    "upload error": "įkėlimo klaida",
+    "this image can not be deleted because it is an App core image": "šio vaizdo negalima ištrinti, nes tai yra programos pagrindinis vaizdas",
+    "HTML-code copied": "HTML kodas nukopijuotas"
 },
 "nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > 19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? 1 : 2);");

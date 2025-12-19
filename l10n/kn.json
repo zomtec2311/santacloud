@@ -55,6 +55,14 @@
     "close upload background image": "ಅಪ್ಲೋಡ್ ಹಿನ್ನೆಲೆ ಚಿತ್ರವನ್ನು ಮುಚ್ಚಿ",
     "upload background image": "ಹಿನ್ನೆಲೆ ಚಿತ್ರವನ್ನು ಅಪ್ಲೋಡ್ ಮಾಡಿ",
     "close upload image": "ಅಪ್‌ಲೋಡ್ ಚಿತ್ರವನ್ನು ಮುಚ್ಚಿ",
-    "upload image": "ಚಿತ್ರವನ್ನು ಅಪ್ಲೋಡ್ ಮಾಡಿ"
+    "upload image": "ಚಿತ್ರವನ್ನು ಅಪ್ಲೋಡ್ ಮಾಡಿ",
+    "Could not fetch settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತರಲಾಗಲಿಲ್ಲ",
+    "Could not set settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಹೊಂದಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ",
+    "Image successfully set as new background": "ಚಿತ್ರವನ್ನು ಹೊಸ ಹಿನ್ನೆಲೆಯಾಗಿ ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ",
+    "Rename your image first. This filename is reserved for the App core image": "ಮೊದಲು ನಿಮ್ಮ ಚಿತ್ರವನ್ನು ಮರುಹೆಸರಿಸಿ. ಈ ಫೈಲ್ ಹೆಸರನ್ನು ಆಪ್ ಕೋರ್ ಚಿತ್ರಕ್ಕಾಗಿ ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ",
+    "Choose an Image!": "ಚಿತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ!",
+    "upload error": "ಅಪ್ಲೋಡ್ ದೋಷ",
+    "this image can not be deleted because it is an App core image": "ಈ ಚಿತ್ರವನ್ನು ಅಳಿಸಲಾಗುವುದಿಲ್ಲ ಏಕೆಂದರೆ ಇದು ಅಪ್ಲಿಕೇಶನ್ ಕೋರ್ ಚಿತ್ರವಾಗಿದೆ",
+    "HTML-code copied": "HTML-ಕೋಡ್ ನಕಲಿಸಲಾಗಿದೆ"
 },"pluralForm" :"nplurals=2; plural=n > 1;"
 }

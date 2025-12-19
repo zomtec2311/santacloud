@@ -55,6 +55,14 @@
     "close upload background image": "închide imaginea de fundal",
     "upload background image": "încărcați imaginea de fundal",
     "close upload image": "închide imaginea de încărcare",
-    "upload image": "încărcați imaginea"
+    "upload image": "încărcați imaginea",
+    "Could not fetch settings": "Nu s-au putut prelua setările",
+    "Could not set settings": "Nu s-au putut seta setările",
+    "Image successfully set as new background": "Imaginea a fost setată cu succes ca fundal nou",
+    "Rename your image first. This filename is reserved for the App core image": "Redenumiți mai întâi imaginea. Acest nume de fișier este rezervat pentru imaginea de bază a aplicației",
+    "Choose an Image!": "Alege o imagine!",
+    "upload error": "eroare de încărcare",
+    "this image can not be deleted because it is an App core image": "această imagine nu poate fi ștearsă deoarece este o imagine de bază a aplicației",
+    "HTML-code copied": "Cod HTML copiat"
 },"pluralForm" :"nplurals=3; plural=(n == 1) ? 0 : ((n == 0 || n != 1 && n % 100 >= 1 && n % 100 <= 19) ? 1 : 2);"
 }

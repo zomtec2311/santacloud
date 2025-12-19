@@ -55,6 +55,14 @@
     "close upload background image": "zárja be a háttérkép feltöltését",
     "upload background image": "háttérkép feltöltése",
     "close upload image": "bezárja a feltöltött képet",
-    "upload image": "kép feltöltése"
+    "upload image": "kép feltöltése",
+    "Could not fetch settings": "Nem sikerült lekérni a beállításokat",
+    "Could not set settings": "Nem sikerült beállítani a beállításokat",
+    "Image successfully set as new background": "A kép sikeresen beállítva új háttérként",
+    "Rename your image first. This filename is reserved for the App core image": "Először nevezze át a képet. Ez a fájlnév az alkalmazás alapképének van fenntartva",
+    "Choose an Image!": "Válassz egy képet!",
+    "upload error": "feltöltési hiba",
+    "this image can not be deleted because it is an App core image": "ezt a képet nem lehet törölni, mert egy alkalmazás alapképe",
+    "HTML-code copied": "HTML-kód másolva"
 },"pluralForm" :"nplurals=2; plural=n != 1;"
 }

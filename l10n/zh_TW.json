@@ -55,6 +55,14 @@
     "close upload background image": "關閉上傳背景圖片",
     "upload background image": "上傳背景圖片",
     "close upload image": "關閉上傳圖片",
-    "upload image": "上傳圖片"
+    "upload image": "上傳圖片",
+    "Could not fetch settings": "無法獲取設置",
+    "Could not set settings": "無法設置設置",
+    "Image successfully set as new background": "圖像成功設置為新背景",
+    "Rename your image first. This filename is reserved for the App core image": "首先重命名您的圖像。該文件名是為App核心鏡像保留的",
+    "Choose an Image!": "選擇一個圖像！",
+    "upload error": "上傳錯誤",
+    "this image can not be deleted because it is an App core image": "該鏡像無法刪除，因為它是App核心鏡像",
+    "HTML-code copied": "已復制 HTML 代碼"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

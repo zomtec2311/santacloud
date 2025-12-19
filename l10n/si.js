@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "උඩුගත පසුබිම් රූපය වසන්න",
     "upload background image": "පසුබිම් රූපය උඩුගත කරන්න",
     "close upload image": "උඩුගත රූපය වසන්න",
-    "upload image": "රූපය උඩුගත කරන්න"
+    "upload image": "රූපය උඩුගත කරන්න",
+    "Could not fetch settings": "සැකසීම් ලබා ගැනීමට නොහැකි විය",
+    "Could not set settings": "සැකසීම් සැකසීමට නොහැකි විය",
+    "Image successfully set as new background": "රූපය නව පසුබිමක් ලෙස සාර්ථකව සකසා ඇත",
+    "Rename your image first. This filename is reserved for the App core image": "මුලින්ම ඔබේ රූපය නැවත නම් කරන්න. මෙම ගොනු නාමය යෙදුම් මූලික රූපය සඳහා වෙන් කර ඇත",
+    "Choose an Image!": "රූපයක් තෝරන්න!",
+    "upload error": "උඩුගත කිරීමේ දෝෂය",
+    "this image can not be deleted because it is an App core image": "මෙම පින්තුරය App core පින්තුරයක් නිසා මකා දැමිය නොහැක",
+    "HTML-code copied": "HTML-කේතය පිටපත් කර ඇත"
 },
 "nplurals=2; plural=n > 1;");

@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "Байршуулах арын дэвсгэрийг хаах",
     "upload background image": "Арын дэвсгэр зургийг байршуулах",
     "close upload image": "Байршуулах зургийг хаах",
-    "upload image": "Зургийг байршуулах"
+    "upload image": "Зургийг байршуулах",
+    "Could not fetch settings": "Тохиргоог татаж чадсангүй",
+    "Could not set settings": "Тохиргоог тохируулж чадсангүй",
+    "Image successfully set as new background": "Зургийг шинэ дэвсгэр болгож амжилттай тохирууллаа",
+    "Rename your image first. This filename is reserved for the App core image": "Эхлээд зургийнхаа нэрийг өөрчил. Энэ файлын нэрийг Апп-ын үндсэн зурагт зориулж хадгалсан",
+    "Choose an Image!": "Зураг сонгоно уу!",
+    "upload error": "байршуулах алдаа",
+    "this image can not be deleted because it is an App core image": "Энэ зураг нь програмын үндсэн зураг тул устгах боломжгүй",
+    "HTML-code copied": "HTML кодыг хуулсан"
 },
 "nplurals=2; plural=n != 1;");

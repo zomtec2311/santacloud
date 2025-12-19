@@ -55,6 +55,14 @@
     "close upload background image": "đóng hình nền tải lên",
     "upload background image": "tải hình nền lên",
     "close upload image": "đóng hình ảnh tải lên",
-    "upload image": "tải hình ảnh lên"
+    "upload image": "tải hình ảnh lên",
+    "Could not fetch settings": "Không thể tìm nạp cài đặt",
+    "Could not set settings": "Không thể đặt cài đặt",
+    "Image successfully set as new background": "Hình ảnh được đặt thành công làm nền mới",
+    "Rename your image first. This filename is reserved for the App core image": "Đổi tên hình ảnh của bạn đầu tiên. Tên tệp này được dành riêng cho hình ảnh lõi ứng dụng",
+    "Choose an Image!": "Chọn một hình ảnh!",
+    "upload error": "lỗi tải lên",
+    "this image can not be deleted because it is an App core image": "Không thể xóa hình ảnh này vì nó là hình ảnh cốt lõi của Ứng dụng",
+    "HTML-code copied": "Đã sao chép mã HTML"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

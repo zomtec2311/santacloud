@@ -56,6 +56,14 @@ OC.L10N.register(
     "close upload background image": "يۈكلەش تەگلىك سۈرىتىنى تاقاڭ",
     "upload background image": "تەگلىك سۈرىتىنى يۈكلەڭ",
     "close upload image": "يۈكلەش رەسىمنى تاقاڭ",
-    "upload image": "رەسىم يوللاڭ"
+    "upload image": "رەسىم يوللاڭ",
+    "Could not fetch settings": "تەڭشەكلەرنى ئېلىپ كېلەلمىدى",
+    "Could not set settings": "تەڭشەكلەرنى تەڭشىگىلى بولمىدى",
+    "Image successfully set as new background": "رەسىم مۇۋەپپەقىيەتلىك ھالدا يېڭى تەگلىك قىلىپ بېكىتىلدى",
+    "Rename your image first. This filename is reserved for the App core image": "ئالدى بىلەن رەسىمىڭىزنىڭ نامىنى ئۆزگەرتىڭ. بۇ ھۆججەت ئىسمى App يادرولۇق رەسىمى ئۈچۈن ساقلانغان",
+    "Choose an Image!": "رەسىم تاللاڭ!",
+    "upload error": "يۈكلەش خاتالىقى",
+    "this image can not be deleted because it is an App core image": "بۇ رەسىمنى ئۆچۈرگىلى بولمايدۇ ، چۈنكى ئۇ App يادرولۇق رەسىمى",
+    "HTML-code copied": "HTML- كود كۆچۈرۈلدى"
 },
 "nplurals=2; plural=n != 1;");
