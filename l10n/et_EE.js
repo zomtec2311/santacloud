@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "sule taustapildi üleslaadimine",
     "upload background image": "laadige üles taustpilt",
     "close upload image": "sule üleslaaditav pilt",
-    "upload image": "laadige pilt üles"
+    "upload image": "laadige pilt üles",
+    "Could not fetch settings": "Seadeid ei saanud tuua",
+    "Could not set settings": "Seadeid ei saanud määrata",
+    "Image successfully set as new background": "Pilt õnnestus uueks taustaks seadistada",
+    "Rename your image first. This filename is reserved for the App core image": "Esmalt nimetage pilt ümber. See failinimi on reserveeritud rakenduse põhipildi jaoks",
+    "Choose an Image!": "Valige pilt!",
+    "upload error": "üleslaadimise viga",
+    "this image can not be deleted because it is an App core image": "seda pilti ei saa kustutada, kuna see on rakenduse põhipilt",
+    "HTML-code copied": "HTML-kood kopeeritud"
 },
 "nplurals=2; plural=n != 1;");

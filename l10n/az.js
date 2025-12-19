@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "Fon şəklini bağlayın",
     "upload background image": "Fon şəkli yükləyin",
     "close upload image": "Yükləmə şəklini bağlayın",
-    "upload image": "Şəkil yükləyin"
+    "upload image": "Şəkil yükləyin",
+    "Could not fetch settings": "Parametrləri əldə etmək mümkün olmadı",
+    "Could not set settings": "Parametrləri təyin etmək mümkün olmadı",
+    "Image successfully set as new background": "Şəkil uğurla yeni fon kimi quruldu",
+    "Rename your image first. This filename is reserved for the App core image": "Əvvəlcə şəklinizin adını dəyişin. Bu fayl adı Proqramın əsas təsviri üçün qorunur",
+    "Choose an Image!": "Şəkil seçin!",
+    "upload error": "yükləmə xətası",
+    "this image can not be deleted because it is an App core image": "bu şəkil silinə bilməz, çünki o, Tətbiqin əsas şəklidir",
+    "HTML-code copied": "HTML kodu kopyalandı"
 },
 "nplurals=2; plural=n != 1;");

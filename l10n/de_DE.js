@@ -44,7 +44,7 @@ OC.L10N.register(
     "I understood. Do not show the message above again." : "Ich habe verstanden. Zeige obige Mitteilung nicht wieder.",
     "Attention!!!" : "Achtung!!!",
     "Copied!" : "Kopiert!",
-        "open image in a new tab": "Bild in einem neuen Tab öffnen",
+    "open image in a new tab": "Bild in einem neuen Tab öffnen",
     "delete": "löschen",
     "do you really want to delete this image?": "Möchten Sie dieses Bild wirklich löschen?",
     "image fetched": "Bild abgerufen",
@@ -56,6 +56,14 @@ OC.L10N.register(
     "close upload background image": "Hintergrundbild hochladen schließen",
     "upload background image": "Hintergrundbild hochladen",
     "close upload image": "Bild hochladen schließen",
-    "upload image": "Bild hochladen"
+    "upload image": "Bild hochladen",
+    "Could not fetch settings": "Die Einstellungen konnten nicht abgerufen werden",
+    "Could not set settings": "Einstellungen konnten nicht vorgenommen werden",
+    "Image successfully set as new background": "Bild erfolgreich als neuer Hintergrund festgelegt",
+    "Rename your image first. This filename is reserved for the App core image": "Benennen Sie zunächst Ihr Bild um. Dieser Dateiname ist für das App-Core-Bild reserviert",
+    "Choose an Image!": "Wählen Sie ein Bild!",
+    "upload error": "Fehler beim Hochladen",
+    "this image can not be deleted because it is an App core image": "Dieses Bild kann nicht gelöscht werden, da es sich um ein App-Core-Bild handelt",
+    "HTML-code copied": "HTML-Code kopiert"
 },
 "nplurals=2; plural=(n != 1);");

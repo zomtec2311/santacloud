@@ -49,6 +49,14 @@
     "Could not fetch images": "Could not fetch images",
     "Image successfully deleted!": "Image successfully deleted!",
     "Could not delete image:": "Could not delete image:",
-    "Image uploaded" : "Image uploaded"
+    "Image uploaded" : "Image uploaded",
+    "Could not fetch settings": "Could not fetch settings",
+    "Could not set settings": "Could not set settings",
+    "Image successfully set as new background": "Image successfully set as new background",
+    "Rename your image first. This filename is reserved for the App core image": "Rename your image first. This filename is reserved for the App core image",
+    "Choose an Image!": "Choose an Image!",
+    "upload error": "upload error",
+    "this image can not be deleted because it is an App core image": "this image can not be deleted because it is an App core image",
+    "HTML-code copied": "HTML-code copied"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

@@ -54,6 +54,14 @@
     "close upload background image": "Hintergrundbild hochladen schließen",
     "upload background image": "Hintergrundbild hochladen",
     "close upload image": "Bild hochladen schließen",
-    "upload image": "Bild hochladen"
+    "upload image": "Bild hochladen",
+    "Could not fetch settings": "Die Einstellungen konnten nicht abgerufen werden",
+    "Could not set settings": "Einstellungen konnten nicht vorgenommen werden",
+    "Image successfully set as new background": "Bild erfolgreich als neuer Hintergrund festgelegt",
+    "Rename your image first. This filename is reserved for the App core image": "Benennen Sie zunächst Ihr Bild um. Dieser Dateiname ist für das App-Core-Bild reserviert",
+    "Choose an Image!": "Wählen Sie ein Bild!",
+    "upload error": "Fehler beim Hochladen",
+    "this image can not be deleted because it is an App core image": "Dieses Bild kann nicht gelöscht werden, da es sich um ein App-Core-Bild handelt",
+    "HTML-code copied": "HTML-Code kopiert"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

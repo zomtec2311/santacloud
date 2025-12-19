@@ -55,6 +55,14 @@
     "close upload background image": "zavřít nahrát obrázek na pozadí",
     "upload background image": "nahrát obrázek na pozadí",
     "close upload image": "zavřít nahrání obrázku",
-    "upload image": "nahrát obrázek"
+    "upload image": "nahrát obrázek",
+    "Could not fetch settings": "Nastavení se nepodařilo načíst",
+    "Could not set settings": "Nastavení nelze nastavit",
+    "Image successfully set as new background": "Obrázek byl úspěšně nastaven jako nové pozadí",
+    "Rename your image first. This filename is reserved for the App core image": "Nejprve přejmenujte obrázek. Tento název souboru je vyhrazen pro bitovou kopii jádra aplikace",
+    "Choose an Image!": "Vyberte obrázek!",
+    "upload error": "chyba nahrávání",
+    "this image can not be deleted because it is an App core image": "tento obrázek nelze smazat, protože se jedná o základní obrázek aplikace",
+    "HTML-code copied": "HTML kód zkopírován"
 },"pluralForm" :"nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : 2);"
 }

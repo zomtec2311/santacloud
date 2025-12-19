@@ -55,6 +55,14 @@
     "close upload background image": "κλείστε τη μεταφόρτωση εικόνας φόντου",
     "upload background image": "ανεβάστε εικόνα φόντου",
     "close upload image": "κλείσιμο μεταφόρτωσης εικόνας",
-    "upload image": "ανεβάστε εικόνα"
+    "upload image": "ανεβάστε εικόνα",
+    "Could not fetch settings": "Δεν ήταν δυνατή η ανάκτηση ρυθμίσεων",
+    "Could not set settings": "Δεν ήταν δυνατός ο ορισμός των ρυθμίσεων",
+    "Image successfully set as new background": "Η εικόνα ορίστηκε επιτυχώς ως νέο φόντο",
+    "Rename your image first. This filename is reserved for the App core image": "Μετονομάστε πρώτα την εικόνα σας. Αυτό το όνομα αρχείου είναι δεσμευμένο για την εικόνα του πυρήνα της εφαρμογής",
+    "Choose an Image!": "Επιλέξτε μια εικόνα!",
+    "upload error": "σφάλμα μεταφόρτωσης",
+    "this image can not be deleted because it is an App core image": "Αυτή η εικόνα δεν μπορεί να διαγραφεί επειδή είναι μια εικόνα πυρήνα εφαρμογής",
+    "HTML-code copied": "Ο κώδικας HTML αντιγράφηκε"
 },"pluralForm" :"nplurals=2; plural=n != 1;"
 }

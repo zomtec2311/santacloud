@@ -55,6 +55,14 @@
     "close upload background image": "tanca la càrrega de la imatge de fons",
     "upload background image": "carregar la imatge de fons",
     "close upload image": "tancar la pujada de la imatge",
-    "upload image": "puja la imatge"
+    "upload image": "puja la imatge",
+    "Could not fetch settings": "No s'ha pogut obtenir la configuració",
+    "Could not set settings": "No s'ha pogut establir la configuració",
+    "Image successfully set as new background": "La imatge s'ha establert correctament com a fons nou",
+    "Rename your image first. This filename is reserved for the App core image": "Primer canvieu el nom de la vostra imatge. Aquest nom de fitxer està reservat per a la imatge principal de l'aplicació",
+    "Choose an Image!": "Tria una imatge!",
+    "upload error": "error de càrrega",
+    "this image can not be deleted because it is an App core image": "aquesta imatge no es pot suprimir perquè és una imatge bàsica de l'aplicació",
+    "HTML-code copied": "Codi HTML copiat"
 },"pluralForm" :"nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == 0) ? 1 : 2);"
 }

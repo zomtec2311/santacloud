@@ -55,6 +55,14 @@
     "close upload background image": "cau delwedd gefndir lanlwytho",
     "upload background image": "uwchlwytho delwedd gefndir",
     "close upload image": "cau delwedd uwchlwytho",
-    "upload image": "uwchlwytho delwedd"
+    "upload image": "uwchlwytho delwedd",
+    "Could not fetch settings": "Methu nôl gosodiadau",
+    "Could not set settings": "Methu gosod gosodiadau",
+    "Image successfully set as new background": "Delwedd wedi'i gosod yn llwyddiannus fel cefndir newydd",
+    "Rename your image first. This filename is reserved for the App core image": "Ail-enwi eich delwedd yn gyntaf. Mae'r enw ffeil hwn wedi'i gadw ar gyfer delwedd graidd yr App",
+    "Choose an Image!": "Dewiswch Ddelwedd!",
+    "upload error": "gwall llwytho i fyny",
+    "this image can not be deleted because it is an App core image": "ni ellir dileu'r ddelwedd hon oherwydd ei fod yn ddelwedd graidd App",
+    "HTML-code copied": "Cod HTML wedi'i gopïo"
 },"pluralForm" :"nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n == 3) ? 3 : ((n == 6) ? 4 : 5))));"
 }

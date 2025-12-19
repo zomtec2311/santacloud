@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "maak oplaai agtergrond beeld toe",
     "upload background image": "laai agtergrondprent op",
     "close upload image": "maak oplaai prent toe",
-    "upload image": "prent oplaai"
+    "upload image": "prent oplaai",
+    "Could not fetch settings": "Kon nie instellings gaan haal nie",
+    "Could not set settings": "Kon nie instellings stel nie",
+    "Image successfully set as new background": "Prent suksesvol gestel as nuwe agtergrond",
+    "Rename your image first. This filename is reserved for the App core image": "Hernoem eers jou prent. Hierdie lêernaam is gereserveer vir die App-kernprent",
+    "Choose an Image!": "Kies 'n prent!",
+    "upload error": "oplaai fout",
+    "this image can not be deleted because it is an App core image": "hierdie prent kan nie uitgevee word nie, want dit is 'n App-kernprent",
+    "HTML-code copied": "HTML-kode gekopieer"
 },
 "nplurals=2; plural=n != 1;");

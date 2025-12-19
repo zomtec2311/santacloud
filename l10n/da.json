@@ -55,6 +55,14 @@
     "close upload background image": "luk upload baggrundsbillede",
     "upload background image": "upload baggrundsbillede",
     "close upload image": "luk upload billede",
-    "upload image": "upload billede"
+    "upload image": "upload billede",
+    "Could not fetch settings": "Indstillingerne kunne ikke hentes",
+    "Could not set settings": "Kunne ikke indstille indstillinger",
+    "Image successfully set as new background": "Billedet blev indstillet som ny baggrund",
+    "Rename your image first. This filename is reserved for the App core image": "Omdøb først dit billede. Dette filnavn er reserveret til app-kernebilledet",
+    "Choose an Image!": "Vælg et billede!",
+    "upload error": "upload fejl",
+    "this image can not be deleted because it is an App core image": "dette billede kan ikke slettes, fordi det er et app-kernebillede",
+    "HTML-code copied": "HTML-kode kopieret"
 },"pluralForm" :"nplurals=2; plural=n != 1;"
 }

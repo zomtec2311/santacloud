@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "cerrar subir imagen de fondo",
     "upload background image": "subir imagen de fondo",
     "close upload image": "cerrar subir imagen",
-    "upload image": "subir imagen"
+    "upload image": "subir imagen",
+    "Could not fetch settings": "No se pudo recuperar la configuración",
+    "Could not set settings": "No se pudo establecer la configuración",
+    "Image successfully set as new background": "Imagen configurada correctamente como nuevo fondo",
+    "Rename your image first. This filename is reserved for the App core image": "Cambie el nombre de su imagen primero. Este nombre de archivo está reservado para la imagen principal de la aplicación.",
+    "Choose an Image!": "¡Elige una imagen!",
+    "upload error": "error de carga",
+    "this image can not be deleted because it is an App core image": "Esta imagen no se puede eliminar porque es una imagen principal de la aplicación.",
+    "HTML-code copied": "Código HTML copiado"
 },
 "nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == 0) ? 1 : 2);");

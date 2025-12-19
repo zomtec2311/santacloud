@@ -54,6 +54,14 @@
     "close upload background image": "بستن تصویر پس زمینه آپلود",
     "upload background image": "آپلود تصویر پس زمینه",
     "close upload image": "بستن تصویر آپلود",
-    "upload image": "آپلود تصویر"
+    "upload image": "آپلود تصویر",
+    "Could not fetch settings": "تنظیمات واکشی نشد",
+    "Could not set settings": "تنظیمات انجام نشد",
+    "Image successfully set as new background": "تصویر با موفقیت به عنوان پس‌زمینه جدید تنظیم شد",
+    "Rename your image first. This filename is reserved for the App core image": "ابتدا نام تصویر خود را تغییر دهید. این نام فایل برای تصویر اصلی برنامه رزرو شده است",
+    "Choose an Image!": "یک تصویر را انتخاب کنید!",
+    "upload error": "خطای آپلود",
+    "this image can not be deleted because it is an App core image": "این تصویر را نمی توان حذف کرد زیرا یک تصویر اصلی برنامه است",
+    "HTML-code copied": "کد HTML کپی شد"
 },"pluralForm" :"nplurals=2; plural=n > 1;"
 }

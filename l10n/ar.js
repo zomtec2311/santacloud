@@ -56,6 +56,14 @@ OC.L10N.register(
     "close upload background image": "إغلاق صورة خلفية التحميل",
     "upload background image": "تحميل صورة الخلفية",
     "close upload image": "إغلاق تحميل الصورة",
-    "upload image": "تحميل الصورة"
+    "upload image": "تحميل الصورة",
+    "Could not fetch settings": "تعذر جلب الإعدادات",
+    "Could not set settings": "لا يمكن ضبط الإعدادات",
+    "Image successfully set as new background": "تم تعيين الصورة كخلفية جديدة بنجاح",
+    "Rename your image first. This filename is reserved for the App core image": "إعادة تسمية صورتك أولا. اسم الملف هذا محجوز للصورة الأساسية للتطبيق",
+    "Choose an Image!": "اختر صورة!",
+    "upload error": "خطأ في التحميل",
+    "this image can not be deleted because it is an App core image": "لا يمكن حذف هذه الصورة لأنها صورة أساسية للتطبيق",
+    "HTML-code copied": "تم نسخ كود HTML"
 },
 "nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n % 100 >= 3 && n % 100 <= 10) ? 3 : ((n % 100 >= 11 && n % 100 <= 99) ? 4 : 5))));");

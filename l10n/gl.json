@@ -55,6 +55,14 @@
     "close upload background image": "pechar a imaxe de fondo de carga",
     "upload background image": "cargar imaxe de fondo",
     "close upload image": "pechar a carga da imaxe",
-    "upload image": "cargar imaxe"
+    "upload image": "cargar imaxe",
+    "Could not fetch settings": "Non se puido recuperar a configuración",
+    "Could not set settings": "Non se puido establecer a configuración",
+    "Image successfully set as new background": "A imaxe definiuse correctamente como fondo novo",
+    "Rename your image first. This filename is reserved for the App core image": "Cambia o nome da túa imaxe primeiro. Este nome de ficheiro está reservado para a imaxe principal da aplicación",
+    "Choose an Image!": "Escolle unha imaxe!",
+    "upload error": "erro de carga",
+    "this image can not be deleted because it is an App core image": "esta imaxe non se pode eliminar porque é unha imaxe principal da aplicación",
+    "HTML-code copied": "Copiouse o código HTML"
 },"pluralForm" :"nplurals=2; plural=n != 1;"
 }

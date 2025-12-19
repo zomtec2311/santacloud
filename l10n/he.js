@@ -56,6 +56,14 @@ OC.L10N.register(
     "close upload background image": "סגור תמונת רקע להעלאה",
     "upload background image": "להעלות תמונת רקע",
     "close upload image": "סגור תמונת העלאה",
-    "upload image": "להעלות תמונה"
+    "upload image": "להעלות תמונה",
+    "Could not fetch settings": "לא ניתן היה להביא הגדרות",
+    "Could not set settings": "לא ניתן להגדיר הגדרות",
+    "Image successfully set as new background": "התמונה הוגדרה בהצלחה כרקע חדש",
+    "Rename your image first. This filename is reserved for the App core image": "תחילה שנה את שם התמונה שלך. שם קובץ זה שמור לתמונת ליבת האפליקציה",
+    "Choose an Image!": "בחר תמונה!",
+    "upload error": "שגיאת העלאה",
+    "this image can not be deleted because it is an App core image": "לא ניתן למחוק תמונה זו מכיוון שהיא תמונת ליבה של האפליקציה",
+    "HTML-code copied": "קוד HTML הועתק"
 },
 "nplurals=3; plural=(n == 1) ? 0 : ((n == 2) ? 1 : 2);");

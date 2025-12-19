@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "আপলোড ব্যাকগ্রাউন্ড ইমেজ বন্ধ করুন",
     "upload background image": "ব্যাকগ্রাউন্ড ইমেজ আপলোড করুন",
     "close upload image": "আপলোড ছবি বন্ধ করুন",
-    "upload image": "ছবি আপলোড করুন"
+    "upload image": "ছবি আপলোড করুন",
+    "Could not fetch settings": "সেটিংস আনা যায়নি",
+    "Could not set settings": "সেটিংস সেট করা যায়নি",
+    "Image successfully set as new background": "ছবি সফলভাবে নতুন ব্যাকগ্রাউন্ড হিসেবে সেট করা হয়েছে",
+    "Rename your image first. This filename is reserved for the App core image": "প্রথমে আপনার ছবির নাম পরিবর্তন করুন। এই ফাইলের নামটি অ্যাপের মূল ছবির জন্য সংরক্ষিত",
+    "Choose an Image!": "একটি ছবি চয়ন করুন!",
+    "upload error": "আপলোড ত্রুটি",
+    "this image can not be deleted because it is an App core image": "এই ছবিটি মুছে ফেলা যাবে না কারণ এটি একটি অ্যাপ কোর ছবি",
+    "HTML-code copied": "HTML-কোড কপি করা হয়েছে"
 },
 "nplurals=2; plural=n > 1;");

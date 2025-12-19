@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "fermu alŝutu fonbildon",
     "upload background image": "alŝutu fonbildon",
     "close upload image": "fermu alŝuti bildon",
-    "upload image": "alŝutu bildon"
+    "upload image": "alŝutu bildon",
+    "Could not fetch settings": "Ne eblis akiri agordojn",
+    "Could not set settings": "Ne eblis agordi agordojn",
+    "Image successfully set as new background": "Bildo sukcese agordita kiel nova fono",
+    "Rename your image first. This filename is reserved for the App core image": "Unue alinomi vian bildon. Ĉi tiu dosiernomo estas rezervita por la kerna bildo de la App",
+    "Choose an Image!": "Elektu Bildon!",
+    "upload error": "alŝuta eraro",
+    "this image can not be deleted because it is an App core image": "ĉi tiu bildo ne povas esti forigita ĉar ĝi estas App kerna bildo",
+    "HTML-code copied": "HTML-kodo kopiita"
 },
 "nplurals=2; plural=n != 1;");

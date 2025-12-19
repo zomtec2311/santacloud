@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "затворете фоновото изображение за качване",
     "upload background image": "качете фоново изображение",
     "close upload image": "затворете изображението за качване",
-    "upload image": "качи изображение"
+    "upload image": "качи изображение",
+    "Could not fetch settings": "Настройките не можаха да бъдат извлечени",
+    "Could not set settings": "Не можах да задам настройки",
+    "Image successfully set as new background": "Изображението е успешно зададено като нов фон",
+    "Rename your image first. This filename is reserved for the App core image": "Rename your image first. Това име на файл е запазено за основното изображение на приложението",
+    "Choose an Image!": "Изберете изображение!",
+    "upload error": "грешка при качване",
+    "this image can not be deleted because it is an App core image": "това изображение не може да бъде изтрито, защото е основно изображение на приложението",
+    "HTML-code copied": "HTML кодът е копиран"
 },
 "nplurals=2; plural=n != 1;");

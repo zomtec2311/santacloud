@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "serrit ar skeudenn en-dro da bellgargañ",
     "upload background image": "kargañ skeudenn an dremmwel",
     "close upload image": "serriñ ar skeudenn bellgargañ",
-    "upload image": "pellgargañ skeudenn"
+    "upload image": "pellgargañ skeudenn",
+    "Could not fetch settings": "N'haller ket kaout arventennoù",
+    "Could not set settings": "N'haller ket lakaat arventennoù",
+    "Image successfully set as new background": "Skeudenn lakaet gant berzh evel foñs nevez",
+    "Rename your image first. This filename is reserved for the App core image": "Adlakaat anv ho skeudenn da gentañ. Miret eo an anv restr-mañ evit ar skeudenn App App .",
+    "Choose an Image!": "Dibab ur skeudenn!",
+    "upload error": "fazi kargañ",
+    "this image can not be deleted because it is an App core image": "N'haller ket dilemel ar skeudenn-mañ rak ur skeudenn App App eo .",
+    "HTML-code copied": "Kodet e voe gant ar c'hod HTML"
 },
 "nplurals=5; plural=(n % 10 == 1 && n % 100 != 11 && n % 100 != 71 && n % 100 != 91) ? 0 : ((n % 10 == 2 && n % 100 != 12 && n % 100 != 72 && n % 100 != 92) ? 1 : ((((n % 10 == 3 || n % 10 == 4) || n % 10 == 9) && (n % 100 < 10 || n % 100 > 19) && (n % 100 < 70 || n % 100 > 79) && (n % 100 < 90 || n % 100 > 99)) ? 2 : ((n != 0 && n % 1000000 == 0) ? 3 : 4)));");

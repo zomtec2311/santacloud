@@ -54,6 +54,14 @@
     "close upload background image": "fermer télécharger l'image d'arrière-plan",
     "upload background image": "télécharger l'image d'arrière-plan",
     "close upload image": "fermer télécharger l'image",
-    "upload image": "télécharger une image"
+    "upload image": "télécharger une image",
+    "Could not fetch settings": "Impossible de récupérer les paramètres",
+    "Could not set settings": "Impossible de définir les paramètres",
+    "Image successfully set as new background": "Image définie avec succès comme nouvel arrière-plan",
+    "Rename your image first. This filename is reserved for the App core image": "Renommez d'abord votre image. Ce nom de fichier est réservé à l'image principale de l'application",
+    "Choose an Image!": "Choisissez une image !",
+    "upload error": "erreur de téléchargement",
+    "this image can not be deleted because it is an App core image": "cette image ne peut pas être supprimée car il s'agit d'une image principale de l'application",
+    "HTML-code copied": "Code HTML copié"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

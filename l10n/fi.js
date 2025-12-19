@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "sulje taustakuvan lataus",
     "upload background image": "lataa taustakuva",
     "close upload image": "sulje latauskuva",
-    "upload image": "lataa kuva"
+    "upload image": "lataa kuva",
+    "Could not fetch settings": "Asetuksia ei voitu hakea",
+    "Could not set settings": "Asetuksia ei voitu asettaa",
+    "Image successfully set as new background": "Kuva on asetettu uudeksi taustaksi",
+    "Rename your image first. This filename is reserved for the App core image": "Nimeä kuvasi ensin uudelleen. Tämä tiedostonimi on varattu sovelluksen ydinkuvalle",
+    "Choose an Image!": "Valitse kuva!",
+    "upload error": "latausvirhe",
+    "this image can not be deleted because it is an App core image": "tätä kuvaa ei voi poistaa, koska se on sovelluksen ydinkuva",
+    "HTML-code copied": "HTML-koodi kopioitu"
 },
 "nplurals=2; plural=n != 1;");

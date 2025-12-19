@@ -55,6 +55,14 @@
     "close upload background image": "itxi kargatu atzeko planoko irudia",
     "upload background image": "igo atzeko planoko irudia",
     "close upload image": "itxi kargatu irudia",
-    "upload image": "igo irudia"
+    "upload image": "igo irudia",
+    "Could not fetch settings": "Ezin izan dira ezarpenak eskuratu",
+    "Could not set settings": "Ezin izan dira ezarri ezarpenak",
+    "Image successfully set as new background": "Irudia behar bezala ezarri da atzeko plano berri gisa",
+    "Rename your image first. This filename is reserved for the App core image": "Aldatu izena zure irudia lehenik. Fitxategi-izen hau aplikazioaren oinarrizko irudirako gordeta dago",
+    "Choose an Image!": "Aukeratu Irudi bat!",
+    "upload error": "kargatzeko errorea",
+    "this image can not be deleted because it is an App core image": "irudi hau ezin da ezabatu aplikazioaren oinarrizko irudia delako",
+    "HTML-code copied": "HTML kodea kopiatu da"
 },"pluralForm" :"nplurals=2; plural=n != 1;"
 }

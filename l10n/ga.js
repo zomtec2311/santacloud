@@ -57,6 +57,14 @@ OC.L10N.register(
     "close upload background image": "Íosluchtaigh íomhá cúlra dúnta",
     "upload background image": "Íosluchtaigh pictiúr cúlra deisce",
     "close upload image": "Íoslódáil an íomhá a dhúnadh",
-    "upload image": "uaslódáil íomhá"
+    "upload image": "uaslódáil íomhá",
+    "Could not fetch settings": "Níorbh fhéidir socruithe a fháil",
+    "Could not set settings": "Níorbh fhéidir socruithe a shocrú",
+    "Image successfully set as new background": "D'éirigh leis an íomhá a shocrú mar chúlra nua",
+    "Rename your image first. This filename is reserved for the App core image": "Athainmnigh d'íomhá ar dtús. Tá an comhadainm seo in áirithe do chroí-íomhá an Aip",
+    "Choose an Image!": "Roghnaigh Íomhá!",
+    "upload error": "earráid uaslódáil",
+    "this image can not be deleted because it is an App core image": "ní féidir an íomhá seo a scriosadh toisc gur croí-íomhá App é",
+    "HTML-code copied": "Cóipeáladh cód HTML"
 },
 "nplurals=5; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n >= 3 && n <= 6) ? 2 : ((n >= 7 && n <= 10) ? 3 : 4)));");
