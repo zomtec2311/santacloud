@@ -47,20 +47,7 @@ You can reach the admin settings for santacloud over the Administration Settings
 <details>
   <summary><b>How to change background image?</b></summary>
 
-Take an image of your choice jpg-format and save as <code>background.jpg</code> into folder <code>apps/santacloud/img/</code>.
-
-If you want to take another format, you also have to edit <code>css/santacloud-main.css</code> about line 22
-
-```
-.cards-wrapper {
-background-image: url('../img/background.jpg');
-background-size: 100% 100%;
-max-width: 800px;
-padding: 48px;
-}
-```
-
-and don't forget to clean up browser cache</details>
+From version 1.1.0 onwards, you can upload your preferred background image via the SantaCloud Administrator settings and set it up as a new background with one click. </details>
 
 <details>
   <summary><b>All of the text is in english?</b></summary>
