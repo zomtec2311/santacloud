@@ -2,17 +2,17 @@
 <calendar>
     <days>
         <day>
-            <date>2025-12-01</date>
-            <title><![CDATA[Here You can set a Title. Take a look at day 2025-12-02 for a full example]]></title>
+            <date>2026-12-01</date>
+            <title><![CDATA[Here You can set a Title. Take a look at day 2026-12-02 for a full example]]></title>
             <description><![CDATA[
               <b>Here you can insert your wanted content for a door</b><br>
-                  You can use HTML. Images can be stored into nextcloud's appdata/santacloud/img/ folder and then use img src="YOUR-DOMAIN/apps/santacloud/image/imageABC.png" or img src="/apps/santacloud/image/imageABC.png"<br>like the example from 2025-12-02<br><p style="padding: 20px;background-color: #f44336;color: white;margin-bottom: 15px;width: 450px;font-size: 0.8em;"><b>Attention!!!</b><br>Please do not place images or other content within the app folder, as these will be lost during an update.<br>Instead, place images or other content for the Advent calendar doors in the Nextcloud appdata folder.<br><b>Very important!</b>
+                  You can use HTML. Images can be stored into nextcloud's appdata/santacloud/img/ folder and then use img src="YOUR-DOMAIN/apps/santacloud/image/imageABC.png" or img src="/apps/santacloud/image/imageABC.png"<br>like the example from 2026-12-02<br><p style="padding: 20px;background-color: #f44336;color: white;margin-bottom: 15px;width: 450px;font-size: 0.8em;"><b>Attention!!!</b><br>Please do not place images or other content within the app folder, as these will be lost during an update.<br>Instead, place images or other content for the Advent calendar doors in the Nextcloud appdata folder.<br><b>Very important!</b>
 					</p>
               ]]></description>
         </day>
 
         <day>
-            <date>2025-12-02</date>
+            <date>2026-12-02</date>
             <title><![CDATA[<center>Today a Reciep for X-Mas Cookies</center>]]></title>
             <description><![CDATA[
               <center><img src="/apps/santacloud/image/xmas-cookies.png" width="500" /></center>
@@ -55,133 +55,133 @@
         </day>
 
         <day>
-            <date>2025-12-03</date>
+            <date>2026-12-03</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-04</date>
+            <date>2026-12-04</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-05</date>
+            <date>2026-12-05</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-06</date>
+            <date>2026-12-06</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-07</date>
+            <date>2026-12-07</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-08</date>
+            <date>2026-12-08</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-09</date>
+            <date>2026-12-09</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-10</date>
+            <date>2026-12-10</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-11</date>
+            <date>2026-12-11</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-12</date>
+            <date>2026-12-12</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-13</date>
+            <date>2026-12-13</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-14</date>
+            <date>2026-12-14</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-15</date>
+            <date>2026-12-15</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-16</date>
+            <date>2026-12-16</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-17</date>
+            <date>2026-12-17</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-18</date>
+            <date>2026-12-18</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-19</date>
+            <date>2026-12-19</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-20</date>
+            <date>2026-12-20</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-21</date>
+            <date>2026-12-21</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-22</date>
+            <date>2026-12-22</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-23</date>
+            <date>2026-12-23</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
 
         <day>
-            <date>2025-12-24</date>
+            <date>2026-12-24</date>
             <title><![CDATA[Example-Title]]></title>
             <description><![CDATA[Example-Text]]></description>
         </day>
