@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1
+
+### Added
+- Nextcloud 33 compatibility
+
 ## 1.1.0
 
 ### Added
