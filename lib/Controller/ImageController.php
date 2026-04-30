@@ -45,6 +45,9 @@ use OCP\AppFramework\Http\ContentSecurityPolicy;
 class ImageController extends Controller {
     /** @var IAppData */
     private $appData;
+    private $urlGenerator;
+    private $config;
+    private $logger;
     
     public function __construct(
         string $AppName, 
