@@ -60,6 +60,7 @@ class DayController extends Controller {
    private $config;
    private $l;
    private $appData;
+   private $logger;
    public function __construct(
      IL10N $l,
      IConfig $config,
