@@ -35,6 +35,7 @@ use OCP\IConfig;
 use OCP\App\IAppManager;
 use OCP\Server;
 use OC;
+use OCA\SantaCloud\Dashboard\SantaCloudWidget;
 
 
 
@@ -46,6 +47,7 @@ class Application extends App implements IBootstrap {
     }
 
 	public function register(IRegistrationContext $context): void {
+        $context->registerDashboardWidget(\OCA\SantaCloud\Dashboard\SantaCloudWidget::class);
     }
 
     public function boot(IBootContext $context): void {
