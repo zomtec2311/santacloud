@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.2
+
+### Added
+- Nextcloud 34 compatibility
+- New dashboard widget showing countdown till advent calendar
+- dashboard widget settings
+
+### Changed
+- language files updated
+
 ## 1.1.1
 
 ### Added
