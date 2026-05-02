@@ -56,6 +56,9 @@ class SantaCloudAdmin implements ISettings {
         $wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last', '');
         $wtpara_lock = (int)$this->config->getAppValue('santacloud', 'wtpara_lock', '');
         $wtpara_own = (int)$this->config->getAppValue('santacloud', 'wtpara_own', '');
+        $wtpara_dasboard_enabled = (int)$this->config->getAppValue('santacloud', 'wtpara_dasboard_enabled', '');
+        $wtpara_db_cd_enabled = (int)$this->config->getAppValue('santacloud', 'wtpara_db_cd_enabled', '');
+
 		if (!isset($wtpara_test) or ($wtpara_test === 0)) {
 			 $wtpara_test = 1;
 			 $this->config->setAppValue('santacloud', 'wtpara_test', 1);
@@ -72,7 +75,14 @@ class SantaCloudAdmin implements ISettings {
 			 $wtpara_own = 1;
 			 $this->config->setAppValue('santacloud', 'wtpara_own', 2);
 		}
-        
+        if (!isset($wtpara_dasboard_enabled) or ($wtpara_dasboard_enabled === 0)) {
+			 $wtpara_dasboard_enabled = 1;
+			 $this->config->setAppValue('santacloud', 'wtpara_dasboard_enabled', $wtpara_dasboard_enabled);
+		}
+		if (!isset($wtpara_db_cd_enabled) or ($wtpara_db_cd_enabled === 0)) {
+			 $wtpara_db_cd_enabled = 1;
+			 $this->config->setAppValue('santacloud', 'wtpara_db_cd_enabled', $wtpara_db_cd_enabled);
+		}
         
         
         
@@ -84,6 +94,7 @@ class SantaCloudAdmin implements ISettings {
           'wtpara_last' => $wtpara_last,
           'wtpara_lock' => $wtpara_lock,
           'wtpara_own' => $wtpara_own,
+          'wtpara_dasboard_enabled' => $wtpara_dasboard_enabled,
     		];
         ($this->config->getSystemValue('version') < 32 ? \OC::$server->getContentSecurityPolicyManager()->addDefaultPolicy($csp) : \OCP\Server::get(IContentSecurityPolicyManager::class)->addDefaultPolicy($csp));
         $response = new TemplateResponse(Application::APP_ID, 'settings/admin', $parameters, '');
