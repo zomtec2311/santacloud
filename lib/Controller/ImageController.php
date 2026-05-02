@@ -137,6 +137,43 @@ class ImageController extends Controller {
         );
     }
     }
+
+    #[NoAdminRequired]
+    #[NoCSRFRequired]
+    public function dbget(string $filename): StreamResponse {
+    $cleanFilename = str_replace('..', '', $filename);
+    $imagePath = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/dbbackgroundimg/' . $cleanFilename;
+    $extension = pathinfo($imagePath, PATHINFO_EXTENSION);
+    $mimeType = match (strtolower($extension)) {
+        'png' => 'image/png',
+        'jpg', 'jpeg' => 'image/jpeg',
+        'gif' => 'image/gif',
+        default => 'application/octet-stream',
+    };
+
+    if (file_exists($imagePath)) {
+        $response =  new StreamResponse(
+            $imagePath,
+            200,
+            [
+                'Content-Type' => $mimeType,
+            ]
+        );
+        $csp = new ContentSecurityPolicy();
+		$csp->addAllowedImageDomain('*');
+		$csp->addAllowedMediaDomain('*');
+		$response->setContentSecurityPolicy($csp);
+        return $response;
+    } else {
+        return new StreamResponse(
+            $imagePath,
+            404,
+            [
+                'Content-Type' => $mimeType,
+            ]
+        );
+    }
+    }
     
     public function getimages(): DataResponse {
         
@@ -154,6 +191,17 @@ class ImageController extends Controller {
         $folder = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/backgroundimg';
         $dateien_gefiltert = array_diff(scandir($folder), array('.', '..'));
 		
+		return new DataResponse([
+                'images' => $dateien_gefiltert,
+                'folder' => $folder,
+            ]);
+	}
+
+	public function getdbimages(): DataResponse {
+
+        $folder = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/dbbackgroundimg';
+        $dateien_gefiltert = array_diff(scandir($folder), array('.', '..'));
+
 		return new DataResponse([
                 'images' => $dateien_gefiltert,
                 'folder' => $folder,
@@ -220,7 +268,7 @@ class ImageController extends Controller {
             return new JSONResponse(['error' => 'SantaCloud: no path defined.'], 400);
         }
 
-        $fullPathRelativeToRoot = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/backgroundimg/' . $fileName; 
+        $fullPathRelativeToRoot = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/backgroundimg/' . $fileName;
         
         try {
 
@@ -233,6 +281,50 @@ class ImageController extends Controller {
             unlink($file);
             $this->setbg('background.jpg');
             
+            return new JSONResponse([
+                'message' => 'SantaCloud: file successful deleted: ' . $fileName,
+                'deletedFile' => $fileName,
+            ], 200);
+
+        } catch (\OCP\Files\NotFoundException $e) {
+            return new JSONResponse([
+                'error' => 'SantaCloud: could not find file.',
+                'gesuchter_pfad_relativ_zur_root' => $fullPathRelativeToRoot,
+            ], 404);
+        } catch (\Throwable $e) {
+            return new JSONResponse(['error' => 'SantaCloud: storage failure.', 'details' => $e->getMessage()], 500);
+        }
+    }
+
+    #[NoCSRFRequired]
+    public function deletedbimage(): JSONResponse {
+
+        $rawBody = file_get_contents('php://input');
+        $data = json_decode($rawBody, true);
+
+        if ($data === null && json_last_error() !== JSON_ERROR_NONE) {
+             return new JSONResponse(['error' => 'SantaCloud: wrong JSON format.'], 400);
+        }
+
+        $fileName = $data['filePath'] ?? null;
+
+        if (empty($fileName)) {
+            return new JSONResponse(['error' => 'SantaCloud: no path defined.'], 400);
+        }
+
+        $fullPathRelativeToRoot = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/dbbackgroundimg/' . $fileName;
+
+        try {
+
+            $file = $fullPathRelativeToRoot;
+
+            if (!file_exists($file)) {
+                return new JSONResponse(['error' => 'SantaCloud: could not find file.'], 404);
+            }
+
+            unlink($file);
+            $this->setdb('dbbackground.jpg');
+
             return new JSONResponse([
                 'message' => 'SantaCloud: file successful deleted: ' . $fileName,
                 'deletedFile' => $fileName,
@@ -267,6 +359,26 @@ class ImageController extends Controller {
  		}
      return '/apps/santacloud/bgimage/' . $wtpara_background_image;
    }
+
+   #[NoAdminRequired]
+   public function getdb() {
+     $wtpara_db_background_image = (string)$this->config->getAppValue('santacloud', 'wtpara_db_background_image');
+     if (!isset($wtpara_db_background_image) or ($wtpara_db_background_image === "") or (!file_exists($this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/dbbackgroundimg/' . $wtpara_db_background_image))) {
+            if (!file_exists($this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/dbbackgroundimg/dbbackground.jpg')) {
+                $backgroundimg = __DIR__ . '/../../img/dbbackground.jpg';
+                $newbackgroundimg = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/dbbackgroundimg/dbbackground.jpg';
+                if (!copy($backgroundimg, $newbackgroundimg)) {
+                    $this->logger->warning("SantaCloud: failed to copy $backgroundimg... ");
+                }
+                else {
+                    $this->logger->debug("SantaCloud: success copy $backgroundimg... ");
+                }
+            }
+ 			 $wtpara_db_background_image = 'dbbackground.jpg';
+             $this->config->setAppValue('santacloud', 'wtpara_db_background_image', $wtpara_db_background_image);
+ 		}
+     return '/apps/santacloud/dbimage/' . $wtpara_db_background_image;
+   }
    
    public function setbg($imagePath) {
         if (file_exists($this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/backgroundimg/' . $imagePath)) {
@@ -274,6 +386,16 @@ class ImageController extends Controller {
         }
         else {
             $this->config->setAppValue('santacloud', 'wtpara_background_image', 'background.jpg');
+        }
+        return;
+   }
+
+   public function setdb($imagePath) {
+        if (file_exists($this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/dbbackgroundimg/' . $imagePath)) {
+            $this->config->setAppValue('santacloud', 'wtpara_db_background_image', $imagePath);
+        }
+        else {
+            $this->config->setAppValue('santacloud', 'wtpara_db_background_image', 'dbbackground.jpg');
         }
         return;
    }
@@ -330,5 +452,59 @@ class ImageController extends Controller {
         } catch (\Exception $e) {
             return new DataResponse(['error' => 'SantaCloud memory error: ' . $e->getMessage()], 500);
         }        
+    }
+
+    #[NoCSRFRequired]
+    public function uploadFileDB(): DataResponse {
+        $uploadedFileArray = $this->request->getUploadedFile('file');
+
+        if (empty($uploadedFileArray) || $uploadedFileArray['error'] !== UPLOAD_ERR_OK) {
+            $errorCode = $uploadedFileArray['error'] ?? UPLOAD_ERR_NO_FILE;
+            return new DataResponse(['error' => 'SantaCloud failed to store. Error code: ' . $errorCode], 500);
+        }
+
+        $tempPath = $uploadedFileArray['tmp_name'];
+        $originalName = $uploadedFileArray['name'];
+
+        try {
+            $allowedMimes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
+            $detectedMime = @mime_content_type($tempPath);
+
+            if ($detectedMime === false || !in_array($detectedMime, $allowedMimes)) {
+                unlink($tempPath);
+                throw new \Exception('SantaCloud: Wrong type extension of file.');
+            }
+
+            $sanitizedName = preg_replace('/[^a-zA-Z0-9\-\._]/', '_', basename($originalName));
+            if (empty($sanitizedName)) {
+                throw new \Exception('SantaCloud: Invalid file name after cleanup.');
+            }
+
+            $targetDir = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/dbbackgroundimg';
+            $targetFile = $targetDir . '/' . $sanitizedName;
+
+            if (!is_writable($targetDir)) {
+                 throw new \Exception('SantaCloud Error: Target folder (' . $targetDir . ') is not writable .');
+            }
+
+            if (!copy($tempPath, $targetFile)) {
+                unlink($tempPath);
+                throw new \Exception('SantaCloud Error: Unable to copy file.');
+            }
+
+            unlink($tempPath);
+
+            $internalFilePath = $this->appName . '/dbimage/' . $sanitizedName;
+
+            $finalImageUrl = $this->urlGenerator->getAbsoluteURL('/apps/') . $internalFilePath;
+
+            return new DataResponse([
+                'filePath' => $finalImageUrl,
+                'name' => $sanitizedName,
+            ]);
+
+        } catch (\Exception $e) {
+            return new DataResponse(['error' => 'SantaCloud memory error: ' . $e->getMessage()], 500);
+        }
     }
 }
