@@ -77,6 +77,7 @@ class DayController extends Controller {
      $this->logger = $logger;
    }
 
+   #[NoAdminRequired]
    public function getParam($who): DataResponse {
      return new DataResponse([
                 'value' => $this->config->getAppValue('santacloud', $who),
