@@ -63,6 +63,23 @@
     "Choose an Image!": "Wielt e Bild!",
     "upload error": "Eroplueden Feeler",
     "this image can not be deleted because it is an App core image": "dëst Bild kann net geläscht ginn well et eng App Kär Bild ass",
-    "HTML-code copied": "HTML-Code kopéiert"
+    "HTML-code copied": "HTML-Code kopéiert",
+    "Advent Calendar": "Adventskalenner",
+"Dashboard Widget Settings": "Dashboard Widget Astellunge",
+"Enable Dashboard Widget": "Aktivéiert Dashboard Widget",
+"The Advent calendar starts as soon as the countdown is over.": "Den Adventskalenner fänkt un soubal de Countdown eriwwer ass.",
+"days": "Deeg",
+"hours": "Stonnen",
+"minutes": "Minutten",
+"seconds": "Sekonnen",
+"remaining until the start of the Advent calendar": "bleiwen bis den Ufank vum Adventskalenner",
+"Open this door": "Maacht dës Dier op",
+"Click a door (opens link in new tab)": "Klickt op eng Dier (maacht de Link op neien Tab op)",
+"Show Countdown": "Countdown weisen",
+"Day and date when the Advent calendar is activated": "Dag an Datum wou den Adventskalenner aktivéiert ass",
+"selected time of activation": "ausgewielt Zäit vun Aktivatioun",
+"close upload dashboard widget image": "zoumaachen eropluede Dashboard Widget Bild",
+"upload dashboard widget image": "eropluede Dashboard Widget Bild",
+"recommended width: 288px and height: 400px": "recommandéiert Breet: 288px an Héicht: 400px"
 },"pluralForm" :"nplurals=2; plural=n != 1;"
 }

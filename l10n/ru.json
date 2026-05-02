@@ -63,6 +63,23 @@
     "Choose an Image!": "Выберите изображение!",
     "upload error": "ошибка загрузки",
     "this image can not be deleted because it is an App core image": "это изображение невозможно удалить, поскольку оно является основным изображением приложения.",
-    "HTML-code copied": "HTML-код скопирован"
+    "HTML-code copied": "HTML-код скопирован",
+    "Advent Calendar": "Адвент-календарь",
+"Dashboard Widget Settings": "Настройки виджета информационной панели",
+"Enable Dashboard Widget": "Включить виджет информационной панели",
+"The Advent calendar starts as soon as the countdown is over.": "Адвент-календарь запускается, как только закончится обратный отсчет.",
+"days": "дни",
+"hours": "часы",
+"minutes": "минуты",
+"seconds": "секунды",
+"remaining until the start of the Advent calendar": "осталось до начала адвент-календаря",
+"Open this door": "Откройте эту дверь",
+"Click a door (opens link in new tab)": "Нажмите на дверь (ссылка откроется в новой вкладке)",
+"Show Countdown": "Показать обратный отсчет",
+"Day and date when the Advent calendar is activated": "День и дата активации адвент-календаря",
+"selected time of activation": "выбранное время активации",
+"close upload dashboard widget image": "закрыть загрузить изображение виджета панели управления",
+"upload dashboard widget image": "загрузить изображение виджета панели управления",
+"recommended width: 288px and height: 400px": "рекомендуемая ширина: 288 пикселей и высота: 400 пикселей."
 },"pluralForm" :"nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);"
 }

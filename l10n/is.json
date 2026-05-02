@@ -63,6 +63,23 @@
     "Choose an Image!": "Veldu mynd!",
     "upload error": "upphleðsluvilla",
     "this image can not be deleted because it is an App core image": "Ekki er hægt að eyða þessari mynd vegna þess að hún er app kjarnamynd",
-    "HTML-code copied": "HTML-kóði afritaður"
+    "HTML-code copied": "HTML-kóði afritaður",
+    "Advent Calendar": "Aðventudagatal",
+"Dashboard Widget Settings": "Stillingar mælaborðsgræju",
+"Enable Dashboard Widget": "Virkja mælaborðsgræju",
+"The Advent calendar starts as soon as the countdown is over.": "Aðventudagatalið hefst um leið og niðurtalningu er lokið.",
+"days": "daga",
+"hours": "klukkustundir",
+"minutes": "mínútur",
+"seconds": "sekúndur",
+"remaining until the start of the Advent calendar": "eftir þar til aðventudagatal hefst",
+"Open this door": "Opnaðu þessa hurð",
+"Click a door (opens link in new tab)": "Smelltu á hurð (opnar tengil í nýjum flipa)",
+"Show Countdown": "Sýna niðurtalningu",
+"Day and date when the Advent calendar is activated": "Dagur og dagsetning þegar aðventudagatalið er virkjað",
+"selected time of activation": "valinn virkjunartími",
+"close upload dashboard widget image": "loka upphleðslu mælaborðs græjumynd",
+"upload dashboard widget image": "hlaða upp mynd fyrir mælaborðsgræju",
+"recommended width: 288px and height: 400px": "ráðlögð breidd: 288px og hæð: 400px"
 },"pluralForm" :"nplurals=2; plural=n % 10 != 1 || n % 100 == 11;"
 }

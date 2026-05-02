@@ -63,6 +63,23 @@
     "Choose an Image!": "ಚಿತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ!",
     "upload error": "ಅಪ್ಲೋಡ್ ದೋಷ",
     "this image can not be deleted because it is an App core image": "ಈ ಚಿತ್ರವನ್ನು ಅಳಿಸಲಾಗುವುದಿಲ್ಲ ಏಕೆಂದರೆ ಇದು ಅಪ್ಲಿಕೇಶನ್ ಕೋರ್ ಚಿತ್ರವಾಗಿದೆ",
-    "HTML-code copied": "HTML-ಕೋಡ್ ನಕಲಿಸಲಾಗಿದೆ"
+    "HTML-code copied": "HTML-ಕೋಡ್ ನಕಲಿಸಲಾಗಿದೆ",
+    "Advent Calendar": "ಅಡ್ವೆಂಟ್ ಕ್ಯಾಲೆಂಡರ್",
+"Dashboard Widget Settings": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ ವಿಜೆಟ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+"Enable Dashboard Widget": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ ವಿಜೆಟ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ",
+"The Advent calendar starts as soon as the countdown is over.": "ಕೌಂಟ್‌ಡೌನ್ ಮುಗಿದ ತಕ್ಷಣ ಅಡ್ವೆಂಟ್ ಕ್ಯಾಲೆಂಡರ್ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
+"days": "ದಿನಗಳು",
+"hours": "ಗಂಟೆಗಳು",
+"minutes": "ನಿಮಿಷಗಳು",
+"seconds": "ಸೆಕೆಂಡುಗಳು",
+"remaining until the start of the Advent calendar": "ಅಡ್ವೆಂಟ್ ಕ್ಯಾಲೆಂಡರ್ ಪ್ರಾರಂಭವಾಗುವವರೆಗೆ ಉಳಿದಿದೆ",
+"Open this door": "ಈ ಬಾಗಿಲು ತೆರೆಯಿರಿ",
+"Click a door (opens link in new tab)": "ಬಾಗಿಲನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ (ಹೊಸ ಟ್ಯಾಬ್‌ನಲ್ಲಿ ಲಿಂಕ್ ತೆರೆಯುತ್ತದೆ)",
+"Show Countdown": "ಕೌಂಟ್ಡೌನ್ ತೋರಿಸಿ",
+"Day and date when the Advent calendar is activated": "ಅಡ್ವೆಂಟ್ ಕ್ಯಾಲೆಂಡರ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದಾಗ ದಿನ ಮತ್ತು ದಿನಾಂಕ",
+"selected time of activation": "ಸಕ್ರಿಯಗೊಳಿಸುವ ಆಯ್ಕೆ ಸಮಯ",
+"close upload dashboard widget image": "ಅಪ್‌ಲೋಡ್ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ ವಿಜೆಟ್ ಚಿತ್ರವನ್ನು ಮುಚ್ಚಿ",
+"upload dashboard widget image": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ ವಿಜೆಟ್ ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+"recommended width: 288px and height: 400px": "ಶಿಫಾರಸು ಮಾಡಿದ ಅಗಲ: 288px ಮತ್ತು ಎತ್ತರ: 400px"
 },"pluralForm" :"nplurals=2; plural=n > 1;"
 }

@@ -63,6 +63,23 @@
     "Choose an Image!": "Valitse kuva!",
     "upload error": "latausvirhe",
     "this image can not be deleted because it is an App core image": "tätä kuvaa ei voi poistaa, koska se on sovelluksen ydinkuva",
-    "HTML-code copied": "HTML-koodi kopioitu"
+    "HTML-code copied": "HTML-koodi kopioitu",
+    "Advent Calendar": "Adventin kalenteri",
+"Dashboard Widget Settings": "Kojelaudan widget-asetukset",
+"Enable Dashboard Widget": "Ota Dashboard-widget käyttöön",
+"The Advent calendar starts as soon as the countdown is over.": "Adventtikalenteri alkaa heti, kun lähtölaskenta on ohi.",
+"days": "päivää",
+"hours": "tuntia",
+"minutes": "minuuttia",
+"seconds": "sekuntia",
+"remaining until the start of the Advent calendar": "jäljellä adventtikalenterin alkuun asti",
+"Open this door": "Avaa tämä ovi",
+"Click a door (opens link in new tab)": "Napsauta ovea (avaa linkin uudessa välilehdessä)",
+"Show Countdown": "Näytä lähtölaskenta",
+"Day and date when the Advent calendar is activated": "Päivä ja päivämäärä, jolloin adventtikalenteri aktivoidaan",
+"selected time of activation": "valittu aktivointiaika",
+"close upload dashboard widget image": "sulje lähetä hallintapaneelin widget-kuva",
+"upload dashboard widget image": "lataa hallintapaneelin widget-kuva",
+"recommended width: 288px and height: 400px": "suositeltu leveys: 288px ja korkeus: 400px"
 },"pluralForm" :"nplurals=2; plural=n != 1;"
 }

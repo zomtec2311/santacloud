@@ -63,6 +63,23 @@
     "Choose an Image!": "이미지를 선택하세요!",
     "upload error": "업로드 오류",
     "this image can not be deleted because it is an App core image": "이 이미지는 앱 코어 이미지이므로 삭제할 수 없습니다.",
-    "HTML-code copied": "HTML 코드 복사됨"
+    "HTML-code copied": "HTML 코드 복사됨",
+    "Advent Calendar": "재림절 달력",
+"Dashboard Widget Settings": "대시보드 위젯 설정",
+"Enable Dashboard Widget": "대시보드 위젯 활성화",
+"The Advent calendar starts as soon as the countdown is over.": "카운트다운이 끝나면 바로 강림절 달력이 시작됩니다.",
+"days": "날",
+"hours": "시간",
+"minutes": "분",
+"seconds": "초",
+"remaining until the start of the Advent calendar": "재림절 달력이 시작될 때까지 남은 시간",
+"Open this door": "이 문을 열어주세요",
+"Click a door (opens link in new tab)": "문을 클릭하세요(새 탭에서 링크 열림)",
+"Show Countdown": "카운트다운 표시",
+"Day and date when the Advent calendar is activated": "재림절 달력이 활성화된 요일 및 날짜",
+"selected time of activation": "선택한 활성화 시간",
+"close upload dashboard widget image": "업로드 대시보드 위젯 이미지 닫기",
+"upload dashboard widget image": "대시보드 위젯 이미지 업로드",
+"recommended width: 288px and height: 400px": "권장 너비: 288px 높이: 400px"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

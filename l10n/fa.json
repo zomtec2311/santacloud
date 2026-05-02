@@ -62,6 +62,23 @@
     "Choose an Image!": "یک تصویر را انتخاب کنید!",
     "upload error": "خطای آپلود",
     "this image can not be deleted because it is an App core image": "این تصویر را نمی توان حذف کرد زیرا یک تصویر اصلی برنامه است",
-    "HTML-code copied": "کد HTML کپی شد"
+    "HTML-code copied": "کد HTML کپی شد",
+    "Advent Calendar": "تقویم ظهور",
+"Dashboard Widget Settings": "تنظیمات ویجت داشبورد",
+"Enable Dashboard Widget": "ویجت داشبورد را فعال کنید",
+"The Advent calendar starts as soon as the countdown is over.": "به محض پایان شمارش معکوس، تقویم ظهور شروع می شود.",
+"days": "روز",
+"hours": "ساعت",
+"minutes": "دقیقه",
+"seconds": "ثانیه",
+"remaining until the start of the Advent calendar": "تا شروع تقویم ظهور باقی مانده است",
+"Open this door": "این در را باز کن",
+"Click a door (opens link in new tab)": "روی یک در کلیک کنید (لینک در برگه جدید باز می شود)",
+"Show Countdown": "نمایش شمارش معکوس",
+"Day and date when the Advent calendar is activated": "روز و تاریخ فعال شدن تقویم ظهور",
+"selected time of activation": "زمان انتخاب شده برای فعال سازی",
+"close upload dashboard widget image": "بستن تصویر ویجت داشبورد آپلود",
+"upload dashboard widget image": "آپلود تصویر ویجت داشبورد",
+"recommended width: 288px and height: 400px": "عرض توصیه شده: 288 پیکسل و ارتفاع: 400 پیکسل"
 },"pluralForm" :"nplurals=2; plural=n > 1;"
 }

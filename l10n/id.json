@@ -63,6 +63,23 @@
     "Choose an Image!": "Pilih Gambar!",
     "upload error": "kesalahan pengunggahan",
     "this image can not be deleted because it is an App core image": "gambar ini tidak dapat dihapus karena merupakan gambar inti Aplikasi",
-    "HTML-code copied": "Kode HTML disalin"
+    "HTML-code copied": "Kode HTML disalin",
+    "Advent Calendar": "Kalender Adven",
+"Dashboard Widget Settings": "Pengaturan Widget Dasbor",
+"Enable Dashboard Widget": "Aktifkan Widget Dasbor",
+"The Advent calendar starts as soon as the countdown is over.": "Kalender Advent dimulai segera setelah hitungan mundur selesai.",
+"days": "hari",
+"hours": "jam",
+"minutes": "menit",
+"seconds": "detik",
+"remaining until the start of the Advent calendar": "tersisa sampai awal kalender Advent",
+"Open this door": "Buka pintu ini",
+"Click a door (opens link in new tab)": "Klik sebuah pintu (membuka tautan di tab baru)",
+"Show Countdown": "Tampilkan Hitung Mundur",
+"Day and date when the Advent calendar is activated": "Hari dan tanggal kalender Advent diaktifkan",
+"selected time of activation": "waktu aktivasi yang dipilih",
+"close upload dashboard widget image": "tutup unggah gambar widget dasbor",
+"upload dashboard widget image": "unggah gambar widget dasbor",
+"recommended width: 288px and height: 400px": "lebar yang disarankan: 288px dan tinggi: 400px"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

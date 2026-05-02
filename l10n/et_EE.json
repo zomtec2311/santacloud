@@ -63,6 +63,23 @@
     "Choose an Image!": "Valige pilt!",
     "upload error": "üleslaadimise viga",
     "this image can not be deleted because it is an App core image": "seda pilti ei saa kustutada, kuna see on rakenduse põhipilt",
-    "HTML-code copied": "HTML-kood kopeeritud"
+    "HTML-code copied": "HTML-kood kopeeritud",
+    "Advent Calendar": "Advendikalender",
+"Dashboard Widget Settings": "Armatuurlaua vidina seaded",
+"Enable Dashboard Widget": "Luba armatuurlaua vidin",
+"The Advent calendar starts as soon as the countdown is over.": "Advendikalender algab kohe, kui loendus on läbi.",
+"days": "päevadel",
+"hours": "tundi",
+"minutes": "minutit",
+"seconds": "sekundit",
+"remaining until the start of the Advent calendar": "jäänud kuni advendikalendri alguseni",
+"Open this door": "Ava see uks",
+"Click a door (opens link in new tab)": "Klõpsake uksel (avab lingi uuel vahelehel)",
+"Show Countdown": "Kuva Taimer",
+"Day and date when the Advent calendar is activated": "Advendikalendri aktiveerimise päev ja kuupäev",
+"selected time of activation": "valitud aktiveerimise aeg",
+"close upload dashboard widget image": "sulge üleslaadimise armatuurlaua vidina pilt",
+"upload dashboard widget image": "laadige üles armatuurlaua vidina pilt",
+"recommended width: 288px and height: 400px": "soovitatav laius: 288px ja kõrgus: 400px"
 },"pluralForm" :"nplurals=2; plural=n != 1;"
 }

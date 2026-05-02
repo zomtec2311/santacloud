@@ -63,6 +63,23 @@
     "Choose an Image!": "Dewiswch Ddelwedd!",
     "upload error": "gwall llwytho i fyny",
     "this image can not be deleted because it is an App core image": "ni ellir dileu'r ddelwedd hon oherwydd ei fod yn ddelwedd graidd App",
-    "HTML-code copied": "Cod HTML wedi'i gopïo"
+    "HTML-code copied": "Cod HTML wedi'i gopïo",
+    "Advent Calendar": "Calendr Adfent",
+"Dashboard Widget Settings": "Gosodiadau Widget Dangosfwrdd",
+"Enable Dashboard Widget": "Galluogi Teclyn Dangosfwrdd",
+"The Advent calendar starts as soon as the countdown is over.": "Mae'r calendr Adfent yn dechrau cyn gynted ag y bydd y cyfrif i lawr drosodd.",
+"days": "dyddiau",
+"hours": "oriau",
+"minutes": "munudau",
+"seconds": "eiliadau",
+"remaining until the start of the Advent calendar": "aros tan ddechrau'r calendr Adfent",
+"Open this door": "Agorwch y drws hwn",
+"Click a door (opens link in new tab)": "Cliciwch ar ddrws (yn agor dolen yn y tab newydd)",
+"Show Countdown": "Dangos Countdown",
+"Day and date when the Advent calendar is activated": "Diwrnod a dyddiad pan fydd y calendr Adfent yn cael ei actifadu",
+"selected time of activation": "amser actifadu dethol",
+"close upload dashboard widget image": "cau delwedd widget dangosfwrdd uwchlwytho",
+"upload dashboard widget image": "uwchlwytho delwedd widget dangosfwrdd",
+"recommended width: 288px and height: 400px": "lled a argymhellir: 288px ac uchder: 400px"
 },"pluralForm" :"nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n == 3) ? 3 : ((n == 6) ? 4 : 5))));"
 }

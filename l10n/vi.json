@@ -63,6 +63,23 @@
     "Choose an Image!": "Chọn một hình ảnh!",
     "upload error": "lỗi tải lên",
     "this image can not be deleted because it is an App core image": "Không thể xóa hình ảnh này vì nó là hình ảnh cốt lõi của Ứng dụng",
-    "HTML-code copied": "Đã sao chép mã HTML"
+    "HTML-code copied": "Đã sao chép mã HTML",
+    "Advent Calendar": "Lịch Mùa Vọng",
+"Dashboard Widget Settings": "Cài đặt tiện ích bảng điều khiển",
+"Enable Dashboard Widget": "Bật tiện ích bảng điều khiển",
+"The Advent calendar starts as soon as the countdown is over.": "Lịch Mùa Vọng bắt đầu ngay khi thời gian đếm ngược kết thúc.",
+"days": "ngày",
+"hours": "giờ",
+"minutes": "phút",
+"seconds": "giây",
+"remaining until the start of the Advent calendar": "còn lại cho đến khi bắt đầu lịch Mùa Vọng",
+"Open this door": "Mở cánh cửa này",
+"Click a door (opens link in new tab)": "Nhấp vào một cánh cửa (mở liên kết trong tab mới)",
+"Show Countdown": "Hiển thị đếm ngược",
+"Day and date when the Advent calendar is activated": "Ngày và ngày kích hoạt lịch Mùa Vọng",
+"selected time of activation": "thời điểm kích hoạt đã chọn",
+"close upload dashboard widget image": "đóng tải lên hình ảnh tiện ích bảng điều khiển",
+"upload dashboard widget image": "tải lên hình ảnh tiện ích bảng điều khiển",
+"recommended width: 288px and height: 400px": "chiều rộng được đề xuất: 288px và chiều cao: 400px"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

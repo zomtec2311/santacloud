@@ -63,6 +63,23 @@
     "Choose an Image!": "Виберіть зображення!",
     "upload error": "помилка завантаження",
     "this image can not be deleted because it is an App core image": "це зображення не можна видалити, оскільки це зображення ядра програми",
-    "HTML-code copied": "HTML-код скопійовано"
+    "HTML-code copied": "HTML-код скопійовано",
+    "Advent Calendar": "Адвент календар",
+"Dashboard Widget Settings": "Налаштування віджета інформаційної панелі",
+"Enable Dashboard Widget": "Увімкнути віджет інформаційної панелі",
+"The Advent calendar starts as soon as the countdown is over.": "Адвент-календар починається, як тільки закінчується зворотний відлік.",
+"days": "днів",
+"hours": "години",
+"minutes": "хвилин",
+"seconds": "секунд",
+"remaining until the start of the Advent calendar": "залишилося до початку адвент-календаря",
+"Open this door": "Відкрийте ці двері",
+"Click a door (opens link in new tab)": "Клацніть двері (посилання відкривається в новій вкладці)",
+"Show Countdown": "Показати зворотний відлік",
+"Day and date when the Advent calendar is activated": "День і дата активації адвент-календаря",
+"selected time of activation": "вибраний час активації",
+"close upload dashboard widget image": "закрити зображення віджета інформаційної панелі завантаження",
+"upload dashboard widget image": "завантажити зображення віджета інформаційної панелі",
+"recommended width: 288px and height: 400px": "рекомендована ширина: 288 пікселів і висота: 400 пікселів"
 },"pluralForm" :"nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);"
 }

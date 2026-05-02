@@ -63,6 +63,23 @@
     "Choose an Image!": "¡Elige una imagen!",
     "upload error": "error de carga",
     "this image can not be deleted because it is an App core image": "Esta imagen no se puede eliminar porque es una imagen principal de la aplicación.",
-    "HTML-code copied": "Código HTML copiado"
+    "HTML-code copied": "Código HTML copiado",
+    "Advent Calendar": "Calendario de Adviento",
+"Dashboard Widget Settings": "Configuración del widget del panel",
+"Enable Dashboard Widget": "Habilitar el widget del panel",
+"The Advent calendar starts as soon as the countdown is over.": "El calendario de Adviento comienza tan pronto como termina la cuenta atrás.",
+"days": "días",
+"hours": "horas",
+"minutes": "minutos",
+"seconds": "artículos de segunda clase",
+"remaining until the start of the Advent calendar": "restantes hasta el inicio del calendario de Adviento",
+"Open this door": "abre esta puerta",
+"Click a door (opens link in new tab)": "Haga clic en una puerta (abre el enlace en una pestaña nueva)",
+"Show Countdown": "Mostrar cuenta regresiva",
+"Day and date when the Advent calendar is activated": "Día y fecha en que se activa el calendario de Adviento",
+"selected time of activation": "hora de activación seleccionada",
+"close upload dashboard widget image": "cerrar cargar imagen del widget del panel",
+"upload dashboard widget image": "cargar la imagen del widget del panel",
+"recommended width: 288px and height: 400px": "ancho recomendado: 288px y alto: 400px"
 },"pluralForm" :"nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == 0) ? 1 : 2);"
 }

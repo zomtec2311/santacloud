@@ -63,6 +63,23 @@
     "Choose an Image!": "Vyberte obrázek!",
     "upload error": "chyba nahrávání",
     "this image can not be deleted because it is an App core image": "tento obrázek nelze smazat, protože se jedná o základní obrázek aplikace",
-    "HTML-code copied": "HTML kód zkopírován"
+    "HTML-code copied": "HTML kód zkopírován",
+    "Advent Calendar": "Adventní kalendář",
+"Dashboard Widget Settings": "Nastavení widgetu Dashboard",
+"Enable Dashboard Widget": "Povolit widget Dashboard",
+"The Advent calendar starts as soon as the countdown is over.": "Adventní kalendář začíná, jakmile skončí odpočítávání.",
+"days": "dní",
+"hours": "hodin",
+"minutes": "zápis",
+"seconds": "sekundy",
+"remaining until the start of the Advent calendar": "zbývá do začátku adventního kalendáře",
+"Open this door": "Otevřete tyto dveře",
+"Click a door (opens link in new tab)": "Klikněte na dveře (otevře odkaz na nové kartě)",
+"Show Countdown": "Zobrazit odpočítávání",
+"Day and date when the Advent calendar is activated": "Den a datum, kdy je adventní kalendář aktivován",
+"selected time of activation": "zvolený čas aktivace",
+"close upload dashboard widget image": "zavřít obrázek widgetu nahrát řídicí panel",
+"upload dashboard widget image": "nahrát obrázek widgetu řídicího panelu",
+"recommended width: 288px and height: 400px": "doporučená šířka: 288px a výška: 400px"
 },"pluralForm" :"nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : 2);"
 }

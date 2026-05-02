@@ -63,6 +63,23 @@
     "Choose an Image!": "Izberite sliko!",
     "upload error": "napaka pri nalaganju",
     "this image can not be deleted because it is an App core image": "te slike ni mogoče izbrisati, ker je osrednja slika aplikacije",
-    "HTML-code copied": "HTML-koda je kopirana"
+    "HTML-code copied": "HTML-koda je kopirana",
+    "Advent Calendar": "Adventni koledar",
+"Dashboard Widget Settings": "Nastavitve pripomočka nadzorne plošče",
+"Enable Dashboard Widget": "Omogoči pripomoček nadzorne plošče",
+"The Advent calendar starts as soon as the countdown is over.": "Adventni koledar se začne takoj, ko se odštevanje konča.",
+"days": "dni",
+"hours": "ure",
+"minutes": "minut",
+"seconds": "sekund",
+"remaining until the start of the Advent calendar": "še do začetka adventnega koledarja",
+"Open this door": "Odpri ta vrata",
+"Click a door (opens link in new tab)": "Kliknite vrata (povezava se odpre v novem zavihku)",
+"Show Countdown": "Prikaži odštevanje",
+"Day and date when the Advent calendar is activated": "Dan in datum vklopa adventnega koledarja",
+"selected time of activation": "izbran čas aktivacije",
+"close upload dashboard widget image": "zapri sliko gradnika nadzorne plošče za nalaganje",
+"upload dashboard widget image": "naloži sliko pripomočka nadzorne plošče",
+"recommended width: 288px and height: 400px": "priporočena širina: 288 slikovnih pik in višina: 400 slikovnih pik"
 },"pluralForm" :"nplurals=4; plural=(n % 100 == 1) ? 0 : ((n % 100 == 2) ? 1 : ((n % 100 == 3 || n % 100 == 4) ? 2 : 3));"
 }

@@ -63,6 +63,23 @@
     "Choose an Image!": "Tria una imatge!",
     "upload error": "error de càrrega",
     "this image can not be deleted because it is an App core image": "aquesta imatge no es pot suprimir perquè és una imatge bàsica de l'aplicació",
-    "HTML-code copied": "Codi HTML copiat"
+    "HTML-code copied": "Codi HTML copiat",
+    "Advent Calendar": "Calendari d'advent",
+"Dashboard Widget Settings": "Configuració del widget del tauler de control",
+"Enable Dashboard Widget": "Activa el widget del tauler de control",
+"The Advent calendar starts as soon as the countdown is over.": "El calendari d'Advent comença tan bon punt s'ha acabat el compte enrere.",
+"days": "dies",
+"hours": "hores",
+"minutes": "minuts",
+"seconds": "segons",
+"remaining until the start of the Advent calendar": "restant fins a l'inici del calendari d'advent",
+"Open this door": "Obre aquesta porta",
+"Click a door (opens link in new tab)": "Feu clic a una porta (obre l'enllaç en una pestanya nova)",
+"Show Countdown": "Mostra el compte enrere",
+"Day and date when the Advent calendar is activated": "Dia i data en què s'activa el calendari d'advent",
+"selected time of activation": "hora d'activació seleccionada",
+"close upload dashboard widget image": "tanca la imatge del widget del tauler de càrrega",
+"upload dashboard widget image": "puja la imatge del widget del tauler",
+"recommended width: 288px and height: 400px": "amplada recomanada: 288px i alçada: 400px"
 },"pluralForm" :"nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == 0) ? 1 : 2);"
 }

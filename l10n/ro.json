@@ -63,6 +63,23 @@
     "Choose an Image!": "Alege o imagine!",
     "upload error": "eroare de încărcare",
     "this image can not be deleted because it is an App core image": "această imagine nu poate fi ștearsă deoarece este o imagine de bază a aplicației",
-    "HTML-code copied": "Cod HTML copiat"
+    "HTML-code copied": "Cod HTML copiat",
+    "Advent Calendar": "Calendarul Adventului",
+"Dashboard Widget Settings": "Setări widget pentru tabloul de bord",
+"Enable Dashboard Widget": "Activați widgetul pentru tabloul de bord",
+"The Advent calendar starts as soon as the countdown is over.": "Calendarul de Advent începe imediat ce numărătoarea inversă s-a încheiat.",
+"days": "zile",
+"hours": "ore",
+"minutes": "minute",
+"seconds": "secunde",
+"remaining until the start of the Advent calendar": "rămânând până la începutul calendarului Advent",
+"Open this door": "Deschide ușa asta",
+"Click a door (opens link in new tab)": "Faceți clic pe o ușă (se deschide linkul într-o filă nouă)",
+"Show Countdown": "Arată numărătoarea inversă",
+"Day and date when the Advent calendar is activated": "Ziua și data când este activat calendarul de Advent",
+"selected time of activation": "ora selectată de activare",
+"close upload dashboard widget image": "Închide imaginea widget-ului de încărcare a tabloului de bord",
+"upload dashboard widget image": "încărcați imaginea widget din tabloul de bord",
+"recommended width: 288px and height: 400px": "latime recomandata: 288px si inaltime: 400px"
 },"pluralForm" :"nplurals=3; plural=(n == 1) ? 0 : ((n == 0 || n != 1 && n % 100 >= 1 && n % 100 <= 19) ? 1 : 2);"
 }

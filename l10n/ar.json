@@ -62,6 +62,23 @@
     "Choose an Image!": "اختر صورة!",
     "upload error": "خطأ في التحميل",
     "this image can not be deleted because it is an App core image": "لا يمكن حذف هذه الصورة لأنها صورة أساسية للتطبيق",
-    "HTML-code copied": "تم نسخ كود HTML"
+    "HTML-code copied": "تم نسخ كود HTML",
+    "Advent Calendar": "تقويم المجيء",
+"Dashboard Widget Settings": "إعدادات القطعة لوحة القيادة",
+"Enable Dashboard Widget": "تمكين القطعة لوحة المعلومات",
+"The Advent calendar starts as soon as the countdown is over.": "يبدأ تقويم Advent بمجرد انتهاء العد التنازلي.",
+"days": "أيام",
+"hours": "ساعات",
+"minutes": "دقائق",
+"seconds": "ثواني",
+"remaining until the start of the Advent calendar": "المتبقية حتى بداية تقويم المجيء",
+"Open this door": "افتح هذا الباب",
+"Click a door (opens link in new tab)": "انقر على أحد الأبواب (يفتح الرابط في علامة تبويب جديدة)",
+"Show Countdown": "عرض العد التنازلي",
+"Day and date when the Advent calendar is activated": "اليوم والتاريخ الذي يتم فيه تنشيط تقويم Advent",
+"selected time of activation": "الوقت المحدد للتنشيط",
+"close upload dashboard widget image": "قم بإغلاق صورة أداة لوحة التحكم الخاصة بتحميلها",
+"upload dashboard widget image": "تحميل صورة القطعة لوحة القيادة",
+"recommended width: 288px and height: 400px": "العرض الموصى به: 288 بكسل والارتفاع: 400 بكسل"
 },"pluralForm" :"nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n % 100 >= 3 && n % 100 <= 10) ? 3 : ((n % 100 >= 11 && n % 100 <= 99) ? 4 : 5))));"
 }

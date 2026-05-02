@@ -63,6 +63,23 @@
     "Choose an Image!": "Изберете слика!",
     "upload error": "грешка при прикачување",
     "this image can not be deleted because it is an App core image": "оваа слика не може да се избрише бидејќи е основна слика на апликацијата",
-    "HTML-code copied": "HTML-кодот е копиран"
+    "HTML-code copied": "HTML-кодот е копиран",
+    "Advent Calendar": "Календар за доаѓање",
+"Dashboard Widget Settings": "Поставки за виџети на контролната табла",
+"Enable Dashboard Widget": "Овозможи виџет за контролна табла",
+"The Advent calendar starts as soon as the countdown is over.": "Календарот за доаѓање започнува веднаш штом ќе заврши одбројувањето.",
+"days": "денови",
+"hours": "часови",
+"minutes": "минути",
+"seconds": "секунди",
+"remaining until the start of the Advent calendar": "останува до почетокот на календарот за адвент",
+"Open this door": "Отвори ја оваа врата",
+"Click a door (opens link in new tab)": "Кликнете на врата (ја отвора врската во нова картичка)",
+"Show Countdown": "Прикажи одбројување",
+"Day and date when the Advent calendar is activated": "Ден и датум кога е активиран календарот за доаѓање",
+"selected time of activation": "избрано време на активирање",
+"close upload dashboard widget image": "затворете ја сликата на графичката контрола на контролната табла за прикачување",
+"upload dashboard widget image": "прикачете слика на графичка контрола на контролната табла",
+"recommended width: 288px and height: 400px": "препорачана ширина: 288 px и висина: 400 px"
 },"pluralForm" :"nplurals=2; plural=n % 10 != 1 || n % 100 == 11;"
 }

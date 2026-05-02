@@ -62,6 +62,23 @@
     "Choose an Image!": "Choisissez une image !",
     "upload error": "erreur de téléchargement",
     "this image can not be deleted because it is an App core image": "cette image ne peut pas être supprimée car il s'agit d'une image principale de l'application",
-    "HTML-code copied": "Code HTML copié"
+    "HTML-code copied": "Code HTML copié",
+    "Advent Calendar": "Calendrier de l'Avent",
+"Dashboard Widget Settings": "Paramètres du widget du tableau de bord",
+"Enable Dashboard Widget": "Activer le widget du tableau de bord",
+"The Advent calendar starts as soon as the countdown is over.": "Le calendrier de l'Avent démarre dès que le compte à rebours est terminé.",
+"days": "jours",
+"hours": "heures",
+"minutes": "minutes",
+"seconds": "secondes",
+"remaining until the start of the Advent calendar": "restant jusqu'au début du calendrier de l'Avent",
+"Open this door": "Ouvre cette porte",
+"Click a door (opens link in new tab)": "Cliquez sur une porte (ouvre le lien dans un nouvel onglet)",
+"Show Countdown": "Afficher le compte à rebours",
+"Day and date when the Advent calendar is activated": "Jour et date d'activation du calendrier de l'Avent",
+"selected time of activation": "heure d'activation sélectionnée",
+"close upload dashboard widget image": "fermer télécharger l'image du widget du tableau de bord",
+"upload dashboard widget image": "télécharger l'image du widget du tableau de bord",
+"recommended width: 288px and height: 400px": "largeur recommandée : 288px et hauteur : 400px"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

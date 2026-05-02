@@ -63,6 +63,23 @@
     "Choose an Image!": "Изаберите слику!",
     "upload error": "грешка при отпремању",
     "this image can not be deleted because it is an App core image": "ова слика се не може избрисати јер је слика језгра апликације",
-    "HTML-code copied": "ХТМЛ-код је копиран"
+    "HTML-code copied": "ХТМЛ-код је копиран",
+    "Advent Calendar": "Адвентски календар",
+"Dashboard Widget Settings": "Подешавања виџета контролне табле",
+"Enable Dashboard Widget": "Омогући виџет за контролну таблу",
+"The Advent calendar starts as soon as the countdown is over.": "Адвентски календар почиње чим се заврши одбројавање.",
+"days": "дана",
+"hours": "сати",
+"minutes": "минута",
+"seconds": "секунди",
+"remaining until the start of the Advent calendar": "остаје до почетка адвентског календара",
+"Open this door": "Отвори ова врата",
+"Click a door (opens link in new tab)": "Кликните на врата (отвара везу у новој картици)",
+"Show Countdown": "Прикажи одбројавање",
+"Day and date when the Advent calendar is activated": "Дан и датум када је адвентски календар активиран",
+"selected time of activation": "одабрано време активације",
+"close upload dashboard widget image": "затвори слику виџета за отпремање на контролној табли",
+"upload dashboard widget image": "отпремите слику виџета контролне табле",
+"recommended width: 288px and height: 400px": "препоручена ширина: 288 пиксела и висина: 400 пиксела"
 },"pluralForm" :"nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);"
 }
