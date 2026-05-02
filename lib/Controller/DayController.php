@@ -144,28 +144,46 @@ class DayController extends Controller {
      }
 
    #[NoAdminRequired]
-   public function getday(string $day) {
+   public function getday(string $day): DataResponse {
      $wtpara_test = (int)$this->config->getAppValue('santacloud', 'wtpara_test');
      $wtpara_last = (int)$this->config->getAppValue('santacloud', 'wtpara_last');
      $day = intval($day);
      $today = intval(date("j"));
      $thismonth = intval(date("n"));
      $out = "";
+      $dayname = ".";
      $wtdayfile = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/xml/days.xml';
      if( $wtpara_test === 1) {
-       if (!file_exists($wtdayfile)) { return; }
+       if (!file_exists($wtdayfile)) {
+         return new DataResponse([
+								'out' => '',
+                                 'dayname' =>$dayname,
+            ]);
+
+      }
        else {
          $xmlStr = file_get_contents($wtdayfile);
          $xml = simplexml_load_string($xmlStr);
          $out .= '<br><h1 style="font-size: 2em;color:red;">' . $this->l->t('Attention - test mode is ON') . '</h1><br><h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
          $out .= '<br>' . $xml->days->day[$day-1]->description;
-         return $out;
+         return new DataResponse([
+								'out' => $out,
+                                 'dayname' =>$xml->days->day[$day-1]->date,
+            ]);
        }
      }
      else {
-       if ($day > $today) { return '<br><b>' . $this->l->t('Unfortunately, you are too early, because you are only allowed to open this door on the right day.') . '</b>'; }
+       if ($day > $today) {
+         return new DataResponse([
+								'out' => '<br><b>' . $this->l->t('Unfortunately, you are too early, because you are only allowed to open this door on the right day.') . '</b>',
+                                 'dayname' =>$dayname,
+            ]);
+      }
        if (!file_exists($wtdayfile)) {
-         return;
+         return new DataResponse([
+								'out' => '',
+                                 'dayname' =>$dayname,
+            ]);
        }
        else {
          $xmlStr = file_get_contents($wtdayfile);
@@ -173,17 +191,33 @@ class DayController extends Controller {
          $datexml  = (string) $xml->days->day[$day-1]->date[0];
          $pieces = explode("-", $datexml);
          $xmlmonth = intval($pieces[1]);
-         if ($xmlmonth !== $thismonth) { return $this->l->t('Unfortunately, you are too early, because you are only allowed to open this door on the right day.'); }
+         if ($xmlmonth !== $thismonth) {
+           return new DataResponse([
+								'out' => $this->l->t('Unfortunately, you are too early, because you are only allowed to open this door on the right day.'),
+                                   'dayname' =>$dayname,
+            ]);
+        }
          if ( $day === $today ) {
            $out .= '<br><h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
            $out .= '<br>' . $xml->days->day[$day-1]->description;
-           return $out;
+           return new DataResponse([
+								'out' => $out,
+                                'dayname' =>$xml->days->day[$day-1]->date,
+            ]);
          }
-         if ( ($day < $today) and ($wtpara_last === 2)) { return '<br><b>' . $this->l->t('Unfortunately, you are too late, because this door is no longer available.') . '</b>'; }
+         if ( ($day < $today) and ($wtpara_last === 2)) {
+           return new DataResponse([
+								'out' => '<br><b>' . $this->l->t('Unfortunately, you are too late, because this door is no longer available.') . '</b>',
+                                   'dayname' =>$dayname,
+            ]);
+        }
          else {
            $out .= '<br><h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
            $out .= '<br>' . $xml->days->day[$day-1]->description;
-           return $out;
+           return new DataResponse([
+								'out' => $out,
+                                'dayname' =>$xml->days->day[$day-1]->date,
+            ]);
          }
        }
      }
@@ -193,13 +227,21 @@ class DayController extends Controller {
      $day = intval($day);
      $out = "";
      $wtdayfile = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/xml/days.xml';
-       if (!file_exists($wtdayfile)) { return; }
+       if (!file_exists($wtdayfile)) {
+         return new DataResponse([
+								'out' => '',
+                                 'dayname' => '.',
+            ]);
+      }
        else {
          $xmlStr = file_get_contents($wtdayfile);
          $xml = simplexml_load_string($xmlStr);
          $out .= '<h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
          $out .= '<br>' . $xml->days->day[$day-1]->description;
-         return $out;
+         return new DataResponse([
+								'out' => $out,
+                                 'dayname' => $xml->days->day[$day-1]->date,
+            ]);
        }
    }
  
@@ -207,12 +249,15 @@ class DayController extends Controller {
         $appdataroot = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud';
  		if (!is_dir($appdataroot . '/img')) $this->appData->newFolder('img');
         if (!is_dir($appdataroot . '/backgroundimg')) $this->appData->newFolder('backgroundimg');
+        if (!is_dir($appdataroot . '/dbbackgroundimg')) $this->appData->newFolder('dbbackgroundimg');
         if (!is_dir($appdataroot . '/xml')) $this->appData->newFolder('xml');
  		
  		$wtdayfile = $this->config->getSystemValue('datadirectory') . '/days.xml';
         $newwtdayfile = $appdataroot . '/xml/days.xml';
         $file = __DIR__ . '/../../data/days_example.xml';
         $backgroundimg = __DIR__ . '/../../img/background.jpg';
+        $dbbackgroundimg = __DIR__ . '/../../img/dbbackground.jpg';
+        $newdbbackgroundimg = $appdataroot . '/dbbackgroundimg/dbbackground.jpg';
         $newbackgroundimg = $appdataroot . '/backgroundimg/background.jpg';
         $exampleimg = __DIR__ . '/../../data/img/xmas-cookies.png';
         $newexampleimg = $appdataroot . '/img/xmas-cookies.png';
@@ -239,6 +284,14 @@ class DayController extends Controller {
           }
           else {
             $this->logger->debug("SantaCloud: success copy $backgroundimg... ");
+          }
+        }
+        if (!$this->appData->getFolder('dbbackgroundimg')->fileExists('dbbackground.jpg')) {
+          if (!copy($dbbackgroundimg, $newdbbackgroundimg)) {
+            $this->logger->warning("SantaCloud: failed to copy $dbbackgroundimg... ");
+          }
+          else {
+            $this->logger->debug("SantaCloud: success copy $dbbackgroundimg... ");
           }
         }
         if (!$this->appData->getFolder('img')->fileExists('xmas-cookies.png')) {          
