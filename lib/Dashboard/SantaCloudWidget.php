@@ -48,11 +48,12 @@ class SantaCloudWidget implements IWidget, IConditionalWidget
   IGroupManager $groupManager,
 ) {
   $user = $userSession->getUser();
-  $this->wtisadmin = $groupManager->isAdmin($user->getUID());
+  //$this->wtisadmin = $groupManager->isAdmin($user->getUID());
 }
 
 public function isEnabled(): bool {
-  return $this->wtisadmin ? true : false;
+  $wtpara_dasboard_enabled =  (int)$this->config->getAppValue('santacloud', 'wtpara_dasboard_enabled', '');
+  return ($wtpara_dasboard_enabled === 1) ? true : false;
 }
 
 /**
