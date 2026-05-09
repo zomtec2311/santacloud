@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.4
+
+### Added
+- dashboard widget: 2nd style of countdown
+- dashboard widget: small link to settings if user is an administrator
+- main view: added link to settings if user is an administrator
+
+## 1.1.3
+
 ## 1.1.2
 
 ### Added
