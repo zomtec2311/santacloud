@@ -4,13 +4,13 @@
 }
 
 #countdown-container { display:flex; gap:8px; align-items:center; font-size: 26px; font-family:Arial, sans-serif; }
-.countdown { width: auto; margin: 100px auto 0px auto;  display:flex; gap:8px; align-items:center; }
+.countdown { width: auto; margin: 0px auto 0px auto;  display:flex; gap:8px; align-items:center; }
 .cd-preitem { background:#f3f3f3; color:steelblue; padding:6px 8px; border-radius:4px; font-weight:600; }
 .cd-item { background:#f3f3f3; color:steelblue; padding:6px 8px; border-radius:4px; font-weight:600; }
 .cd-item-60 { background:#f3f3f3; color:#c00; padding:6px 8px; border-radius:4px; font-weight:600; }
 .countdown-expired { color:#c00; font-weight:700; }
 
-#countdownpre {padding:6px 8px;font-size:16px;}
+#countdownpre {margin-bottom: 50px;padding:6px 8px;font-size:16px;}
 
 #countdownpost {background:#f3f3f3; color:steelblue; padding:6px 8px; margin:20px 8px;font-size:12px; border-radius:4px;}
 /* Widget-Wrapper: 288x400 */
