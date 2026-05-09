@@ -34,6 +34,7 @@ return [
       ['name' => 'Day#savedayxmlcontent', 'url' => '/saveday', 'verb' => 'POST'],
       ['name' => 'Day#saveowntext', 'url' => '/saveowntext', 'verb' => 'POST'],
       ['name' => 'Day#getParam', 'url' => '/getparam/{who}', 'verb' => 'GET'],
+      ['name' => 'Day#isAdmin', 'url' => '/isadmin', 'verb' => 'GET'],
       ['name' => 'image#get', 'url' => '/image/{filename}', 'verb' => 'GET'],
       ['name' => 'image#bgget', 'url' => '/bgimage/{filename}', 'verb' => 'GET'],
       ['name' => 'image#dbget', 'url' => '/dbimage/{filename}', 'verb' => 'GET'],
