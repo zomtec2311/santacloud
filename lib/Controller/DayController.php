@@ -44,6 +44,8 @@ use OCP\Files\IAppData;
 use OCP\Files\SimpleFS\ISimpleFile;
 use OCP\Files\SimpleFS\ISimpleFolder;
 use Psr\Log\LoggerInterface;
+use OCP\IUserSession;
+use OCP\IGroupManager;
 
 class DayController extends Controller {
   #[NoCSRFRequired]
@@ -61,13 +63,19 @@ class DayController extends Controller {
    private $l;
    private $appData;
    private $logger;
+   public $wtuser;
+   private $isadmin = false;
+
+
    public function __construct(
-     IL10N $l,
-     IConfig $config,
-     IRequest $request,
-     IAppData $appData,
-     LoggerInterface $logger,
-     private IInitialState $initialState
+      IL10N $l,
+      IConfig $config,
+      IRequest $request,
+      IAppData $appData,
+      LoggerInterface $logger,
+      private IUserSession $userSession,
+      private IGroupManager $groupManager,
+      private IInitialState $initialState
    ) {
      parent::__construct('santacloud', $request);
      $this->l = $l;
@@ -75,6 +83,8 @@ class DayController extends Controller {
      $this->request = $request;
      $this->appData = $appData;
      $this->logger = $logger;
+     $this->wtuser = $userSession->getUser();
+     $this->isadmin = $groupManager->isAdmin($this->wtuser->getUID());
    }
 
    #[NoAdminRequired]
@@ -305,4 +315,11 @@ class DayController extends Controller {
         }                
          return;
        }
+
+   #[NoAdminRequired]
+   public function isadmin(): DataResponse {
+     return new DataResponse([
+                'value' => $this->isadmin ,
+            ]);
+   }
    }
