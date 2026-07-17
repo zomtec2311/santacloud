@@ -33,7 +33,7 @@ OC.L10N.register(
     "DO NOT store images within the apps data or image folder, because they will be deleted on the next app update automatically!!!" : "NE stockez PAS d'images dans le dossier de données ou d'images de l'application, car elles seront automatiquement supprimées lors de la prochaine mise à jour de l'application !!!",
     "Starting with version 1.1.0 there is a folder named" : "À partir de la version 1.1.0, il existe un dossier nommé",
     "here you can store all images used in the advent calendar doors. These images will remain unaffected by future app updates and will therefore not be lost." : "ici, vous pouvez stocker toutes les images utilisées dans les portes du calendrier de l'Avent. Ces images ne seront pas affectées par les futures mises à jour de l'application et ne seront donc pas perdues.",
-    "Example:" : "Exemple:"
+    "Example:" : "Exemple:",
     "you can use it in your HTML code this way:" : "vous pouvez l'utiliser dans votre code HTML de cette façon :",
     "An image 'imageABC.png' is stored in:" : "Une image 'imageABC.png' est stockée dans :",
     "or this way" : "ou par ici",
