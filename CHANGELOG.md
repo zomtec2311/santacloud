@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.5
+
+### Fixed
+- getbg returned raw data. Fixed by wrapping in a Response
+- missing comma in fr.js fixed
+
 ## 1.1.4
 
 ### Added
