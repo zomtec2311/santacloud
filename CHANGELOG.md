@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.6
+
+### Fixed
+- missing comma in fr.json fixed
+
 ## 1.1.5
 
 ### Fixed
