@@ -341,7 +341,7 @@ class ImageController extends Controller {
     }
     
     #[NoAdminRequired]
-   public function getbg() {
+   public function getbg(): DataResponse {
      $wtpara_background_image = (string)$this->config->getAppValue('santacloud', 'wtpara_background_image');
      if (!isset($wtpara_background_image) or ($wtpara_background_image === "") or (!file_exists($this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/backgroundimg/' . $wtpara_background_image))) {
             if (!file_exists($this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/backgroundimg/background.jpg')) {
@@ -357,11 +357,13 @@ class ImageController extends Controller {
  			 $wtpara_background_image = 'background.jpg';
              $this->config->setAppValue('santacloud', 'wtpara_background_image', $wtpara_background_image);
  		}
-     return '/apps/santacloud/bgimage/' . $wtpara_background_image;
+     return new DataResponse([
+                'image' => '/apps/santacloud/bgimage/' . $wtpara_background_image,
+            ]);
    }
 
    #[NoAdminRequired]
-   public function getdb() {
+   public function getdb(): DataResponse {
      $wtpara_db_background_image = (string)$this->config->getAppValue('santacloud', 'wtpara_db_background_image');
      if (!isset($wtpara_db_background_image) or ($wtpara_db_background_image === "") or (!file_exists($this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/dbbackgroundimg/' . $wtpara_db_background_image))) {
             if (!file_exists($this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/dbbackgroundimg/dbbackground.jpg')) {
@@ -377,7 +379,9 @@ class ImageController extends Controller {
  			 $wtpara_db_background_image = 'dbbackground.jpg';
              $this->config->setAppValue('santacloud', 'wtpara_db_background_image', $wtpara_db_background_image);
  		}
-     return '/apps/santacloud/dbimage/' . $wtpara_db_background_image;
+     return new DataResponse([
+                'image' => '/apps/santacloud/bgimage/' . $wtpara_db_background_image,
+            ]);
    }
    
    public function setbg($imagePath) {
