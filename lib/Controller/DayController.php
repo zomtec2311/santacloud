@@ -46,6 +46,8 @@ use OCP\Files\SimpleFS\ISimpleFolder;
 use Psr\Log\LoggerInterface;
 use OCP\IUserSession;
 use OCP\IGroupManager;
+use OCP\Files\IRootFolder;
+use OCP\Files\NotFoundException;
 
 class DayController extends Controller {
   #[NoCSRFRequired]
@@ -258,10 +260,11 @@ class DayController extends Controller {
  
   public function checkdatafolder() {
         $appdataroot = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud';
- 		if (!is_dir($appdataroot . '/img')) $this->appData->newFolder('img');
-        if (!is_dir($appdataroot . '/backgroundimg')) $this->appData->newFolder('backgroundimg');
-        if (!is_dir($appdataroot . '/dbbackgroundimg')) $this->appData->newFolder('dbbackgroundimg');
-        if (!is_dir($appdataroot . '/xml')) $this->appData->newFolder('xml');
+
+        $this->createfolderifnotexists('img');
+        $this->createfolderifnotexists('backgroundimg');
+        $this->createfolderifnotexists('dbbackgroundimg');
+        $this->createfolderifnotexists('xml');
  		
  		$wtdayfile = $this->config->getSystemValue('datadirectory') . '/days.xml';
         $newwtdayfile = $appdataroot . '/xml/days.xml';
@@ -316,10 +319,18 @@ class DayController extends Controller {
          return;
        }
 
+       function createfolderifnotexists(string $folder): void {
+          try {
+			$this->appData->getFolder($folder);
+          } catch (NotFoundException $e) {
+              $this->appData->newFolder($folder);
+          }
+      }
+
    #[NoAdminRequired]
    public function isadmin(): DataResponse {
      return new DataResponse([
-                'value' => $this->isadmin ,
+                'value' => $this->isadmin,
             ]);
    }
    }
