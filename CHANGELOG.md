@@ -2,8 +2,12 @@
 
 ## 1.1.6
 
+### Added
+- Nextcloud 35 compatibility
+
 ### Fixed
 - missing comma in fr.json fixed
+- some code cleanups
 
 ## 1.1.5
 

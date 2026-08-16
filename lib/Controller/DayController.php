@@ -113,6 +113,7 @@ class DayController extends Controller {
      $out = '';
      $arr = array();
        $xmlStr = file_get_contents($wtdayfile);
+       //$xmlStr = $this->appData->getFolder('xml')->getFile('days.xml')->getContent();
        $xml = simplexml_load_string($xmlStr);
        for ($i = 0; $i <= 23; $i++) {
          $xml->days->day[$i]->title = strval($xml->days->day[$i]->title);
@@ -131,6 +132,7 @@ class DayController extends Controller {
       $out = '';
       $arr = array();
         $xmlStr = file_get_contents($wtdayfile);
+        //$xmlStr = $this->appData->getFolder('xml')->getFile('days.xml')->getContent();
         $xml = simplexml_load_string($xmlStr);
         $obja = new \stdClass();
         $obja->day = $day;
@@ -143,11 +145,13 @@ class DayController extends Controller {
      public function savedayxmlcontent($day, $date, $title, $description): JSONResponse {
        $wtdayfile = $this->config->getSystemValue('datadirectory') . '/appdata_' . $this->config->getSystemValue('instanceid') . '/santacloud/xml/days.xml';
        $xmlStr = file_get_contents($wtdayfile);
+       //$xmlStr = $this->appData->getFolder('xml')->getFile('days.xml')->getContent();
        $xml = simplexml_load_string($xmlStr);
        $xml->days->day[$day-1]->date = $date;
        $xml->days->day[$day-1]->title = '<![CDATA[' . $title . ']]>';
        $xml->days->day[$day-1]->description = '<![CDATA[' . $description . ']]>';
        file_put_contents($wtdayfile, html_entity_decode($xml->asXML()),LOCK_EX);
+       //$this->appData->getFolder('xml')->getFile('days.xml')->putContent(html_entity_decode($xml->asXML()));
        return new JSONResponse([
          'day' => $day,
          'date' => $date,
@@ -176,6 +180,7 @@ class DayController extends Controller {
       }
        else {
          $xmlStr = file_get_contents($wtdayfile);
+         //$xmlStr = $this->appData->getFolder('xml')->getFile('days.xml')->getContent();
          $xml = simplexml_load_string($xmlStr);
          $out .= '<br><h1 style="font-size: 2em;color:red;">' . $this->l->t('Attention - test mode is ON') . '</h1><br><h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
          $out .= '<br>' . $xml->days->day[$day-1]->description;
@@ -200,6 +205,7 @@ class DayController extends Controller {
        }
        else {
          $xmlStr = file_get_contents($wtdayfile);
+         //$xmlStr = $this->appData->getFolder('xml')->getFile('days.xml')->getContent();
          $xml = simplexml_load_string($xmlStr);
          $datexml  = (string) $xml->days->day[$day-1]->date[0];
          $pieces = explode("-", $datexml);
@@ -248,6 +254,7 @@ class DayController extends Controller {
       }
        else {
          $xmlStr = file_get_contents($wtdayfile);
+         //$xmlStr = $this->appData->getFolder('xml')->getFile('days.xml')->getContent();
          $xml = simplexml_load_string($xmlStr);
          $out .= '<h1 style="font-size: 1.3em;">' . $xml->days->day[$day-1]->title . '</h1>';
          $out .= '<br>' . $xml->days->day[$day-1]->description;
