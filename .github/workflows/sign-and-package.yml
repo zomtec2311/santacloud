@@ -97,7 +97,8 @@ jobs:
 
           # Nicht benötigte Bild-Assets entfernen
           rm -f \
-            "${APP_ID}/*.png"
+            "${APP_ID}/santacloud-settings.png" \
+            "${APP_ID}/SantaCloud.png"
 
           # Dev-Dateien entfernen
           rm -rf \
