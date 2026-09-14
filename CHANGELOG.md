@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.7
+
+### Changed
+- removed debug information from console log caused by widget
+
 ## 1.1.6
 
 ### Added

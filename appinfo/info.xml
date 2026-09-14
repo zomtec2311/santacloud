@@ -8,8 +8,15 @@
 - ✅ Create your own content for the doors - e.g. competitions, reciepts, poems...
 - ✅ Offer your customers entertainment during the Advent season.
 - ✅ With built-in test mode.
-- ✅ Easy setup via an XML file.]]></description>
-	<version>1.1.6</version>
+- ✅ Easy setup via Backend.]]></description>
+<description lang="de"><![CDATA[**SantaCloud ist ein Adventskalender für Nextcloud**
+
+- ✅ Eigene Inhalte für die Türchen erstellen – z. B. Gewinnspiele, Rezepte, Gedichte …
+- ✅ Bieten Sie Ihren Kunden während der Adventszeit Unterhaltung.
+- ✅ Mit integriertem Testmodus.
+- ✅ Einfache Einrichtung über das Backend.
+]]></description>
+	<version>1.1.7</version>
 	<licence>agpl</licence>
 	<author mail="wtoedt@gmail.com" homepage="https://github.com/zomtec2311/santacloud">Wolfgang Tödt</author>
 	<namespace>SantaCloud</namespace>
@@ -18,7 +25,7 @@
 	<website>https://github.com/zomtec2311/santacloud</website>
 	<screenshot>https://raw.githubusercontent.com/zomtec2311/santacloud/refs/heads/main/SantaCloud.png</screenshot>
 	<dependencies>
-		<nextcloud min-version="31" max-version="35"/>
+		<nextcloud min-version="32" max-version="35"/>
 	</dependencies>
 	<settings>
     <admin>OCA\SantaCloud\Settings\SantaCloudAdmin</admin>
