@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.8
+
+### Changed
+- **l10n:** Language files extended by additional phrases
+
+### Fixed
+- Dashboard-Widget did not display background image
+
 ## 1.1.7
 
 ### Changed

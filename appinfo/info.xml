@@ -16,7 +16,7 @@
 - ✅ Mit integriertem Testmodus.
 - ✅ Einfache Einrichtung über das Backend.
 ]]></description>
-	<version>1.1.7</version>
+	<version>1.1.8</version>
 	<licence>agpl</licence>
 	<author mail="wtoedt@gmail.com" homepage="https://github.com/zomtec2311/santacloud">Wolfgang Tödt</author>
 	<namespace>SantaCloud</namespace>

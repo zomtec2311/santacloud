@@ -380,7 +380,7 @@ class ImageController extends Controller {
              $this->config->setAppValue('santacloud', 'wtpara_db_background_image', $wtpara_db_background_image);
  		}
      return new DataResponse([
-                'image' => '/apps/santacloud/bgimage/' . $wtpara_db_background_image,
+                'image' => '/apps/santacloud/dbimage/' . $wtpara_db_background_image,
             ]);
    }
    
