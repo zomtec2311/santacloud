@@ -33,7 +33,7 @@ OC.L10N.register(
     "DO NOT store images within the apps data or image folder, because they will be deleted on the next app update automatically!!!" : "لا تقم بتخزين الصور داخل مجلد بيانات التطبيقات أو الصور، لأنه سيتم حذفها عند تحديث التطبيق التالي تلقائيًا !!!",
     "Starting with version 1.1.0 there is a folder named" : "بدءًا من الإصدار 1.1.0 يوجد مجلد باسم",
     "here you can store all images used in the advent calendar doors. These images will remain unaffected by future app updates and will therefore not be lost." : "هنا يمكنك تخزين جميع الصور المستخدمة في أبواب تقويم القدوم. ستظل هذه الصور غير متأثرة بتحديثات التطبيق المستقبلية وبالتالي لن يتم فقدها.",
-    "Example:" : "مثال:"
+    "Example:" : "مثال:",
     "you can use it in your HTML code this way:" : "يمكنك استخدامه في كود HTML الخاص بك بهذه الطريقة:",
     "An image 'imageABC.png' is stored in:" : "يتم تخزين الصورة \"imageABC.png\" في:",
     "or this way" : "أو بهذه الطريقة",

@@ -31,7 +31,7 @@ OC.L10N.register(
     "Must be format YYYY-MM-DD" : "Ní mór a bheith i bhformáid yyyy-mm-dd",
     "Write something.." : "Scríobh rud éigin ..",
     "Advises about risks or negative outcomes of certain actions." : "Tugann sé comhairle faoi rioscaí nó torthaí diúltacha gníomhartha áirithe.",
-    "DO NOT store images within the apps data or image folder, because they will be deleted on the next app update automatically!!!" : "NÁ stóráil íomhánna laistigh de shonraí na haipeanna nó fillteán íomhánna, mar scriosfar iad ar an gcéad nuashonrú app eile go huathoibríoch, !!!"
+    "DO NOT store images within the apps data or image folder, because they will be deleted on the next app update automatically!!!" : "NÁ stóráil íomhánna laistigh de shonraí na haipeanna nó fillteán íomhánna, mar scriosfar iad ar an gcéad nuashonrú app eile go huathoibríoch, !!!",
     "Starting with version 1.1.0 there is a folder named" : "Ag tosú le leagan 1.1.0 tá fillteán ainmnithe",
     "here you can store all images used in the advent calendar doors. These images will remain unaffected by future app updates and will therefore not be lost." : "anseo is féidir leat gach íomhá a úsáidtear sna doirse féilire teacht a stóráil. Ní bheidh aon tionchar ag nuashonruithe aipeanna amach anseo ar na híomhánna seo agus mar sin ní chaillfear iad.",
     "Example:" : "Sampla:",

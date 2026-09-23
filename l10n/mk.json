@@ -32,7 +32,7 @@
     "DO NOT store images within the apps data or image folder, because they will be deleted on the next app update automatically!!!" : "НЕ чувајте слики во податоците на апликациите или папката со слики, бидејќи тие автоматски ќе се избришат при следното ажурирање на апликацијата!!!",
     "Starting with version 1.1.0 there is a folder named" : "Почнувајќи од верзијата 1.1.0, постои папка со име",
     "here you can store all images used in the advent calendar doors. These images will remain unaffected by future app updates and will therefore not be lost." : "Овде можете да ги зачувате сите слики што се користат во вратите на календарот за доаѓање. Овие слики нема да бидат засегнати од идните ажурирања на апликациите и затоа нема да бидат изгубени.",
-    "Example:" : "Пример:"
+    "Example:" : "Пример:",
     "you can use it in your HTML code this way:" : "можете да го користите во вашиот HTML код на следниов начин:",
     "An image 'imageABC.png' is stored in:" : "Сликата „imageABC.png“ е зачувана во:",
     "or this way" : "или на овој начин",
