@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.9
+
+### Fixed
+- **l10n:** Language files ar, ga and mk added missing comma
+
 ## 1.1.8
 
 ### Changed
